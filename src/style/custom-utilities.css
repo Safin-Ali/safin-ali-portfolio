@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+    .d-full-flex{
+        @apply flex items-center justify-center;
+    }
+}
