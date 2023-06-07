@@ -13,8 +13,11 @@ module.exports = {
         "wh-hover":`#F3F5F7`,
         "wh-menu-hover":`#E8EBF0`,
         "bl-base":`#1B1B1B`,
-        "primary":`#F0F4F9`,
-      }
+        "primary":`#0078D4`,
+      },
+      height:{
+        'nav': '70px'
+      },
     },
   },
   plugins: [],

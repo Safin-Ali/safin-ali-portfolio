@@ -1,7 +1,13 @@
 @tailwind utilities;
 
 @layer utilities {
+    .d-v-flex{
+        @apply flex items-center;
+    }
     .d-full-flex{
         @apply flex items-center justify-center;
+    }
+    .customise-container{
+        @apply px-5 container md:px-[2%] lg:px-[3%] xl:px-[4%] 2xl:px-[5%] mx-auto;
     }
 }

@@ -25,6 +25,6 @@
         font-size: 0.67em;
     }
     body{
-        @apply bg-wh-base;
+        @apply bg-wh-base text-bl-base;
     }
 }

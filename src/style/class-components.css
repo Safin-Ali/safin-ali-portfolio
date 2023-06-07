@@ -1,7 +1,6 @@
 @tailwind components;
 
 @layer components {
-    .style-component{
-        @apply text-slate-800;
-    }
+    /* app-bar sttyles */
+    @import url('../components/AppBar/app-bar-style.css');
 }
