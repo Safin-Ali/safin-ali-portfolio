@@ -3,7 +3,7 @@
 }
 
 .hero-section .hero-content{
-    @apply basis-1/2;
+    @apply basis-1/2 ml-[6%];
 }
 .hero-title{
     @apply font-semibold capitalize
@@ -17,4 +17,8 @@
 
 .mouse-scroll-anim-area{
     @apply absolute bottom-2 left-1/2 transform -translate-x-1/2;
+}
+
+.social-network-icons{
+    @apply absolute
 }

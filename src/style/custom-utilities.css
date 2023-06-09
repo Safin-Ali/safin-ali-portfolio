@@ -10,4 +10,11 @@
     .customise-container{
         @apply px-5 sm:px-[1.5%] container md:px-[2%] lg:px-[3%] xl:px-[4%] 2xl:px-[5%] mx-auto;
     }
+
+    .position-full-center{
+        @apply transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2;
+    }
+    .position-v-center{
+        @apply transform -translate-y-1/2 top-1/2;
+    }
 }
