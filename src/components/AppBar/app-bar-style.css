@@ -1,5 +1,5 @@
 header{
-    @apply h-nav shadow-md;
+    @apply h-nav shadow-md bg-wh-base sticky top-0 z-[100];
 }
 
 .nav-container {

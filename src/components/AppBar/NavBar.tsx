@@ -1,12 +1,13 @@
+'use client'
 import navLinks from '@/data/nav-links';
-import React from 'react';
+import { Link } from "react-scroll";
 interface PropsType { };
 
 export default function NavBar() {
 
   return (
     <header>
-      <nav className={`nav-container d-v-flex customise-container`}>
+      <nav className={ `nav-container flex-v-center customise-container` }>
 
         {/* Web Name */ }
         <div>
@@ -15,19 +16,23 @@ export default function NavBar() {
 
         {/* Nav Items */ }
 
-        <div className={`nav-items-container`}>
-          <ul className={`d-full-flex`}>
+        <div className={ `nav-items-container` }>
+          <ul className={ `flex-full-center` }>
             {
               navLinks.map(
                 (link, idx) => <li
                   key={ idx }
-                  className={`nav-item`}
                   aria-label={ `nav-link` }
                 >
-                  <a
-                    href={link.value}>
-                    { link.label }
-                  </a>
+                  <Link
+                    className={ `nav-item` }
+                    activeClass={`nav-active`}
+                    spy
+                    to={ link.value }
+                  >
+                    {link.label
+                    }
+                  </Link>
 
                 </li>
               )

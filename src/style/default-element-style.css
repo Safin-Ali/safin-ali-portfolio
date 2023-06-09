@@ -24,6 +24,9 @@
     h6 {
         font-size: 0.67em;
     }
+    html{
+        @apply scroll-smooth;
+    }
     body{
         @apply bg-wh-base text-bl-base select-none;
     }

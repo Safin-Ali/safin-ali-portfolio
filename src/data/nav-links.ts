@@ -1,29 +1,29 @@
-import { navLinksTypes } from "@/types/nav-links-type";
+import { NavLinksTypes } from "@/types/nav-links-type";
 
-const navLinks:navLinksTypes[] = [
+const navLinks:NavLinksTypes[] = [
     {
         label:'home',
-        value:'#home-section'
+        value:'home-section'
     },
     {
         label:'about',
-        value:'#about-section'
+        value:'about-section'
     },
     {
         label:'skills',
-        value:'#skills-section'
+        value:'skills-section'
     },
     {
         label:'services',
-        value:'#services-section'
+        value:'services-section'
     },
     {
         label:'projects',
-        value:'#projects-section'
+        value:'projects-section'
     },
     {
         label:'contact',
-        value:'#contact-section'
+        value:'contact-section'
     },
 ];
 
