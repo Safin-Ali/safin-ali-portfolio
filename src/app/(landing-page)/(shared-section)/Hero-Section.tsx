@@ -15,7 +15,33 @@ export default function HeroSection() {
 
                     {/* hero content area */ }
                     <article className={ `hero-content` }>
-                        <h1 className={ `hero-title` }>Hi, { getGreeting() }</h1>
+                        <h1 className={ `hero-title` }>
+                            <span className={ `mx-3` }>Hi<Image
+                                src={ `https://i.ibb.co/r7yW7fg/waving-hand.gif` }
+                                alt={ `hi_emoji` }
+                                width={ 40 }
+                                height={ 40 }
+                                className={ `inline-block mb-3` }
+                            />,
+                            </span>
+
+                            <span>
+                                { getGreeting().greet }
+
+                                <Image
+                                    src={ getGreeting().shift
+                                        ?
+                                        'https://svgshare.com/i/u50.svg'
+                                        :
+                                        'https://svgshare.com/i/u4n.svg'
+                                    }
+                                    alt="moon"
+                                    width={ 45 }
+                                    height={ 45 }
+                                    className={ `inline-block` }
+                                />
+                            </span>
+                        </h1>
                         <h2 className={ `hero-subtitle my-5 font-medium` }>
                             I&#39;m Safin Ali an <MultiTextSlide
                                 textArr={ ['Front-End-Developer', 'Instractor'] }
@@ -41,14 +67,20 @@ export default function HeroSection() {
                     </div>
                 </div>
 
-                {/* scroll down anim */}
+                {/* scroll down anim */ }
                 <div className={ `mouse-scroll-anim-area` }>
-                    <MouseScrollAnim />
+                        <MouseScrollAnim />
+                    <div className={`font-medium text-sm`}>
+                        <span className={`mx-2`}>Scroll down</span>
+                        <span>
+                            <svg style={{display:'inline-block'}} xmlns="http://www.w3.org/2000/svg" width={15} height={15} id="caret-down" viewBox="42 90 172 92"><rect width="256" height="256" fill="none"></rect><polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" points="208 96 128 176 48 96"></polyline></svg>
+                        </span>
+                    </div>
                 </div>
 
                 {/* social network communicate icon */ }
-                <div className={`social-network-icons position-v-center`}>
-                    <SocialNav/>
+                <div className={ `social-network-icons position-v-center` }>
+                    <SocialNav />
                 </div>
             </div>
         </section>

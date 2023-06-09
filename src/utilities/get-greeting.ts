@@ -1,11 +1,23 @@
-export default function getGreeting(): string {
+export default function getGreeting(): {
+    greet:string,
+    shift:boolean
+} {
     const currentHour: number = new Date().getHours();
 
     if (currentHour >= 5 && currentHour < 12) {
-        return 'Good morning!';
+        return {
+            greet:'Good morning',
+            shift:false
+        };
     } else if (currentHour >= 12 && currentHour < 18) {
-        return 'Good afternoon!';
+        return {
+            greet:'Good afternoon',
+            shift: false
+        };
     } else {
-        return 'Good evening!';
+        return {
+            greet:`Good evening`,
+            shift:true
+        };
     };
 }
