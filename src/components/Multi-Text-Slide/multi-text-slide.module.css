@@ -2,7 +2,7 @@
     display: inline-block;
     height: fit-content;
     overflow: hidden;
-    vertical-align: text-bottom;
+    vertical-align: bottom;
 }
 .multi-text-root > span{
     display: none;

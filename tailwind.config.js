@@ -13,10 +13,11 @@ module.exports = {
         "wh-hover":`#F3F5F7`,
         "wh-menu-hover":`#E8EBF0`,
         "bl-base":`#1B1B1B`,
-        "primary":`#0078D4`,
+        "primary":`#0079FF`,
       },
       height:{
-        'nav': '70px'
+        'nav': '70px',
+        'fit-screen': 'calc(100vh - 70px)',
       },
     },
   },
