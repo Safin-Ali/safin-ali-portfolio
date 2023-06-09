@@ -17,3 +17,7 @@ header{
 .nav-active{
     @apply text-primary relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-primary md:before:absolute md:before:inset-x-0;
 }
+
+.social-nav-icons{
+    @apply w-7 my-3 rounded-full p-1.5 box-content border-0 hover:border cursor-pointer border-bl-base;
+}
