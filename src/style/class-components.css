@@ -3,4 +3,5 @@
 @layer components {
     /* app-bar sttyles */
     @import url('../components/AppBar/app-bar-style.css');
+    @import url('../app/(landing-page)/(shared-section)/landing-page-style.css');
 }

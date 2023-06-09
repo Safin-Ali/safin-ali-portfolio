@@ -1,0 +1,20 @@
+.hero-section{
+    @apply h-fit-screen relative;
+}
+
+.hero-section .hero-content{
+    @apply basis-1/2;
+}
+.hero-title{
+    @apply font-semibold capitalize
+}
+.hero-subtitle{
+    @apply text-2xl;
+}
+.hero-section .hero-image{
+    @apply rounded-md grayscale hover:grayscale-0 mx-auto duration-1000;
+}
+
+.mouse-scroll-anim-area{
+    @apply absolute bottom-2 left-1/2 transform -translate-x-1/2;
+}
