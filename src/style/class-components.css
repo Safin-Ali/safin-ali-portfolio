@@ -7,4 +7,6 @@
     @import url('../app/(landing-page)/(shared-section)/landing-page-style.css');
     /* card component  styles*/
     @import url('../components/Card/card-style.css');
+    /* tooltip component  styles*/
+    @import url('../components/Tooltip/tooltip-style.css');
 }
