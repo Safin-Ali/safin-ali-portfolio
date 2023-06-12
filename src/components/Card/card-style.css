@@ -1,0 +1,9 @@
+.about-card-box{
+    @apply border rounded-md border-wh-border px-8 py-4 text-center bg-wh-block hover:shadow-normal transition-shadow duration-300 ease-in-out;
+}
+.about-card-title{
+    @apply font-medium mt-2 text-lg capitalize;
+}
+.about-card-subtitle{
+    @apply font-medium mt-2 text-sm text-bl-sub-title capitalize;
+}
