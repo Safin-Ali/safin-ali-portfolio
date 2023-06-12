@@ -1,17 +1,16 @@
-import getGreeting from '@/utilities/get-greeting';
-import Image from 'next/image';
-import React from 'react';
+import SocialNav from '@/components/AppBar/Social-Nav';
 import MouseScrollAnim from '@/components/Mouse-Scroll-Anim/Mouse-Scroll-Anim';
 import MultiTextSlide from '@/components/Multi-Text-Slide/Multi-Text-Slide';
-import SocialNav from '@/components/AppBar/Social-Nav';
+import getGreeting from '@/utilities/get-greeting';
+import Image from 'next/image';
 
 export default function HeroSection() {
 
     return (
-        <section className={ `customise-container` }>
+        <section id={'home-section'} className={ `customise-container` }>
             <div className={ `hero-section` }>
 
-                <div className={ `d-v-flex w-full` }>
+                <div className={ `flex-v-center w-full` }>
 
                     {/* hero content area */ }
                     <article className={ `hero-content` }>
@@ -73,7 +72,7 @@ export default function HeroSection() {
                     <div className={`font-medium text-sm`}>
                         <span className={`mx-2`}>Scroll down</span>
                         <span>
-                            <svg style={{display:'inline-block'}} xmlns="http://www.w3.org/2000/svg" width={15} height={15} id="caret-down" viewBox="42 90 172 92"><rect width="256" height="256" fill="none"></rect><polyline fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" points="208 96 128 176 48 96"></polyline></svg>
+                            <svg style={{display:'inline-block'}} xmlns="http://www.w3.org/2000/svg" width={15} height={15} id="caret-down" viewBox="42 90 172 92"><rect width="256" height="256" fill="none"></rect><polyline fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="12" points="208 96 128 176 48 96"></polyline></svg>
                         </span>
                     </div>
                 </div>
