@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import SimpleTooltip from '../Tooltip/Simple-Tooltip';
 interface PropsType {
     iconSRC: string,
-    level: 'Intermediate' | 'Familiar' | 'Expert' | 'Master',
+    level: 'Intermediate' | 'Familiar' | 'Expert' | 'Master' | 'Future',
     name: string
 };
 
@@ -17,7 +17,11 @@ export default function SkillsCard({
     const [toolBool, setTool] = useState<boolean>(false)
 
     return (
-        <div onMouseEnter={ () => setTool(true) } onMouseLeave={ () => setTool(false) } className={ `skill-card-box` }>
+        <div
+            onMouseEnter={ () => setTool(true) }
+            onMouseLeave={ () => setTool(false) }
+            className={ `skill-card-box ${level.toLocaleLowerCase() === 'future' ? 'opacity-40' : ''}` }
+        >
 
             {/* Skill Icon */ }
             <div className={ `h-[35px]` }>
