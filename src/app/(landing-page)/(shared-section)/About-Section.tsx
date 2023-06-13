@@ -12,6 +12,7 @@ export default function AboutSection() {
                 <SectionTitle
                     title={ 'About Me' }
                     sub_title={ "My Introduction" }
+                    iconSRC={'https://svgshare.com/i/uCr.svg'}
                 />
 
                 <div className={ `flex-full-center w-full` }>

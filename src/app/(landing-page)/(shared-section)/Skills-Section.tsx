@@ -3,7 +3,6 @@ import ConnectedTilesLine from '@/components/Connected-Line/Connected-Tiles-Line
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import skills from '@/data/skills-info';
 import React from 'react';
-interface PropsType { };
 
 export default function SkillsSection() {
 
@@ -12,6 +11,7 @@ export default function SkillsSection() {
             <SectionTitle
                 title={ `My Skills` }
                 sub_title={ `My Technical Level` }
+                iconSRC={'https://svgshare.com/i/uDp.svg'}
             />
 
             <div className={ `skills-container` }>
