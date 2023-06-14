@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "wh-base":`hsl(220 36% 96% / 1)`,
+        "wh-base":`hsl(220 25% 96% / 1)`,
         "wh-block":`#FBFCFD`,
-        "wh-hover":`hsl(210 15% 95% / 1)`,
+        "wh-hover":`hsl(210 10% 97% / 1)`,
         "wh-menu-hover":`#E8EBF0`,
         "wh-border":`#E2E5EA`,
         "bl-base":`#1B1B1B`,
         "bl-sub-title":`#666666`,
-        "primary":`#0079FF`,
+        "primaryL":`hsl(217 2% 25% / 1)`,
       },
       height:{
         'nav': '70px',

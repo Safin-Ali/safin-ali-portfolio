@@ -1,6 +1,8 @@
 'use client'
 import navLinks from '@/data/nav-links';
-import { Link } from "react-scroll";
+import Image from 'next/image';
+import NavLink from "next/link";
+import { Link } from 'react-scroll';
 interface PropsType { };
 
 export default function NavBar() {
@@ -11,7 +13,16 @@ export default function NavBar() {
 
         {/* Web Name */ }
         <div>
-          Safin Ali
+          <span className={`text-3xl font-mono`}>
+            <NavLink href={'/'}>
+              <Image
+                src={'https://svgshare.com/i/uD_.svg'}
+                width={200}
+                height={200}
+                alt={'Safin-Logo'}
+              />
+            </NavLink>
+          </span>
         </div>
 
         {/* Nav Items */ }

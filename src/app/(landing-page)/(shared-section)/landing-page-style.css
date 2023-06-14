@@ -28,7 +28,7 @@
 }
 
 .skills-stack{
-    @apply odd:border-r py-5
+    @apply odd:border-r py-5;
 }
 
 .skill-tech{
@@ -36,5 +36,5 @@
 }
 
 .skill-category-header{
-    @apply text-center font-semibold mb-3 text-primary underline underline-offset-2;
+    @apply text-center font-semibold mb-3 underline underline-offset-2;
 }

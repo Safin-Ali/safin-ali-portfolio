@@ -11,15 +11,19 @@ header{
 }
 
 .nav-item{
-    @apply py-2 md:py-0 hover:text-primary relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primary md:before:absolute md:before:inset-x-0;
+    @apply py-2 md:py-0 font-medium hover:text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
 }
 
 .nav-active{
-    @apply text-primary relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-primary md:before:absolute md:before:inset-x-0;
+    @apply text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
 }
 
 .social-nav-icons{
     @apply w-7 my-3 rounded-full p-1.5 box-content border-0 hover:border cursor-pointer border-bl-base;
+}
+
+path,circle{
+    transition: fill 0.3s ease-in;
 }
 
 #linkedin:hover path {
