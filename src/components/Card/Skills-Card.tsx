@@ -20,7 +20,7 @@ export default function SkillsCard({
         <div
             onMouseEnter={ () => setTool(true) }
             onMouseLeave={ () => setTool(false) }
-            className={ `skill-card-box ${level.toLocaleLowerCase() === 'future' ? 'opacity-40' : ''}` }
+            className={ `skill-card-box ${level.toLocaleLowerCase() === 'future' ? 'opacity-40' : 'hover:scale-105'}` }
         >
 
             {/* Skill Icon */ }
