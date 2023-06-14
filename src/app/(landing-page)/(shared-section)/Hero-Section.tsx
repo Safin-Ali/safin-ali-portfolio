@@ -1,4 +1,5 @@
 import SocialNav from '@/components/AppBar/Social-Nav';
+import GreetingMessage from '@/components/Greating-Message/Greeting-Message';
 import MouseScrollAnim from '@/components/Mouse-Scroll-Anim/Mouse-Scroll-Anim';
 import MultiTextSlide from '@/components/Multi-Text-Slide/Multi-Text-Slide';
 import getGreeting from '@/utilities/get-greeting';
@@ -24,22 +25,7 @@ export default function HeroSection() {
                             />,
                             </span>
 
-                            <span>
-                                { getGreeting().greet }
-
-                                <Image
-                                    src={ getGreeting().shift
-                                        ?
-                                        'https://svgshare.com/i/u50.svg'
-                                        :
-                                        'https://svgshare.com/i/u4n.svg'
-                                    }
-                                    alt="moon"
-                                    width={ 45 }
-                                    height={ 45 }
-                                    className={ `inline-block` }
-                                />
-                            </span>
+                            <GreetingMessage/>
                         </h1>
                         <h2 className={ `hero-subtitle my-5 font-medium` }>
                             I&#39;m Safin Ali an <MultiTextSlide
