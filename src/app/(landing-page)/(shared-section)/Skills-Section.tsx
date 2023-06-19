@@ -1,8 +1,6 @@
 import SkillsCard from '@/components/Card/Skills-Card';
-import ConnectedTilesLine from '@/components/Connected-Line/Connected-Tiles-Line';
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import skills from '@/data/skills-info';
-import React from 'react';
 
 export default function SkillsSection() {
 

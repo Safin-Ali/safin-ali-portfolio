@@ -18,7 +18,7 @@ export default function GreetingMessage () {
         alt="moon"
         width={ 45 }
         height={ 45 }
-        className={ `inline-block ml-1` }
+        className={ `inline-block ml-2` }
     />
 </span>
   );
