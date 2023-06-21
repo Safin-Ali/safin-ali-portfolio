@@ -13,3 +13,7 @@
 .skill-card-box img{
     @apply mx-auto object-contain h-[35px] px-2;
 }
+
+.services-card-container{
+    @apply border rounded-md p-3;
+}
