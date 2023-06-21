@@ -5,21 +5,37 @@ const myServices:ServicesDataType[] = [
         _id:'1',
         iconSRC:'https://svgshare.com/i/uSw.svg',
         serviceName:'Web App Develeopment',
-        serviceSummary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui debitis laboriosam tenetur, mollitia aliquam veritatis optio sed perferendis eum corrupti.'
+        servicesList:[
+            'Responsive and Pixel Perfect User Interface',
+            'API Development and Integration',
+            'Testing Components',
+            'SEO-Friendly Page',
+            'Performance Optimization'
+        ]
     },
     {
         _id:'2',
-        // iconSRC:'https://svgshare.com/i/uRW.svg',
         iconSRC:'https://svgshare.com/i/uTE.svg',
-        // iconSRC:'https://svgshare.com/i/uUH.svg',
-        serviceName:'Bugs Find & Fix',
-        serviceSummary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui debitis laboriosam tenetur, mollitia aliquam veritatis optio sed perferendis eum corrupti.'
+        serviceName:'Bug Fixing and Troubleshooting',
+        servicesList:[
+            'Code Optimization and Refactoring',
+            'Diagnostic Glitch',
+            'Enhancing User Experience',
+            'Problem-Solving',
+            'Write clean and efficient code',
+        ]
     },
     {
         _id:'3',
-        iconSRC:'https://svgshare.com/i/uVq.svg',
+        iconSRC:'https://svgshare.com/i/uVg.svg',
         serviceName:'A Web Instractor',
-        serviceSummary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui debitis laboriosam tenetur, mollitia aliquam veritatis optio sed perferendis eum corrupti.'
+        servicesList:[
+            'Responsive UI/UX Design',
+            'Scalable and Efficient Solutions',
+            'Continuous Maintenance and Support',
+            'API Development and Integration',
+            'A/B Testing and Conversion Optimization',
+        ]
     },
 ];
 

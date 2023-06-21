@@ -23,7 +23,7 @@ export default function ServicesSection () {
                     _id={elm._id}
                     iconSRC={elm.iconSRC}
                     serviceName={elm.serviceName}
-                    serviceSummary={elm.serviceSummary}
+                    servicesList={elm.servicesList}
                 />)
             }
 

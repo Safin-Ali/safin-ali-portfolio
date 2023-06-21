@@ -6,7 +6,7 @@ export default function ServicesCard({
   _id,
   iconSRC,
   serviceName,
-  serviceSummary
+  servicesList
 }: ServicesDataType) {
 
   return (
@@ -22,9 +22,16 @@ export default function ServicesCard({
         />
       </div>
 
+      <div className={`text-center mt-2 mb-3`}>
+        <h3 className={`font-semibold`}>{serviceName}</h3>
+      </div>
+
       <div>
-        <h3 className={`font-semibold text-center mb-3`}>{serviceName}</h3>
-        <p className={`text-justify`}>{serviceSummary}</p>
+        <ul>
+          {
+            servicesList.map((service,idx) => <li key={idx}>{service}</li>)
+          }
+        </ul>
       </div>
 
     </figure>

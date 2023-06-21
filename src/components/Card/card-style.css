@@ -15,5 +15,13 @@
 }
 
 .services-card-container{
-    @apply border rounded-md p-3;
+    @apply border rounded-md p-3 bg-wh-block shadow-square shadow-black/5 duration-200;
+}
+
+.services-card-container ul {
+    @apply ml-5;
+    list-style-type: '\2713';
+}
+.services-card-container ul li{
+    @apply pl-1.5 text-base my-1.5;
 }
