@@ -38,3 +38,7 @@
 .skill-category-header{
     @apply text-center font-semibold mb-3 underline underline-offset-2;
 }
+
+.services-container{
+    @apply grid grid-cols-3 gap-5 justify-center items-center my-5;
+}
