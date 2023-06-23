@@ -38,3 +38,10 @@ path,circle{
 #facebook:hover {
     fill: #1194F5;
 }
+
+.projects-tech-bar-container{
+    @apply flex items-center gap-5 justify-center;
+}
+.projects-tech-bar-container li{
+    @apply border px-1.5 py-1.5 cursor-pointer rounded-md;
+}
