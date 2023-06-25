@@ -177,31 +177,31 @@ const tool:SkillInfoType[] = [
         level: 'Intermediate'
     },
     {
-        _id: '3',
+        _id: '4',
         icon: 'https://svgshare.com/i/uDG.svg',
         name: 'AD-Photoshop',
         level: 'Familiar'
     },
     {
-        _id: '4',
+        _id: '5',
         icon: 'https://svgshare.com/i/uD6.svg',
         name: 'Postman',
         level: 'Familiar'
     },
     {
-        _id: '5',
+        _id: '6',
         icon: 'https://svgshare.com/i/uDT.svg',
         name: 'ESLint',
         level: 'Familiar'
     },
     {
-        _id: '5',
+        _id: '7',
         icon: 'https://svgshare.com/i/uDU.svg',
         name: 'Babel',
         level: 'Familiar'
     },
     {
-        _id: '6',
+        _id: '8',
         icon: 'https://svgshare.com/i/uCw.svg',
         name: 'Webpack',
         level: 'Familiar'

@@ -1,12 +1,14 @@
 'use client'
 import ProjectsTechBar from '@/components/AppBar/Projects-Tech-Bar';
 import ProjectInfoCard from '@/components/Card/Project-Info-Card';
+import ModalBase from '@/components/Modal/Modal-Base';
 import projectsData from '@/data/projects-data';
+import useModalToggler from '@/hooks/useModal';
 import React, { useState } from 'react';
 
 export default function ProjectsDynamicSec() {
 
-  // const [projectsData, setProjectsData] = useState<any>();
+  const {modalVal,closeModal,modalCurrentEvent,toggleModal} = useModalToggler<HTMLElement | null>();
 
   const [projectsCategory, setProjectsCategory] = useState<string>('javascript');
 
@@ -27,11 +29,26 @@ export default function ProjectsDynamicSec() {
             source={dt.projectCodeURL}
             thumb={dt.projectThumb}
             others={dt.projectOthersInfo}
+            moreInfoModal={toggleModal}
             />
             )
         }
 
       </div>
+
+        {
+          modalVal.modalBool && (
+            <ModalBase
+            modalToggle={{
+              closeModal,
+              setCurrentEvent:modalCurrentEvent
+            }}
+            modalStatusVal={modalVal}
+          >
+            hellow
+          </ModalBase>
+          )
+        }
 
     </div>
   );
