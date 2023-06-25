@@ -1,0 +1,3 @@
+.projects-showcase-container{
+    @apply grid grid-cols-4;
+}
