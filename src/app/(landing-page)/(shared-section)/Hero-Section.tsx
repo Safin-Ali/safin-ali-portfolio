@@ -2,7 +2,6 @@ import SocialNav from '@/components/AppBar/Social-Nav';
 import GreetingMessage from '@/components/Greating-Message/Greeting-Message';
 import MouseScrollAnim from '@/components/Mouse-Scroll-Anim/Mouse-Scroll-Anim';
 import MultiTextSlide from '@/components/Multi-Text-Slide/Multi-Text-Slide';
-import getGreeting from '@/utilities/get-greeting';
 import Image from 'next/image';
 
 export default function HeroSection() {
@@ -28,8 +27,8 @@ export default function HeroSection() {
                             <GreetingMessage/>
                         </h1>
                         <h2 className={ `hero-subtitle my-5 font-medium` }>
-                            I&#39;m Safin Ali an <MultiTextSlide
-                                textArr={ ['Front-End-Developer', 'Instractor'] }
+                            I&#39;m Safin Ali a <MultiTextSlide
+                                textArr={ ['Web App Developer', 'Instractor'] }
                             />
                         </h2>
 
