@@ -1,16 +1,16 @@
 import Image from 'next/image';
-import React from 'react';
 export type ProjetOtherInfoType = {
-    shortText:string,
-    challenges: string[],
-    features: [string,string,string,string,string],
+    readonly shortText:string,
+    readonly challenges: string[],
+    readonly features: string[],
 }
 interface PropsType {
-    thumb: string,
-    name: string,
-    live: string,
-    source: string,
-    others: ProjetOtherInfoType
+    readonly thumb: string,
+    readonly name: string,
+    readonly live: string,
+    readonly source: string,
+    readonly others: ProjetOtherInfoType,
+    readonly moreInfoModal: () => void
 };
 
 export default function ProjectInfoCard({
@@ -18,7 +18,8 @@ export default function ProjectInfoCard({
     name,
     source,
     thumb,
-    others
+    others,
+    moreInfoModal
 }: PropsType) {
 
     return (
@@ -79,7 +80,7 @@ export default function ProjectInfoCard({
                         </a>
                     </div>
 
-                    <div title={'More Info'}>
+                    <div onClick={moreInfoModal} title={'More Info'}>
                         <Image
                             src={ 'https://svgshare.com/i/uax.svg' }
                             alt={ 'three_dots_icon' }
