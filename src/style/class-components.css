@@ -3,10 +3,14 @@
 @layer components {
     /* app-bar styles */
     @import url('../components/AppBar/app-bar-style.css');
-    /* landing-page  styles*/
+    /* landing-page styles*/
     @import url('../app/(landing-page)/(shared-section)/landing-page-style.css');
-    /* card component  styles*/
+    /* card component styles*/
     @import url('../components/Card/card-style.css');
-    /* tooltip component  styles*/
+    /* tooltip component styles*/
     @import url('../components/Tooltip/tooltip-style.css');
+    /* features component styles*/
+    @import url('../features/features-style.css');
+    /* button component styles*/
+    @import url('../components/Button/button-style.css');
 }
