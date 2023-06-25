@@ -25,3 +25,36 @@
 .services-card-container ul li{
     @apply pl-1.5 text-base my-1.5;
 }
+
+/* Project-Info-Card Start */
+
+.project-info-container{
+    @apply bg-white border hover:shadow-normal overflow-hidden hover:shadow-black/5 duration-150 rounded-md;
+}
+
+.project-content{
+    @apply flex justify-between items-center p-2;
+}
+.project-func-area{
+    @apply flex gap-x-4 items-center mr-3;
+}
+.project-func-area div{
+    @apply cursor-pointer hover:bg-bl-base/20 p-2 rounded-full duration-200 ease-in;
+}
+.project-content img{
+    @apply object-contain;
+}
+.project-title{
+    @apply font-semibold text-lg;
+}
+.projecct-summary{
+    @apply text-sm p-2;
+}
+.project-thumb{
+    @apply overflow-hidden;
+}
+.project-thumb img{
+    @apply object-contain mx-auto;
+}
+
+/* Project-Info-Card End */
