@@ -13,4 +13,6 @@
     @import url('../features/features-style.css');
     /* button component styles*/
     @import url('../components/Button/button-style.css');
+    /* modal component styles*/
+    @import url('../components/Modal/modal-style.css');
 }

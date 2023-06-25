@@ -1,0 +1,7 @@
+.modal-base{
+    @apply fixed z-[105] bg-wh-base shadow-square shadow-black/10 inset-0 w-1/2  m-auto h-[calc(100vh-80px)];
+}
+
+.modal-blur-bg{
+    @apply fixed w-full h-screen bg-transparent backdrop-blur-sm z-[100] inset-0;
+}
