@@ -1,3 +1,7 @@
 .projects-showcase-container{
     @apply grid grid-cols-4;
 }
+
+.project-more-info{
+    @apply p-5;
+}

@@ -6,12 +6,12 @@ const projectsData = [
         projectLiveURL: 'https://is-tech-city.vercel.app/',
         projectCodeURL: 'https://github.com/Safin-Ali/tech-city.git',
         projectOthersInfo: {
-            shortText: 'A Technology Based E-Commerce React Web App',
             challenges: ['xx','yy'],
             features: ['1','2','3','4','5'],
         },
         projectBadge: ['e-commerce'],
-        projectTech:['react','html','tailwindcss','css','javascript','single-page']
+        projectTech:['react','html','tailwindcss','css','javascript','single-page'],
+        shortText: 'A Technology Based E-Commerce React Web App',
     },
 ];
 

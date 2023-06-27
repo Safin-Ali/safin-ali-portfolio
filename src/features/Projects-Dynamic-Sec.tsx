@@ -1,18 +1,31 @@
 'use client'
 import ProjectsTechBar from '@/components/AppBar/Projects-Tech-Bar';
-import ProjectInfoCard from '@/components/Card/Project-Info-Card';
+import ProjectInfoCard, { ProjetOtherInfoType } from '@/components/Card/Project-Info-Card';
 import ModalBase from '@/components/Modal/Modal-Base';
 import projectsData from '@/data/projects-data';
 import useModalToggler from '@/hooks/useModal';
 import React, { useState } from 'react';
+import ProjectMoreInfo from './Project-More-Info';
 
 export default function ProjectsDynamicSec() {
 
   const {modalVal,closeModal,modalCurrentEvent,toggleModal} = useModalToggler<HTMLElement | null>();
 
+  const [modalMoreInfoData,setModalMoreInfoData] = useState<ProjetOtherInfoType & {projectName:string} >({
+    challenges: [''],
+    features: [''],
+    projectName: ''
+  });
+
   const [projectsCategory, setProjectsCategory] = useState<string>('javascript');
 
   const handleProjectsTech = (val: string) => setProjectsCategory(val);
+
+  const handleModalData = (moreInfo:ProjetOtherInfoType & {projectName:string}):void => setModalMoreInfoData({
+    challenges: moreInfo.challenges,
+    features: moreInfo.features,
+    projectName: moreInfo.projectName,
+  })
 
   return (
     <div className={`my-5`}>
@@ -29,15 +42,15 @@ export default function ProjectsDynamicSec() {
             source={dt.projectCodeURL}
             thumb={dt.projectThumb}
             others={dt.projectOthersInfo}
-            moreInfoModal={toggleModal}
+            moreInfoModalToggle={toggleModal}
+            handleModalInfo={handleModalData}
+            shortText={dt.shortText}
             />
             )
         }
 
       </div>
 
-        {
-          modalVal.modalBool && (
             <ModalBase
             modalToggle={{
               closeModal,
@@ -45,10 +58,11 @@ export default function ProjectsDynamicSec() {
             }}
             modalStatusVal={modalVal}
           >
-            hellow
+            <ProjectMoreInfo
+              modalInfo={modalMoreInfoData}
+              closeModal={closeModal}
+            />
           </ModalBase>
-          )
-        }
 
     </div>
   );

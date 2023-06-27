@@ -1,16 +1,17 @@
 import Image from 'next/image';
 export type ProjetOtherInfoType = {
-    readonly shortText:string,
     readonly challenges: string[],
     readonly features: string[],
 }
 interface PropsType {
     readonly thumb: string,
+    readonly shortText:string,
     readonly name: string,
     readonly live: string,
     readonly source: string,
     readonly others: ProjetOtherInfoType,
-    readonly moreInfoModal: () => void
+    readonly moreInfoModalToggle: () => void,
+    readonly handleModalInfo: (moreInfo:ProjetOtherInfoType & {projectName:string}) => void,
 };
 
 export default function ProjectInfoCard({
@@ -19,7 +20,9 @@ export default function ProjectInfoCard({
     source,
     thumb,
     others,
-    moreInfoModal
+    shortText,
+    moreInfoModalToggle,
+    handleModalInfo
 }: PropsType) {
 
     return (
@@ -42,7 +45,7 @@ export default function ProjectInfoCard({
 
             <div title={'Project Summary'} className={`projecct-summary`}>
                 {
-                    others.shortText
+                    shortText
                 }
             </div>
 
@@ -80,7 +83,17 @@ export default function ProjectInfoCard({
                         </a>
                     </div>
 
-                    <div onClick={moreInfoModal} title={'More Info'}>
+                    <div
+                    onClick={()=>{
+                        moreInfoModalToggle()
+                        handleModalInfo({
+                            challenges:others.challenges,
+                            features: others.challenges,
+                            projectName: name
+                        })
+                    }}
+                    title={'More Info'}
+                    >
                         <Image
                             src={ 'https://svgshare.com/i/uax.svg' }
                             alt={ 'three_dots_icon' }
