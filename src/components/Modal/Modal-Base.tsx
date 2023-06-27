@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface PropsType {
     readonly children: React.ReactNode;
@@ -10,7 +10,7 @@ interface PropsType {
         modalBool: boolean;
         currentEvent: HTMLElement | null;
     };
-}
+};
 
 export default function ModalBase({
     children,
@@ -19,7 +19,13 @@ export default function ModalBase({
 }: PropsType) {
     const modalBaseRef = useRef<HTMLDivElement | null>(null);
 
+    const [modalMount, setModalMount] = useState<boolean>(false);
+
+    const handleModalUnmount = () => setModalMount(false);
+
     useEffect(() => {
+        if (modalStatusVal.modalBool) setModalMount(true);
+
         const handleOutsideClick = (e: MouseEvent) => {
             if (
                 modalBaseRef.current &&
@@ -43,14 +49,27 @@ export default function ModalBase({
         return () => {
             document.removeEventListener('click', handleOutsideClick);
         };
+
     }, [modalStatusVal.modalBool]);
 
-    return (
-        <>
-            <div ref={ modalBaseRef } className={ `modal-base` }>
-                { children }
-            </div>
-            <div className={ `modal-blur-bg` }></div>
-        </>
-    );
+    if (modalMount) {
+
+        return (
+            <>
+                <div
+                    ref={ modalBaseRef }
+                    onAnimationEnd={ () => {
+                        if (!modalStatusVal.modalBool) handleModalUnmount()
+                    } }
+                    className={ `modal-base ${modalStatusVal.modalBool ? 'modal-content-mount' : 'modal-content-unmount'}` }
+                >
+                    { children }
+                </div>
+
+                <div
+                    className={ `modal-blur-bg ${modalStatusVal.modalBool ? 'modal-fadeIn' : 'modal-fadeOut'}` }>
+                </div>
+
+            </>)
+    }
 }

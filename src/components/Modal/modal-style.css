@@ -1,7 +1,48 @@
-.modal-base{
-    @apply fixed z-[105] bg-wh-base shadow-square shadow-black/10 inset-0 w-1/2  m-auto h-[calc(100vh-80px)];
+.modal-base {
+    @apply fixed rounded-2xl z-[105] bg-wh-base shadow-square shadow-black/10 inset-0 w-1/2 m-auto h-[calc(100vh-80px)];
 }
 
-.modal-blur-bg{
+.modal-blur-bg {
     @apply fixed w-full h-screen bg-transparent backdrop-blur-sm z-[100] inset-0;
+}
+
+.modal-content-mount{
+    opacity: 0;
+    scale: 0;
+    animation: modal-content-mount 0.3s ease-in forwards;
+}
+
+.modal-content-unmount{
+    animation: modal-content-unmount 0.3s ease-in forwards;
+}
+.modal-fadeIn{
+    opacity: 0;
+    animation: modal-fadeIn 0.3s ease-in forwards;
+}
+
+.modal-fadeOut{
+    animation: modal-fadeOut 0.3s ease-in forwards;
+}
+
+@keyframes modal-content-mount {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+@keyframes modal-content-unmount {
+    to{
+        scale: 0;
+        opacity: 0;
+    }
+}
+@keyframes modal-fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+@keyframes modal-fadeOut {
+    to{
+        opacity: 0;
+    }
 }
