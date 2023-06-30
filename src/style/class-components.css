@@ -9,8 +9,8 @@
     @import url('../components/Card/card-style.css');
     /* tooltip component styles*/
     @import url('../components/Tooltip/tooltip-style.css');
-    /* features component styles*/
-    @import url('../features/features-style.css');
+    /* landing-pagge features styles*/
+    @import url('../app/(landing-page)/(features)/features-style.css');
     /* button component styles*/
     @import url('../components/Button/button-style.css');
     /* modal component styles*/

@@ -1,0 +1,20 @@
+.projects-showcase-container{
+    @apply grid grid-cols-4;
+}
+
+.project-more-info{
+    @apply p-5 h-full overflow-hidden;
+}
+.project-more-library-info{
+    @apply border-t flex items-center justify-center gap-5 h-full;
+}
+.project-more-library-name{
+    @apply flex items-center justify-center border py-0.5 px-1 border-bl-base rounded-md;
+}
+.project-more-info ol{
+    list-style-position: inside;
+    list-style-type: lower-roman;
+}
+.project-more-info h3{
+    @apply my-5 text-center underline underline-offset-4;
+}
