@@ -1,0 +1,10 @@
+.tooltip-txt{
+    @apply px-5 py-1 bg-black absolute left-1/2 before:content-[''] before:absolute before:left-1/2 before:-bottom-[16%] whitespace-nowrap -translate-x-1/2 before:-translate-x-1/2 before:border-[5px] before:border-black opacity-0 before:rotate-45 z-[100] before:-z-[1] text-white rounded-md;
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to{
+        @apply opacity-100;
+    }
+}

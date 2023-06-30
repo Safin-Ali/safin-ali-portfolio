@@ -1,0 +1,47 @@
+header{
+    @apply h-nav shadow-md bg-wh-base sticky top-0 z-[100];
+}
+
+.nav-container {
+    @apply justify-between h-full;
+}
+
+.nav-items-container ul {
+    @apply gap-5 capitalize
+}
+
+.nav-item{
+    @apply py-2 md:py-0 font-medium hover:text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
+}
+
+.nav-active{
+    @apply text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
+}
+
+.social-nav-icons{
+    @apply w-7 my-3 rounded-full p-1.5 box-content border-0 hover:border cursor-pointer border-bl-base;
+}
+
+path,circle{
+    transition: fill 0.3s ease-in;
+}
+
+#linkedin:hover path {
+    fill: #0a66c2;
+}
+#linkedin:hover circle {
+    fill: #0a66c2;
+}
+#github:hover {
+    fill: #1d1d1d;
+}
+#facebook:hover {
+    fill: #1194F5;
+}
+
+.projects-tech-bar-container{
+    @apply flex items-center gap-5 justify-center;
+}
+.projects-tech-bar-container li{
+    @apply border px-1.5 py-1.5 cursor-pointer rounded-md;
+}

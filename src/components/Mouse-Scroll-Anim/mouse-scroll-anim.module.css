@@ -1,0 +1,40 @@
+.mousey {
+    width: 0px;
+    padding: 0px 10px;
+    height: 35px;
+    border: 2px solid #1b1b1b;
+    border-radius: 25px;
+    opacity: 0.8;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 1px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #1b1b1b;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+.scroller-center{
+    margin: 0 auto;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}

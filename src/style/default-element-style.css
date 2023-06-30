@@ -24,7 +24,10 @@
     h6 {
         font-size: 0.67em;
     }
+    html{
+        @apply scroll-smooth;
+    }
     body{
-        background: hsl(205 100% 97.5% / 1);
+        @apply bg-wh-base text-bl-base select-none;
     }
 }

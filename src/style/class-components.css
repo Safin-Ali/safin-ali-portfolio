@@ -1,7 +1,18 @@
 @tailwind components;
 
 @layer components {
-    .style-component{
-        @apply text-slate-800;
-    }
+    /* app-bar styles */
+    @import url('../components/AppBar/app-bar-style.css');
+    /* landing-page styles*/
+    @import url('../app/(landing-page)/(shared-section)/landing-page-style.css');
+    /* card component styles*/
+    @import url('../components/Card/card-style.css');
+    /* tooltip component styles*/
+    @import url('../components/Tooltip/tooltip-style.css');
+    /* features component styles*/
+    @import url('../features/features-style.css');
+    /* button component styles*/
+    @import url('../components/Button/button-style.css');
+    /* modal component styles*/
+    @import url('../components/Modal/modal-style.css');
 }
