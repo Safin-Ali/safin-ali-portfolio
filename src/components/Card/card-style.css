@@ -56,5 +56,8 @@
 .project-thumb img{
     @apply object-contain mx-auto;
 }
+.project-badge{
+    @apply border rounded-md capitalize px-1.5 py-0.5 mr-3;
+}
 
 /* Project-Info-Card End */

@@ -1,3 +1,4 @@
+import { ModalStateType } from '@/app/(landing-page)/(features)/projects-section/Projects-Dynamic-Sec';
 import Image from 'next/image';
 export type ProjetOtherInfoType = {
     readonly challenges: string[],
@@ -9,9 +10,11 @@ interface PropsType {
     readonly name: string,
     readonly live: string,
     readonly source: string,
+    readonly projectCategory: string[],
+    readonly projectlibrary: string[],
     readonly others: ProjetOtherInfoType,
     readonly moreInfoModalToggle: () => void,
-    readonly handleModalInfo: (moreInfo:ProjetOtherInfoType & {projectName:string}) => void,
+    readonly handleModalInfo: (moreInfo:ModalStateType) => void,
 };
 
 export default function ProjectInfoCard({
@@ -22,7 +25,9 @@ export default function ProjectInfoCard({
     others,
     shortText,
     moreInfoModalToggle,
-    handleModalInfo
+    handleModalInfo,
+    projectCategory,
+    projectlibrary
 }: PropsType) {
 
     return (
@@ -46,6 +51,16 @@ export default function ProjectInfoCard({
             <div title={'Project Summary'} className={`projecct-summary`}>
                 {
                     shortText
+                }
+            </div>
+            <div title={'Project Summary'} className={`projecct-summary`}>
+                {
+                    projectCategory.map((badge,idx) =><span
+                    className={`project-badge`}
+                    key={idx+1}>
+                        {badge}
+                    </span>
+                    )
                 }
             </div>
 
@@ -89,7 +104,8 @@ export default function ProjectInfoCard({
                         handleModalInfo({
                             challenges:others.challenges,
                             features: others.challenges,
-                            projectName: name
+                            projectName: name,
+                            projectlibrary: projectlibrary
                         })
                     }}
                     title={'More Info'}
