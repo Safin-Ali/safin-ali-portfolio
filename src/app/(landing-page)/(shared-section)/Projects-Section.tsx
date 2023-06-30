@@ -1,7 +1,6 @@
 import SectionTitle from '@/components/Section-Title/Section-Title';
-import ProjectsDynamicSec from '@/features/Projects-Dynamic-Sec';
 import React from 'react';
-interface PropsType {};
+import ProjectsDynamicSec from '../(features)/projects-section/Projects-Dynamic-Sec';
 
 export default function ProjectsSection () {
 
@@ -15,9 +14,7 @@ export default function ProjectsSection () {
         />
 
         <div>
-
           <ProjectsDynamicSec/>
-
         </div>
 
     </section>

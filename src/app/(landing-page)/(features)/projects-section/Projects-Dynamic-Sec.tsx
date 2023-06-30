@@ -7,30 +7,38 @@ import useModalToggler from '@/hooks/useModal';
 import React, { useState } from 'react';
 import ProjectMoreInfo from './Project-More-Info';
 
+export interface ModalStateType extends ProjetOtherInfoType {
+  projectName:string,
+  projectlibrary:string[]
+}
+
 export default function ProjectsDynamicSec() {
 
   const {modalVal,closeModal,modalCurrentEvent,toggleModal} = useModalToggler<HTMLElement | null>();
 
-  const [modalMoreInfoData,setModalMoreInfoData] = useState<ProjetOtherInfoType & {projectName:string} >({
+  const [modalMoreInfoData,setModalMoreInfoData] = useState<ModalStateType>({
     challenges: [''],
     features: [''],
-    projectName: ''
+    projectName: '',
+    projectlibrary: ['']
   });
 
   const [projectsCategory, setProjectsCategory] = useState<string>('javascript');
 
   const handleProjectsTech = (val: string) => setProjectsCategory(val);
 
-  const handleModalData = (moreInfo:ProjetOtherInfoType & {projectName:string}):void => setModalMoreInfoData({
+  const handleModalData = (moreInfo:ModalStateType):void => setModalMoreInfoData({
     challenges: moreInfo.challenges,
     features: moreInfo.features,
     projectName: moreInfo.projectName,
+    projectlibrary: moreInfo.projectlibrary
   })
 
   return (
     <div className={`my-5`}>
 
       <ProjectsTechBar callback={ handleProjectsTech } value={ projectsCategory } />
+
 
       <div className={`projects-showcase-container`}>
 
@@ -45,13 +53,15 @@ export default function ProjectsDynamicSec() {
             moreInfoModalToggle={toggleModal}
             handleModalInfo={handleModalData}
             shortText={dt.shortText}
+            projectCategory={dt.projectCategory}
+            projectlibrary={dt.projectUsedLib}
             />
             )
         }
 
       </div>
 
-            <ModalBase
+          <ModalBase
             modalToggle={{
               closeModal,
               setCurrentEvent:modalCurrentEvent
