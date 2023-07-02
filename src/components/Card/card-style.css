@@ -26,7 +26,7 @@
     @apply pl-1.5 text-base my-1.5;
 }
 
-/* Project-Info-Card Start */
+/* project-info-card start */
 
 .project-info-container{
     @apply bg-white border hover:shadow-normal overflow-hidden hover:shadow-black/5 duration-150 rounded-md;
@@ -60,4 +60,21 @@
     @apply border rounded-md capitalize px-1.5 py-0.5 mr-3;
 }
 
-/* Project-Info-Card End */
+/* project-info-card end */
+
+/* contact-card start */
+
+.contact-card{
+    @apply border text-center p-5 font-semibold rounded-lg border-wh-border mb-3 cursor-pointer hover:shadow-card duration-150 hover:shadow-black/10;
+}
+.contact-card h3 {
+    @apply capitalize mb-1;
+}
+.contact-card h6 {
+    @apply text-base mt-1;
+}
+.contact-card .navigate {
+    transform: rotateY(180deg);
+}
+
+/* contact-card end */
