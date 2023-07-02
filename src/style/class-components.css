@@ -15,4 +15,6 @@
     @import url('../components/Button/button-style.css');
     /* modal component styles*/
     @import url('../components/Modal/modal-style.css');
+    /* field component styles*/
+    @import url('../components/Field/field-style.css');
 }
