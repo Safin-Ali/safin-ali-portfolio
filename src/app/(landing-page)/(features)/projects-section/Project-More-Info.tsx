@@ -1,5 +1,5 @@
 import React from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import {IoClose} from 'react-icons/io5';
 interface SubPropsType {
   projectName: string,
   features: string[],
@@ -26,11 +26,11 @@ export default function ProjectMoreInfo({
         </div>
 
         <div className={ `w-1/2` }>
-          <XMarkIcon
+          <IoClose
             onClick={ closeModal }
+            size={40}
             style={
               {
-                width: '40px',
                 cursor: 'pointer',
                 marginLeft: 'auto'
               }
