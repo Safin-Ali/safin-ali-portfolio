@@ -8,14 +8,19 @@ export default function FloatingInputField({
     ...props
 }:PropsType) {
 
-
+    const attr = {
+        ...props,
+        className: `floating-field peer ${props.className}`,
+        id: props.id || 'floating_field',
+        placeholder: props.placeholder || ' '
+    }
 
     return (
         <div className="relative my-5">
             <input
-            className={`floating-field peer ${props.className}`}
-            id={props.id ||'floating_field'}
-            placeholder={props.placeholder || ' '}
+            {
+                ...attr
+            }
             />
             <label htmlFor={ 'floating_field' } className={`floating-label ${props.className}`}>{children}</label>
         </div>
