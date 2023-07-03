@@ -10,7 +10,7 @@ export default function FloatingTextAreaField({
 
     const attr = {
         ...props,
-        className: `floating-field peer ${props.className}`,
+        className: `${props.className} floating-field peer`,
         id: props.id || 'floating_field',
         placeholder: props.placeholder || ' '
     }
@@ -24,7 +24,7 @@ export default function FloatingTextAreaField({
             />
             <label
                 htmlFor={ 'floating_field' }
-                className={ `floating-label ${props.className}` }
+                className={ `floating-label peer-placeholder-shown:top-7 peer-focus:peer-placeholder-shown:top-1.5 ${props.className}` }
             >
                 { children }
             </label>
