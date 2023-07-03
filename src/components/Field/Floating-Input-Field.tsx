@@ -1,6 +1,5 @@
-import InputFieldProps from '@/types/field-type';
 import React from 'react';
-interface PropsType extends InputFieldProps {
+interface PropsType extends React.InputHTMLAttributes<HTMLInputElement> {
     children:string,
 };
 
@@ -12,7 +11,7 @@ export default function FloatingInputField({
 
 
     return (
-        <div className="relative">
+        <div className="relative my-5">
             <input
             className={`floating-field peer ${props.className}`}
             id={props.id ||'floating_field'}
