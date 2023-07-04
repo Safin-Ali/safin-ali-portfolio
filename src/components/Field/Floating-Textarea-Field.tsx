@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 
 interface PropsType extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
 };
@@ -8,10 +8,12 @@ export default function FloatingTextAreaField({
     ...props
 }: PropsType) {
 
+    const uniqueID = useId();
+
     const attr = {
         ...props,
         className: `${props.className} floating-field peer`,
-        id: props.id || 'floating_field',
+        id: props.id || uniqueID,
         placeholder: props.placeholder || ' '
     }
 
@@ -23,8 +25,9 @@ export default function FloatingTextAreaField({
                 ...attr }
             />
             <label
-                htmlFor={ 'floating_field' }
+                htmlFor={ props.id || uniqueID }
                 className={ `floating-label peer-placeholder-shown:top-7 peer-focus:peer-placeholder-shown:top-1.5 ${props.className}` }
+                aria-label={uniqueID}
             >
                 { children }
             </label>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 interface PropsType extends React.InputHTMLAttributes<HTMLInputElement> {
     children:string,
 };
@@ -8,10 +8,12 @@ export default function FloatingInputField({
     ...props
 }:PropsType) {
 
+    const uniqueID = useId();
+
     const attr = {
         ...props,
         className: `floating-field peer ${props.className}`,
-        id: props.id || 'floating_field',
+        id: props.id || uniqueID,
         placeholder: props.placeholder || ' '
     }
 
@@ -22,7 +24,7 @@ export default function FloatingInputField({
                 ...attr
             }
             />
-            <label htmlFor={ 'floating_field' } className={`floating-label ${props.className}`}>{children}</label>
+            <label aria-label={uniqueID} htmlFor={ props.id || uniqueID } className={`floating-label ${props.className}`}>{children}</label>
         </div>
     );
 };
