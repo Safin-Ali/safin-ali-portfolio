@@ -1,9 +1,7 @@
-import ContactCard from '@/components/Card/Contact-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
-import { HiOutlineEnvelope } from 'react-icons/hi2';
-import { LiaFacebookMessenger } from 'react-icons/lia';
-import { FaWhatsapp } from 'react-icons/fa';
 import React from 'react';
+import ContactForm from '../(features)/contact-section/Contact-Form';
+import ContactMethod from '../(features)/contact-section/Contact-Method';
 
 export default function ContactSection() {
 
@@ -18,26 +16,26 @@ export default function ContactSection() {
 
             {/* contact layout */ }
 
-            <div className={ `flex-full-center my-5` }>
+            <div className={ `flex-full-center my-5 gap-44` }>
 
                 {/* contact others method card */ }
 
                 <div>
-                    <ContactCard
-                        path={ 'safin.ali.7205@gmail.com' }
-                        type={ 'email' }
-                        icon={ <HiOutlineEnvelope size={ 25 } /> }
-                    />
-                    <ContactCard
-                        path={ 'safin.ali.7205' }
-                        type={ 'Messenger' }
-                        icon={ <LiaFacebookMessenger size={ 30 } /> }
-                    />
-                    <ContactCard
-                        path={ '+880 1316987205' }
-                        type={ 'WhatsApp' }
-                        icon={ <FaWhatsapp size={25}/> }
-                    />
+
+                    <h4 className={ `text-center my-5` }>Talk with easily</h4>
+
+                    {/* contact method cards */ }
+                    <ContactMethod />
+
+                </div>
+
+                <div className={ `basis-1/4 self-start` }>
+
+                    <h4 className={ `text-center my-5` }>Talk via email</h4>
+
+                    {/* contact form */ }
+
+                    <ContactForm />
                 </div>
 
             </div>
