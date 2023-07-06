@@ -5,6 +5,7 @@ import SkillsSection from "./(shared-section)/Skills-Section";
 import ServicesSection from "./(shared-section)/Services-Section";
 import ProjectsSection from "./(shared-section)/Projects-Section";
 import ContactSection from "./(shared-section)/Contact-Section";
+import FooterSection from "./(shared-section)/Footer-Section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <ServicesSection/>
         <ProjectsSection/>
         <ContactSection/>
+        <FooterSection/>
       </main>
     </>
   )

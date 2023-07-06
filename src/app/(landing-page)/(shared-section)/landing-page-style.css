@@ -42,3 +42,18 @@
 .services-container{
     @apply grid grid-cols-3 gap-5 justify-center items-center my-5;
 }
+
+/* footer start */
+
+footer {
+    @apply bg-bl-base w-full pt-14 text-white;
+}
+
+footer .social-icon {
+    @apply rounded-full p-2 box-content border border-wh-border;
+}
+footer .social-icon svg  {
+    fill: #ffffff;
+}
+
+/* footer end */
