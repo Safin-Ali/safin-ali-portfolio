@@ -1,5 +1,5 @@
 import ContactCard from '@/components/Card/Contact-Card';
-import { HiOutlineEnvelope } from 'react-icons/hi2';
+import { LuLinkedin } from 'react-icons/lu';
 import { LiaFacebookMessenger } from 'react-icons/lia';
 import { FaWhatsapp } from 'react-icons/fa';
 import React from 'react';
@@ -10,9 +10,9 @@ export default function ContactMethod() {
     return (
         <>
             <ContactCard
-                path={ 'safin.ali.7205@gmail.com' }
-                type={ 'email' }
-                icon={ <HiOutlineEnvelope size={ 25 } /> }
+                path={ 'safin-ali' }
+                type={ 'Linkedin' }
+                icon={ <LuLinkedin size={ 27 } /> }
             />
             <ContactCard
                 path={ 'safin.ali.7205' }

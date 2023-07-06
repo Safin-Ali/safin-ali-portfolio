@@ -65,7 +65,7 @@
 /* contact-card start */
 
 .contact-card{
-    @apply border bg-wh-block text-center p-5 font-semibold rounded-lg border-wh-border mb-3 cursor-pointer hover:shadow-card duration-150 hover:shadow-black/10;
+    @apply border bg-wh-block text-center py-5 px-10 font-semibold rounded-lg border-wh-border mb-3 cursor-pointer hover:shadow-card duration-150 hover:shadow-black/10;
 }
 .contact-card h3 {
     @apply capitalize mb-1;

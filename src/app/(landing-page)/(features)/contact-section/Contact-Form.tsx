@@ -32,6 +32,7 @@ export default function ContactForm() {
             >
                 Subject
             </FloatingInputField>
+
             <FloatingInputField
                 type={ 'text' }
                 name={ `name` }
@@ -39,6 +40,7 @@ export default function ContactForm() {
             >
                 Your Name
             </FloatingInputField>
+
             <FloatingInputField
                 type={ 'email' }
                 name={ `email` }
@@ -46,8 +48,9 @@ export default function ContactForm() {
             >
                 Your Email
             </FloatingInputField>
+
             <FloatingTextAreaField
-                className={ `bg-wh-block top-5` }
+                className={ `bg-wh-block top-5 resize-none` }
                 rows={ 5 }
                 name={ `desc` }
 
