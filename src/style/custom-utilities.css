@@ -17,4 +17,17 @@
     .position-v-center{
         @apply transform -translate-y-1/2 top-1/2;
     }
+    .anim-fade{
+        animation: fade 1s ease 0s 1 normal forwards;
+    }
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
