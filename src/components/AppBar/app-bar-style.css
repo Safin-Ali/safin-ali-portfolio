@@ -19,7 +19,7 @@ header{
 }
 
 .social-nav-icons{
-    @apply w-7 my-3 rounded-full p-1.5 box-content border-0 hover:border cursor-pointer border-bl-base;
+    @apply w-7 my-3 rounded-full p-1.5 box-content border-0 hover:border border-bl-base;
 }
 
 path,circle{

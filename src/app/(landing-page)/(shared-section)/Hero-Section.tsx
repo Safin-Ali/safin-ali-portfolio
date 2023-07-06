@@ -64,7 +64,7 @@ export default function HeroSection() {
 
                 {/* social network communicate icon */ }
                 <div className={ `social-network-icons position-v-center` }>
-                    <SocialNav />
+                    <SocialNav size={25} className={`social-nav-icons`}/>
                 </div>
             </div>
         </section>
