@@ -16,11 +16,11 @@ export default function ContactSection() {
 
             {/* contact layout */ }
 
-            <div className={ `flex-full-center my-5 gap-44` }>
+            <div className={ `flex-full-center flex-col sm:flex-row my-5 sm:gap-x-20 md:gap-44` }>
 
                 {/* contact others method card */ }
 
-                <div>
+                <div className={`w-full md:w-auto`}>
 
                     <h4 className={ `text-center my-5` }>Talk with easily</h4>
 
@@ -29,7 +29,7 @@ export default function ContactSection() {
 
                 </div>
 
-                <div className={ `basis-1/4 self-start` }>
+                <div className={ `w-full sm:basis-3/4 md:basis-1/4 md:self-start` }>
 
                     <h4 className={ `text-center my-5` }>Talk via email</h4>
 

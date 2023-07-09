@@ -24,7 +24,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={ handleSendMessageForm }>
+        <form className={`w-full`} onSubmit={ handleSendMessageForm }>
             <FloatingInputField
                 type={ 'text' }
                 name={ `subject` }
