@@ -34,7 +34,7 @@ export default function AboutSection() {
 
                         {/* gained cards */ }
 
-                        <div className={ `flex gap-5 justify-center w-full` }>
+                        <div className={ `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-center w-full` }>
                             <AboutCard
                                 iconSRC={ `https://svgshare.com/i/u8s.svg` }
                                 title={ 'Experince' }
