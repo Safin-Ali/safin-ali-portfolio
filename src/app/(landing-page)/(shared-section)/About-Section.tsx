@@ -2,7 +2,6 @@ import AboutCard from '@/components/Card/About-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import Image from 'next/image';
 import React from 'react';
-interface PropsType { };
 
 export default function AboutSection() {
 
@@ -15,11 +14,11 @@ export default function AboutSection() {
                     iconSRC={'https://svgshare.com/i/uCr.svg'}
                 />
 
-                <div className={ `flex-full-center w-full` }>
+                <div className={ `flex-full-center gap-x-10 md:flex-row flex-col w-full` }>
 
                     {/* my professional image */ }
                     <div className={ `basis-1/2` }>
-                        <div className={ `w-full my-10 overflow-hidden` }>
+                        <div className={ `w-9/12 mx-auto md:w-full my-5 md:my-10 overflow-hidden` }>
                             <Image
                                 src={ 'https://i.ibb.co/8MJBTHk/sa-fin-ali.jpg' }
                                 alt={ `safin-ali-photo` }
@@ -35,7 +34,7 @@ export default function AboutSection() {
 
                         {/* gained cards */ }
 
-                        <div className={ `flex gap-5 justify-center ` }>
+                        <div className={ `flex gap-5 justify-center w-full` }>
                             <AboutCard
                                 iconSRC={ `https://svgshare.com/i/u8s.svg` }
                                 title={ 'Experince' }

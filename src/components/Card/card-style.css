@@ -1,5 +1,6 @@
+/* about-card start */
 .about-card-box{
-    @apply border rounded-md border-wh-border px-8 py-4 text-center bg-wh-block hover:bg-wh-hover hover:shadow-normal duration-300 hover:shadow-black/10 ease-in-out;
+    @apply border rounded-md border-wh-border w-full px-4 md:px-8 py-4 text-center bg-wh-block hover:bg-wh-hover hover:shadow-normal duration-300 hover:shadow-black/10 ease-in-out;
 }
 .about-card-title{
     @apply font-medium mt-2 text-lg capitalize;
@@ -7,6 +8,7 @@
 .about-card-subtitle{
     @apply font-medium mt-2 text-sm text-bl-sub-title capitalize;
 }
+/* about-card end */
 .skill-card-box{
     @apply border w-[88px] bg-wh-block hover:bg-wh-hover hover:shadow-normal duration-200 hover:shadow-black/10 relative mx-auto h-20 border-wh-border rounded-md py-2;
 }
