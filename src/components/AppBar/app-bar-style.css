@@ -11,7 +11,7 @@ header {
 }
 
 .nav-expand {
-    @apply p-5 absolute top-nav bg-wh-base shadow w-4/5 mx-auto inset-x-0;
+    @apply p-5 absolute top-nav bg-wh-base shadow w-full sm:w-11/12 md:w-4/5 mx-auto inset-x-0;
 
 }
 

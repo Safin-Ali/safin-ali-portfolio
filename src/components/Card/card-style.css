@@ -9,12 +9,18 @@
     @apply font-medium mt-2 text-sm text-bl-sub-title capitalize;
 }
 /* about-card end */
+
+/* skill-card start */
 .skill-card-box{
     @apply border w-[88px] bg-wh-block hover:bg-wh-hover hover:shadow-normal duration-200 hover:shadow-black/10 relative mx-auto h-20 border-wh-border rounded-md py-2;
 }
 .skill-card-box img{
     @apply mx-auto object-contain h-[35px] px-2;
 }
+
+/* skill-card end */
+
+/* services-card start */
 
 .services-card-container{
     @apply border rounded-md p-3 bg-wh-block shadow-square shadow-black/5 duration-200;
@@ -27,6 +33,8 @@
 .services-card-container ul li{
     @apply pl-1.5 text-base my-1.5;
 }
+
+/* services-card end */
 
 /* project-info-card start */
 

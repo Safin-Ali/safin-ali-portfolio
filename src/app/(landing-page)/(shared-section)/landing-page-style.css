@@ -37,7 +37,7 @@
 }
 
 .skill-tech{
-    @apply grid grid-cols-4 justify-center gap-5;
+    @apply grid grid-cols-3 md:grid-cols-4 justify-center gap-5;
 }
 
 .skill-category-header{
