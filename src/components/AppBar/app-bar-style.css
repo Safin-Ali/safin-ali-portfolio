@@ -71,7 +71,7 @@ circle {
 }
 
 .projects-tech-bar-container {
-    @apply flex items-center gap-5 justify-center;
+    @apply flex items-center gap-5 mx-auto justify-center flex-wrap;
 }
 
 .projects-tech-bar-container li {
