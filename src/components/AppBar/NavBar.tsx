@@ -94,9 +94,9 @@ export default function NavBar() {
               </div>
 
               {
-                resNav
-                &&
-                <ResNavBar />
+                <ResNavBar
+                  expandBool={resNav}
+                />
               }
 
 
