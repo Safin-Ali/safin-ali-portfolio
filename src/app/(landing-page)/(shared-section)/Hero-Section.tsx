@@ -1,5 +1,4 @@
 import SocialNav from '@/components/AppBar/Social-Nav';
-import GreetingMessage from '@/components/Greating-Message/Greeting-Message';
 import MouseScrollAnim from '@/components/Mouse-Scroll-Anim/Mouse-Scroll-Anim';
 import MultiTextSlide from '@/components/Multi-Text-Slide/Multi-Text-Slide';
 import Image from 'next/image';
@@ -10,36 +9,24 @@ export default function HeroSection() {
         <section id={'home-section'} className={ `customise-container` }>
             <div className={ `hero-section` }>
 
-                <div className={ `flex-v-center w-full` }>
+                <div className={ `flex-col flex-v-center md:flex-row w-full` }>
 
                     {/* hero content area */ }
                     <article className={ `hero-content` }>
-                        <h1 className={ `hero-title` }>
-                            <span className={ `mx-3` }>Hi<Image
-                                src={ `https://i.ibb.co/r7yW7fg/waving-hand.gif` }
-                                alt={ `hi_emoji` }
-                                width={ 40 }
-                                height={ 40 }
-                                className={ `inline-block mb-3` }
-                            />,
-                            </span>
-
-                            <GreetingMessage/>
-                        </h1>
-                        <h2 className={ `hero-subtitle my-5 font-medium` }>
-                            I&#39;m Safin Ali a <MultiTextSlide
+                        <h1 className={ `hero-subtitle` }>
+                        I&#39;m Safin Ali a <MultiTextSlide
                                 textArr={ ['Web App Developer', 'Instractor'] }
                             />
-                        </h2>
+                        </h1>
 
-                        <p className={ `my-5` }>
+                        <p className={ `text-sm md:text-base my-5` }>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium beatae dolore. Soluta, a autem, magni voluptates exercitationem similique harum non corrupti deleniti neque reprehenderit impedit ex. Laborum, provident veritatis!
                         </p>
                     </article>
 
                     {/* hero my image mockup */ }
                     <div className={ `basis-1/2` }>
-                        <div className={ `w-full my-10 overflow-hidden` }>
+                        <div className={ `w-2/3 md:w-full md:my-10 mx-auto overflow-hidden` }>
                             <Image
                                 src={ 'https://i.ibb.co/8MJBTHk/sa-fin-ali.jpg' }
                                 alt={ `safin-ali-photo` }
