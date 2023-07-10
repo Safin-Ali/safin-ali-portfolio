@@ -23,7 +23,7 @@ header {
     animation:scale-down-ver-top 0.4s forwards ease-out;
 }
 
-.res-nav-container>div {
+.res-nav-container>div, .res-nav-container svg {
     @apply mx-auto;
 }
 
@@ -41,6 +41,7 @@ header {
 .res-nav-active {
     @apply bg-zinc-700 fill-white text-white;
 }
+
 .res-nav-active > svg, .res-nav-active > svg path {
     @apply bg-inherit fill-inherit text-inherit p-1.5 rounded-md;
 }

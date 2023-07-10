@@ -37,8 +37,9 @@ export default function ProjectsDynamicSec() {
   return (
     <div className={`my-5`}>
 
-      <ProjectsTechBar callback={ handleProjectsTech } value={ projectsCategory } />
-
+      <div className={`my-5`}>
+        <ProjectsTechBar callback={ handleProjectsTech } value={ projectsCategory } />
+      </div>
 
       <div className={`projects-showcase-container`}>
 

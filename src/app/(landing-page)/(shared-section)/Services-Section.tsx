@@ -1,13 +1,12 @@
 import ServicesCard from '@/components/Card/Services-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import myServices from '@/data/services-data';
-import React from 'react';
 interface PropsType {};
 
 export default function ServicesSection () {
 
  return (
-    <section id={`services-section`} className={`customise-container my-20`}>
+    <section id={`services-section`} className={`customise-container my-7 sm:my-10 md:my-20`}>
 
         <SectionTitle
             iconSRC={`https://svgshare.com/i/uQr.svg`}

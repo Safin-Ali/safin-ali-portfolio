@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function HeroSection() {
 
     return (
-        <section id={'home-section'} className={ `customise-container` }>
+        <section id={'home-section'} className={ `customise-container mb-10 sm:mb-5 md:mb-auto` }>
             <div className={ `hero-section` }>
 
                 <div className={ `flex-col flex-v-center md:flex-row w-full` }>
@@ -50,7 +50,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* social network communicate icon */ }
-                <div className={ `social-network-icons position-v-center` }>
+                <div className={ `social-network-icons top-[15%] sm:position-v-center` }>
                     <SocialNav size={25} className={`social-nav-icons`}/>
                 </div>
             </div>

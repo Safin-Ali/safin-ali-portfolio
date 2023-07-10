@@ -5,7 +5,7 @@ import skills from '@/data/skills-info';
 export default function SkillsSection() {
 
     return (
-        <section id={ `skills-section` } className={ `customise-container my-20` }>
+        <section id={ `skills-section` } className={ `customise-container my-7 sm:my-10 md:my-20` }>
             <SectionTitle
                 title={ `My Skills` }
                 sub_title={ `My Technical Level` }

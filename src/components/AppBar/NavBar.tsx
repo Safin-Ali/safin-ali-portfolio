@@ -22,7 +22,7 @@ export default function NavBar() {
       >
 
         {/* Web Name */ }
-        <div title={ 'Web Name' }>
+        <div className={`w-2/5 sm:w-3/5 md:w-full`} title={ 'Web Name (Safin)' }>
           <span className={ `text-3xl font-mono` }>
             <NavLink href={ '/' }>
               <Image

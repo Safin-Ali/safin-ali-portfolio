@@ -1,12 +1,11 @@
 import SectionTitle from '@/components/Section-Title/Section-Title';
-import React from 'react';
 import ContactForm from '../(features)/contact-section/Contact-Form';
 import ContactMethod from '../(features)/contact-section/Contact-Method';
 
 export default function ContactSection() {
 
     return (
-        <section id={ 'contact-section' } className={ `customise-container my-10` }>
+        <section id={ 'contact-section' } className={ `customise-container my-7 sm:my-10 md:my-20` }>
 
             <SectionTitle
                 iconSRC={ 'https://svgshare.com/i/uss.svg' }

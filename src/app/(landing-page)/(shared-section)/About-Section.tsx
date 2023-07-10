@@ -1,13 +1,12 @@
 import AboutCard from '@/components/Card/About-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import Image from 'next/image';
-import React from 'react';
 
 export default function AboutSection() {
 
     return (
         <>
-            <section id={ 'about-section' } className={ `customise-container my-20` }>
+            <section id={ 'about-section' } className={ `customise-container my-7 sm:my-10 md:my-20` }>
                 <SectionTitle
                     title={ 'About Me' }
                     sub_title={ "My Introduction" }
