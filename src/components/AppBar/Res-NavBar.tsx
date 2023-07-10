@@ -27,6 +27,7 @@ export default function ResNavBar({
             } }
                 className={ `nav-expand ${expandBool ? 'mount-res-nav' : 'unmount-res-nav'}` }>
                 <div className={ `res-nav-container` }>
+
                     <div>
                         <Link
                             to={ 'home-section' }
@@ -36,7 +37,9 @@ export default function ResNavBar({
                             <IoHomeOutline
                                 size={ 35 }
                             />
+
                         </Link>
+                        <span className={`font-medium text-sm`}>Home</span>
                     </div>
 
                     <div>
@@ -49,7 +52,7 @@ export default function ResNavBar({
                                 size={ 35 }
                             />
                         </Link>
-
+                        <span className={`font-medium text-sm`}>About</span>
                     </div>
 
                     <div>
@@ -62,7 +65,7 @@ export default function ResNavBar({
                                 size={ 35 }
                             />
                         </Link>
-
+                        <span className={`font-medium text-sm`}>Skills</span>
                     </div>
 
                     <div>
@@ -76,7 +79,7 @@ export default function ResNavBar({
                                 color={ 'none' }
                             />
                         </Link>
-
+                        <span className={`font-medium text-sm`}>Services</span>
                     </div>
 
                     <div>
@@ -89,10 +92,10 @@ export default function ResNavBar({
                                 size={ 35 }
                             />
                         </Link>
+                        <span className={`font-medium text-sm`}>Projects</span>
                     </div>
 
                     <div>
-
                         <Link
                             to={ 'contact-section' }
                             activeClass={ `res-nav-active` }
@@ -103,7 +106,7 @@ export default function ResNavBar({
                                 color={ 'none' }
                             />
                         </Link>
-
+                        <span className={`font-medium text-sm`}>Contact</span>
                     </div>
                 </div>
             </div>
