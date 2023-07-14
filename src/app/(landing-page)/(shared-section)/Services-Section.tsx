@@ -1,7 +1,6 @@
 import ServicesCard from '@/components/Card/Services-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
 import myServices from '@/data/services-data';
-interface PropsType {};
 
 export default function ServicesSection () {
 

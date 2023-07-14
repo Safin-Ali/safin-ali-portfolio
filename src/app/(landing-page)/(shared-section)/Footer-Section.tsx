@@ -1,7 +1,4 @@
 import React from 'react';
-import { AiOutlineFacebook } from 'react-icons/ai';
-import { VscGithub } from 'react-icons/vsc';
-import { BiLogoLinkedin } from 'react-icons/bi';
 import SocialNav from '@/components/AppBar/Social-Nav';
 
 export default function FooterSection() {

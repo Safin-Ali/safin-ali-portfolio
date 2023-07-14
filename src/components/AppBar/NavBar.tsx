@@ -8,6 +8,7 @@ import ResNavBar from './Res-NavBar';
 import { TbLayoutGridAdd } from 'react-icons/tb';
 import { BsUiChecksGrid } from 'react-icons/bs';
 import { useState } from 'react';
+import useAOS from '@/hooks/useAOS';
 
 export default function NavBar() {
 
@@ -15,14 +16,19 @@ export default function NavBar() {
 
   const [resNav, setResNav] = useState<boolean>(false);
 
+  // for aos animate on scroll
+  useAOS();
+
   return (
-    <header>
+    <header
+      data-aos="fade-down"
+    >
       <nav
         className={ `nav-container flex-v-center customise-container` }
       >
 
         {/* Web Name */ }
-        <div className={`w-2/5 sm:w-3/5 md:w-full`} title={ 'Web Name (Safin)' }>
+        <div className={ `w-2/5 sm:w-3/5 md:w-full` } title={ 'Web Name (Safin)' }>
           <span className={ `text-3xl font-mono` }>
             <NavLink href={ '/' }>
               <Image
@@ -95,7 +101,7 @@ export default function NavBar() {
 
               {
                 <ResNavBar
-                  expandBool={resNav}
+                  expandBool={ resNav }
                 />
               }
 
