@@ -1,8 +1,12 @@
 import AboutCard from '@/components/Card/About-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
+import { ProjectDataType } from '@/types/projects-data-type';
+import API from '@/utilities/fetch-data';
 import Image from 'next/image';
 
-export default function AboutSection() {
+export default async function AboutSection() {
+
+	const data:ProjectDataType[] = (await API.get('/projects',"no-cache"));
 
     return (
         <>
@@ -31,7 +35,7 @@ export default function AboutSection() {
                     {/* my short bio */ }
                     <div className={`basis-1/2`}>
 
-                        {/* gained cards */ }
+                        {/* achived cards */ }
 
                         <div className={ `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-center w-full` }>
                             <AboutCard
@@ -43,7 +47,7 @@ export default function AboutSection() {
                             <AboutCard
                                 iconSRC={ `https://svgshare.com/i/u7g.svg` }
                                 title={ 'Completed' }
-                                subtitle={ `3+ projects` }
+                                subtitle={`${data.length}`}
 
                             />
                             <AboutCard
