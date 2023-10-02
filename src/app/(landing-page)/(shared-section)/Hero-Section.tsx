@@ -15,12 +15,18 @@ export default function HeroSection() {
                     <article className={ `hero-content` }>
                         <h1 className={ `hero-subtitle` }>
                         I&#39;m Safin Ali a <MultiTextSlide
-                                textArr={ ['Web App Developer', 'Instractor'] }
+                                textArr={ ['Web App Developer', 'JR. Problem Solver', 'Learner'] }
                             />
                         </h1>
 
                         <p className={ `text-sm md:text-base my-5` }>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium beatae dolore. Soluta, a autem, magni voluptates exercitationem similique harum non corrupti deleniti neque reprehenderit impedit ex. Laborum, provident veritatis!
+								creating and developing user-friendly interface. 📰
+								<br />
+								experince in data structure & algorithm. 🎓
+							<br />
+								I am very passionate and dedicated in my work. 📝
+								<br />
+								like to learn and practice. 📖
                         </p>
                     </article>
 
