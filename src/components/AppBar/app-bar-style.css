@@ -32,7 +32,7 @@ header {
 }
 
 .nav-item {
-    @apply py-2 md:py-0 font-medium hover:text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
+    @apply cursor-pointer py-2 md:py-0 font-medium hover:text-primaryL relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primaryL md:before:absolute md:before:inset-x-0;
 }
 
 .nav-active {

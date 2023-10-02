@@ -12,13 +12,13 @@
 }
 @keyframes my-name-anim-parent {
 	0%   {
-		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		fill: rgba(72,138,20,0); stroke: #1b1b1b;
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
 	}
-	70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
-	80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	70%  {fill: rgba(72,138,20,0); stroke: #1b1b1b; }
+	80%  {fill: rgba(72,138,20,0); stroke: #1b1b1b; stroke-width: 3; }
 	100% {
-		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		fill: #1b1b1b; stroke: rgba(54,95,160,0);
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 }

@@ -16,7 +16,7 @@ export default function NameLoader() {
             className={`${styleLoader['my-name-anim-parent']} ${font.className}`}
             viewBox="0 0 1320 300">
                 <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    SA Safim Ali
+                    Safin Ali
                 </text>
             </svg>
         </>
