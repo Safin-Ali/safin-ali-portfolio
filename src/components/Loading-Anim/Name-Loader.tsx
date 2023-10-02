@@ -15,7 +15,7 @@ export default function NameLoader() {
             <svg
             className={`${styleLoader['my-name-anim-parent']} ${font.className}`}
             viewBox="0 0 1320 300">
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                <text x="50%" y="50%" dy=".35em" textAnchor="middle">
                     Safin Ali
                 </text>
             </svg>

@@ -32,8 +32,7 @@
    }
 
    .dot1, .dot2, .dot3 {
-	width: 13px;
-	height: 13px;
+	@apply w-3 h-3;
 	border: double;
 	border-color: white;
 	border-radius: 50%;
