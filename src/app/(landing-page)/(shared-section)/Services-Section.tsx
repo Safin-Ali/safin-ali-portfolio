@@ -1,8 +1,11 @@
 import ServicesCard from '@/components/Card/Services-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
-import myServices from '@/data/services-data';
+import { ServicesDataType } from '@/types/services-data-type';
+import API from '@/utilities/fetch-data';
 
-export default function ServicesSection () {
+export default async function ServicesSection () {
+
+	const myServices:ServicesDataType[] = await API.get(`/services`,'default');
 
  return (
     <section id={`services-section`} className={`customise-container my-7 sm:my-10 md:my-20`}>
