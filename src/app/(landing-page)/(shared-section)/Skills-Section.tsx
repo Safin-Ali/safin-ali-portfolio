@@ -1,8 +1,11 @@
 import SkillsCard from '@/components/Card/Skills-Card';
 import SectionTitle from '@/components/Section-Title/Section-Title';
-import skills from '@/data/skills-info';
+import { SkillInfoType } from '@/types/skillls-info-type';
+import API from '@/utilities/fetch-data';
 
-export default function SkillsSection() {
+export default async function SkillsSection() {
+
+	const [skills]:SkillInfoType[] = await API.get(`/skills`,'default');
 
     return (
         <section id={ `skills-section` } className={ `customise-container my-7 sm:my-10 md:my-20` }>
