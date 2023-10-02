@@ -60,7 +60,7 @@ export default async function AboutSection() {
 
 						<article className={ `my-10` }>
 							<p>
-								Hey, I from <b>Bangladesh</b>. Student of <b>Digital Technology in Business</b>. A <b>self learner</b> and generat programming logic without <b>AI</b>.
+								<span className={`note-text inline-block`}>Hey, I from <span className={`note-word`}>Bangladesh</span>. Student of <span className={`note-word`}>Digital Technology in Business</span>. A <span className={`note-word`}>self learner</span> and generat programming logic without <span className={`note-word`}>AI</span>.</span>
 
 								<br /> <br />
 
@@ -71,7 +71,6 @@ export default async function AboutSection() {
 								- Experiment in a programe 🔬<br />
 								- Creating NPM package 🧑‍💻<br />
 								- Discussing a particular topic 🗣
-
 							</p>
 						</article>
 					</div>

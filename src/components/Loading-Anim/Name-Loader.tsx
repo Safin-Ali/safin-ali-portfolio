@@ -5,7 +5,7 @@ import { Bruno_Ace_SC } from 'next/font/google';
 const font = Bruno_Ace_SC({
     fallback:['cursive'],
     weight:['400'],
-    subsets:['latin','latin-ext']
+    subsets:['latin']
   });
 
 export default function NameLoader() {
