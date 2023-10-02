@@ -6,7 +6,7 @@
 }
 .multi-text-root > span{
     display: none;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .multi-text-root > .multi-text-textIn{
