@@ -7,11 +7,11 @@ import { Link } from 'react-scroll';
 import ResNavBar from './Res-NavBar';
 import { TbLayoutGridAdd } from 'react-icons/tb';
 import { BsUiChecksGrid } from 'react-icons/bs';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import useAOS from '@/hooks/useAOS';
 import ThemeToggle from '../Button/Theme-Toggle';
 
-export default function NavBar() {
+export default memo(function NavBar() {
 
 	const screenWidth = useScreenWidth();
 
@@ -113,12 +113,10 @@ export default function NavBar() {
 								/>
 							}
 
-
-
-						</div>
+					</div>
 				}
 
 			</nav>
 		</header>
 	);
-};
+});
