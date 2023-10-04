@@ -95,12 +95,12 @@ export default memo(function NavBar() {
 										?
 										<TbLayoutGridAdd
 											size={ 30 }
-											className={ `anim-fade` }
+											className={ `animate-fade` }
 										/>
 										:
 										<BsUiChecksGrid
 											size={ 24 }
-											className={ `anim-fade` }
+											className={ `animate-fade` }
 											color={ '#ffffff' }
 										/>
 								}
