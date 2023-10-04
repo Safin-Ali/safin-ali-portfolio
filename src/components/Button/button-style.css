@@ -14,15 +14,36 @@
 .slider {
 	@apply absolute cursor-pointer inset-0 rounded-[30px] before:absolute before:content-[""] before:h-[1.4em] before:w-[1.4em] before:rounded-[20px] before:left-[0.3em];
 }
-.slider::before{
-	transition: transform 0.3s,box-shadow 0.5s;
+
+.slider::before {
+	transition: transform 0.3s, box-shadow 0.5s;
 }
 
-.moon{
+.moon {
 	@apply before:translate-x-full bg-slate-900 before:bottom-[0.3em] before:shadow-white before:shadow-[inset_2px_-2px_0_1.8px];
 }
-.sun{
+
+.sun {
 	@apply bg-wh-base border before:bottom-1 before:shadow-[inset_25px_0px_0px_0px] before:shadow-yellow-400;
 }
 
 /* theme button end */
+
+/* loading or pending button start */
+
+.processing-loader {
+	@apply border-2 mx-auto border-wh-base dark:border-bl-base/5 border-l-transparent rounded-[50%] w-5 h-5;
+	animation: processing-spin 1s linear infinite;
+}
+
+@keyframes processing-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* loading or pending button end */
