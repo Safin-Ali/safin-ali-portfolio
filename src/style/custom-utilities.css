@@ -24,8 +24,12 @@
 		@apply font-semibold;
 	}
 	.note-text{
-		@apply border rounded-md p-2.5;
+		@apply border rounded-md p-2.5 bg-wh-hover;
 	}
+	.slide-up-anim {
+		animation: slide-up 1s ease 0s 1 normal forwards;
+	}
+
 }
 
 @keyframes fade {
@@ -35,5 +39,11 @@
 
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes slide-up {
+	100% {
+		@apply translate-y-0;
 	}
 }
