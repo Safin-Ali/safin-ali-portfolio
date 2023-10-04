@@ -1,14 +1,15 @@
 import React from 'react';
-interface PropsType {
-    children: React.ReactNode,
-    className?: string
+interface PropsType extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    children: React.ReactNode
 };
 
-export default function PrimaryBtn({ children, className }: PropsType) {
+
+
+export default function PrimaryBtn(props: PropsType) {
 
     return (
         <div>
-            <button className={ `pmr-btn ${className}` }>{ children }</button>
+            <button {...props}  className={ `pmr-btn ${props.className}` }>{ props.children }</button>
         </div>
     );
 };
