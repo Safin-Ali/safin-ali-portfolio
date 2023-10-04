@@ -1,3 +1,5 @@
+/* project-section start */
+
 .projects-showcase-container{
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4;
 }
@@ -18,3 +20,11 @@
 .project-more-info h3{
     @apply my-5 text-center underline underline-offset-4;
 }
+
+/* project-section end */
+
+/* contact-section start */
+.email-send-btn{
+	@apply transition-transform gap-2 duration-[400ms] ease-linear;
+}
+/* contact-section end */
