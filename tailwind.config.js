@@ -29,7 +29,11 @@ module.exports = {
 				'normal': '6px 10px 18px 0px',
 				'card': '2px 7px 10px 0px',
 				'square': '0px 0px 20px 15px',
-			}
+			},
+			animation:{
+				'slide-up': 'slide-up 1s ease 0s 1 normal forwards',
+				'fade':'fade 1s ease 0s 1 normal forwards;'
+			},
 		},
 	},
 	plugins: [],

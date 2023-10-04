@@ -17,17 +17,11 @@
     .position-v-center{
         @apply transform -translate-y-1/2 top-1/2;
     }
-    .anim-fade{
-        animation: fade 1s ease 0s 1 normal forwards;
-    }
 	.note-word{
 		@apply font-semibold;
 	}
 	.note-text{
 		@apply border rounded-md p-2.5 bg-wh-hover;
-	}
-	.slide-up-anim {
-		animation: slide-up 1s ease 0s 1 normal forwards;
 	}
 
 }
