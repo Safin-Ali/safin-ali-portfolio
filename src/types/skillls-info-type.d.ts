@@ -2,7 +2,7 @@ interface SkillInfoShape {
 	_id: string
     icon:string,
     name: string,
-    level: 'Intermediate' | 'Familiar' | 'Expert' | 'Master' | 'Future',
+    level: 'Intermediate' | 'Familiar' | 'Expert' | 'Pro' | 'Future',
 }
 
 export interface SkillInfoType {
