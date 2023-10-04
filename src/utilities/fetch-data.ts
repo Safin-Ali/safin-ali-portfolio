@@ -1,4 +1,4 @@
-import { cacheType } from "@/types/fetch-data-class-type";
+import { CacheType } from "@/types/fetch-data-class-type";
 
 class fetchAPI {
 	private baseURL: string;
@@ -7,7 +7,7 @@ class fetchAPI {
 		this.baseURL = baseURL;
 	}
 
-	async get<T>(endpoint: string, cache: cacheType = 'no-cache', params?: object, headers?: HeadersInit): Promise<T> {
+	async get<T>(endpoint: string, cache: CacheType = 'no-cache', params?: object, headers?: HeadersInit): Promise<T> {
 		const url = this.baseURL + endpoint;
 		const response = await fetch(url, {
 			method: 'GET',
