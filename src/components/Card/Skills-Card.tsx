@@ -2,9 +2,10 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import SimpleTooltip from '../Tooltip/Simple-Tooltip';
+import { SkillLevelType } from '@/types/skillls-info-type';
 interface PropsType {
     iconSRC: string,
-    level: 'Intermediate' | 'Familiar' | 'Expert' | 'Master' | 'Future',
+    level: SkillLevelType,
     name: string
 };
 
