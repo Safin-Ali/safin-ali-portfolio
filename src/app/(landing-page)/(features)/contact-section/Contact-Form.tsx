@@ -11,14 +11,11 @@ interface FormElementsType extends HTMLFormControlsCollection {
 	subject: HTMLInputElement,
 	name: HTMLInputElement,
 	desc: HTMLInputElement,
-	email: HTMLInputElement
+	email: HTMLInputElement,
 };
 
-interface CustomForm extends HTMLFormElement {
-	elements: FormElementsType
-};
 
-type InputFormType = React.FormEvent<CustomForm>;
+type InputFormType = React.FormEvent;
 
 interface AnimButtonType {
 	reqeust: boolean,
@@ -32,24 +29,31 @@ export default function ContactForm() {
 		status: 'ready'
 	});
 
-	const handleSendMessageForm = async (e: InputFormType): Promise<void> => {
+	const handleSendMessageForm = async (e: InputFormType ): Promise<void> => {
+
+		const events = e.target as unknown as FormElementsType;
 
 		const reset = () => setTimeout(() => {
 			setAnimBool({ reqeust: false, status: 'ready' });
 			const currForm = e.target as HTMLFormElement;
-			currForm.reset()
+			currForm.reset();
 		}, 1700);
 
 		try {
 			e.preventDefault();
 
-			const { email, desc, name, subject } = e.currentTarget.elements;
+			const {ip} = await (await fetch('https://api.ipify.org?format=json')).json();
+
+			const userLocation:any = await (await fetch(`https://ipapi.co/${ip}/json`)).json() || {country_name:'unknown',city:'unknown'};
+
+			const { email, desc, name, subject } = events;
 
 			const formObj = {
 				emailSub: subject.value,
 				senderName: name.value,
 				senderEmail: email.value,
 				emailDesc: desc.value,
+				senderLocation: `${userLocation.city}, ${userLocation.country_name}`
 			};
 
 			await API.post('sendEmail',formObj,{
@@ -58,10 +62,9 @@ export default function ContactForm() {
 
 			setAnimBool({ ...animBool, status: 'success' });
 			reset()
-		} catch (err) {
+		} catch (err:any) {
+			console.log(err.message);
 			setTimeout(() => {
-				console.log(err);
-
 				setAnimBool({ ...animBool, status: 'error' });
 				reset();
 			}, 3000);
@@ -107,6 +110,7 @@ export default function ContactForm() {
 				rows={ 5 }
 				name={ `desc` }
 				required
+				maxLength={200}
 			>
 				Message
 			</FloatingTextAreaField>
