@@ -19,4 +19,6 @@
     @import url('../components/Field/field-style.css');
     /* mouse animation component styles*/
     @import url('../components/Mouse-Scroll-Anim/mouse-scroll-anim.module.css');
+    /* loader component styles*/
+    @import url('../components/Loading-Anim/loading.style.module.css');
 }

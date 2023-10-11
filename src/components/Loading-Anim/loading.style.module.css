@@ -7,7 +7,7 @@
 	text-transform: uppercase;
 	animation: my-name-anim-parent 5s infinite alternate;
 	stroke-width: 2;
-	stroke: #365fa0;
+	stroke: #1b1b1b;
 	font-size: 140px;
 }
 @keyframes my-name-anim-parent {
@@ -34,7 +34,7 @@
    .dot1, .dot2, .dot3 {
 	@apply w-3 h-3;
 	border: double;
-	border-color: white;
+	@apply border-wh-hover dark:border-bl-block-2;
 	border-radius: 50%;
 	margin: 10px;
    }
@@ -42,17 +42,17 @@
    /* default loader */
    .dot1 {
 	animation: jump765 1.4s -0.32s linear infinite;
-	@apply bg-bl-base;
+	@apply bg-bl-base dark:bg-wh-hover;
    }
 
    .dot2 {
 	animation: jump765 1.4s -0.16s linear infinite;
-	@apply bg-bl-base;
+	@apply bg-bl-base dark:bg-wh-hover;
    }
 
    .dot3 {
 	animation: jump765 1.4s linear infinite;
-	@apply bg-bl-base;
+	@apply bg-bl-base dark:bg-wh-hover;
    }
 
    @keyframes jump765 {
