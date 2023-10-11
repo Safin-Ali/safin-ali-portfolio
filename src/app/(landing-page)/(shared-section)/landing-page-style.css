@@ -55,11 +55,11 @@
 /* footer start */
 
 footer {
-    @apply bg-bl-base w-full pt-14 text-white;
+    @apply bg-bl-base dark:bg-bl-block/80 w-full pt-14 text-white dark:text-wh-menu-hover;
 }
 
 footer .social-icon {
-    @apply rounded-full p-2 box-content border border-wh-border;
+    @apply rounded-full p-2 box-content border border-wh-border dark:border-bl-block-2;
 }
 footer .social-icon svg  {
     fill: #ffffff;
