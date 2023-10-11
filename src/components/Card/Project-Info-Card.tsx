@@ -82,6 +82,7 @@ export default function ProjectInfoCard({
                                 alt={ 'project_live_icon' }
                                 width={ 25 }
                                 height={ 25 }
+								className={'dark:invert'}
                             />
                         </a>
 
@@ -94,6 +95,7 @@ export default function ProjectInfoCard({
                                 alt={ 'project_source_code_icon' }
                                 width={ 25 }
                                 height={ 25 }
+								className={'dark:invert'}
                             />
                         </a>
                     </div>
@@ -115,6 +117,7 @@ export default function ProjectInfoCard({
                             alt={ 'three_dots_icon' }
                             width={ 6 }
                             height={ 5 }
+							className={'dark:invert'}
                         />
                     </div>
                 </div>

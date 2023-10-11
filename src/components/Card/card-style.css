@@ -39,7 +39,7 @@
 /* project-info-card start */
 
 .project-info-container{
-    @apply bg-white border hover:shadow-normal overflow-hidden hover:shadow-black/5 duration-150 rounded-md;
+    @apply bg-white dark:bg-bl-block border dark:border-bl-block-2 hover:shadow-normal overflow-hidden hover:shadow-black/5 dark:hover:shadow-bl-block-2/30 duration-150 rounded-md;
 }
 
 .project-content{
@@ -67,7 +67,7 @@
     @apply object-contain mx-auto;
 }
 .project-badge{
-    @apply border rounded-md capitalize px-1.5 py-0.5 mr-3;
+    @apply border dark:border-blue-900/50 rounded-md capitalize px-1.5 py-0.5 mr-3;
 }
 
 /* project-info-card end */
