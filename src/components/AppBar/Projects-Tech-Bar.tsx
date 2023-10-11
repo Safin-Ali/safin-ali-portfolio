@@ -15,7 +15,11 @@ export default function ProjectsTechBar ({
 
         <ul className={`projects-tech-bar-container`}>
           {
-            projectsTechStack.map((elm,idx) => <li key={idx+1} onClick={() => callback(elm.value)} aria-label={'project-category'} className={elm.value === value ? 'bg-bl-base text-white' : '' }>{elm.name}</li>)
+            projectsTechStack.map((elm,idx) => <li
+			key={idx+1}
+			onClick={() => callback(elm.value)}
+			aria-label={'project-category'}
+			className={elm.value === value ? 'bg-bl-base text-white dark:bg-bl-block-2 dark:text-wh-menu-hover' : '' }>{elm.name}</li>)
           }
         </ul>
 

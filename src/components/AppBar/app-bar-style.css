@@ -83,7 +83,7 @@ circle {
 }
 
 .projects-tech-bar-container li {
-    @apply border px-1.5 py-1.5 cursor-pointer rounded-md;
+    @apply border dark:border-bl-block-2 px-1.5 py-1.5 cursor-pointer rounded-md;
 }
 
 @keyframes scale-up-ver-top {
