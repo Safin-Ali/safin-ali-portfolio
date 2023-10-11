@@ -9,12 +9,18 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				// white color scheme
 				"wh-base": `hsl(220 0% 98% / 1)`,
 				"wh-block": `#FBFCFD`,
 				"wh-hover": `hsl(210 10% 97% / 1)`,
 				"wh-menu-hover": `#E8EBF0`,
 				"wh-border": `#E2E5EA`,
-				"bl-base": `#1B1B1B`,
+				// white black scheme
+				"bl-base": `hsl(240 30% 6% / 1)`,
+				"bl-block": `hsl(240 50% 15% / 1)`,
+				"bl-block-2": `hsl(240 50% 23% / 1)`,
+				"bl-menu-hover": `#E8EBF0`,
+				"bl-border": `#E2E5EA`,
 				"bl-sub-title": `#666666`,
 				"primaryL": `hsl(217 2% 25% / 1)`,
 			},

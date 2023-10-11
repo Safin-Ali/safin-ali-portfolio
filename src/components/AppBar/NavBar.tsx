@@ -30,7 +30,7 @@ export default memo(function NavBar() {
 
 				{/* Web Name */ }
 				<div className={ `w-2/5 sm:w-3/5 md:w-full` } title={ 'Web Name (Safin)' }>
-					<span className={ `text-3xl font-mono` }>
+					<span className={ `text-3xl font-mono dark:invert` }>
 						<NavLink href={ '/' }>
 							<Image
 								src={ 'https://svgshare.com/i/uD_.svg' }
@@ -87,7 +87,7 @@ export default memo(function NavBar() {
 							{/* humburger icon */ }
 							<div
 								title={ 'Nav Grid Icon' }
-								className={ `${!resNav ? 'rotate-[180deg]' : 'bg-zinc-700'} cursor-pointer p-1.5 rounded-md` }
+								className={ `${!resNav ? 'rotate-[180deg]' : 'bg-zinc-700 dark:bg-bl-block-2'} cursor-pointer p-1.5 rounded-md` }
 								onClick={ () => setResNav(!resNav) }
 							>
 								{

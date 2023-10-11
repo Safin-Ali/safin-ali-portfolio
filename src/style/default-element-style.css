@@ -28,6 +28,6 @@
         @apply scroll-smooth;
     }
     body{
-        @apply bg-wh-base dark:bg-bl-base dark:text-wh-base duration-500 text-bl-base ease-in-out;
+        @apply bg-wh-base dark:bg-bl-base dark:text-wh-hover lg:duration-500 text-bl-base ease-in-out;
     }
 }

@@ -20,11 +20,11 @@
 }
 
 .moon {
-	@apply before:translate-x-full bg-slate-900 before:bottom-[0.3em] before:shadow-white before:shadow-[inset_2px_-2px_0_1.8px];
+	@apply before:translate-x-full bg-slate-900 dark:bg-bl-block-2 before:bottom-[0.3em] before:shadow-white before:shadow-[inset_2px_-2px_0_1.8px];
 }
 
 .sun {
-	@apply bg-wh-base border before:bottom-1 before:shadow-[inset_25px_0px_0px_0px] before:shadow-yellow-400;
+	@apply bg-wh-hover border before:bottom-1 before:shadow-[inset_25px_0px_0px_0px] before:shadow-yellow-400;
 }
 
 /* theme button end */
