@@ -51,10 +51,10 @@ header {
 }
 
 .social-nav-icons {
-    @apply w-7 h-7 my-3 rounded-full p-1.5 box-content border-0 hover:border border-bl-base;
+    @apply w-7 h-7 my-3 rounded-full p-1.5 box-content border-0 hover:border border-bl-base dark:border-wh-hover;
 }
 .social-nav-icons svg{
-    @apply mx-auto;
+    @apply mx-auto text-bl-base dark:text-wh-base;
 }
 
 path,

@@ -17,7 +17,6 @@ export default function SocialNav({
 
           <BiLogoFacebook
           size={size}
-          color={ '#1b1b1b' }
           />
         </a>
       </div>
@@ -26,7 +25,6 @@ export default function SocialNav({
         <a rel="noopener noreferrer" href="https://github.com/Safin-Ali/" target={ '_blank' }>
         <SiGithub
           size={size}
-          color={ '#1b1b1b' }
           />
         </a>
       </div>
@@ -35,7 +33,6 @@ export default function SocialNav({
         <a rel="noopener noreferrer" href="https://www.linkedin.com/in/safin-ali/" target={ '_blank' }>
         <BiLogoLinkedin
           size={size}
-          color={ '#1b1b1b' }
           />
         </a>
       </div>
