@@ -18,7 +18,7 @@ export default function ServicesCard({
           alt={ `${serviceName}_service_icon` }
           width={ 150 }
           height={ 150 }
-          className={`mx-auto object-contain h-full`}
+          className={`mx-auto object-contain h-full dark:invert dark:opacity-80`}
         />
       </div>
 

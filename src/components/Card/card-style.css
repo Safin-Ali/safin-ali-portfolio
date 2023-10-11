@@ -23,7 +23,7 @@
 /* services-card start */
 
 .services-card-container{
-    @apply border rounded-md p-3 bg-wh-block shadow-square shadow-black/5 duration-200;
+    @apply border rounded-md p-3 bg-wh-block dark:bg-bl-block dark:border-bl-block-2 shadow-square shadow-black/5 dark:shadow-bl-block-2/25;
 }
 
 .services-card-container ul {
