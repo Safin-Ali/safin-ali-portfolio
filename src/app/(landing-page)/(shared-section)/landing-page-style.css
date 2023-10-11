@@ -27,7 +27,7 @@
 /* skills section start */
 
 .skills-container{
-    @apply grid grid-cols-1 gap-x-5 md:after:content-[''] md:after:absolute md:after:inset-0 md:after:w-[0.5px] md:after:bg-gray-200 md:after:h-full md:grid-cols-2 md:after:left-1/2 md:after:transform md:after:-translate-x-1/2 relative justify-center my-5;
+    @apply grid grid-cols-1 gap-x-5 md:after:content-[''] md:after:absolute md:after:inset-0 md:after:w-[0.5px] md:after:bg-gray-200 md:after:bg-bl-block-2 md:after:h-full md:grid-cols-2 md:after:left-1/2 md:after:transform md:after:-translate-x-1/2 relative justify-center my-5;
 }
 
 .skills-stack{

@@ -36,7 +36,7 @@ export default function SkillsCard({
 
             {/* Skill Level */ }
             <div className={ `text-center` }>
-                <small className={ `text-neutral-500 font-medium` }>{ level }</small>
+                <small className={ `text-neutral-500 dark:text-wh-menu-hover/70 font-medium` }>{ level }</small>
             </div>
 
             {
