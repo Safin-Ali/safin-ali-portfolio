@@ -21,8 +21,7 @@ module.exports = {
 				"bl-block-2": `hsl(240 50% 23% / 1)`,
 				"bl-hover": `hsl(240 70% 10% / 1)`,
 				"bl-border": `#E2E5EA`,
-				"bl-sub-title": `#666666`,
-				"primaryL": `hsl(217 2% 25% / 1)`,
+				"bl-sub-title": `#666666`
 			},
 			spacing: {
 				'nav': '70px'

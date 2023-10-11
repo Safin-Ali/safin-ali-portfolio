@@ -32,15 +32,15 @@ header {
 }
 
 .nav-items-container ul {
-    @apply gap-5 capitalize
+    @apply gap-5 capitalize;
 }
 
 .nav-item {
-    @apply cursor-pointer py-2 md:py-0 font-medium hover:text-primaryL dark:hover:text-wh-border relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-primaryL dark:md:before:bg-wh-border md:before:absolute md:before:inset-x-0;
+    @apply cursor-pointer py-2 md:py-0 font-medium hover:text-bl-base dark:hover:text-wh-border relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-0 hover:md:before:scale-x-100 border-b last:border-none md:border-none w-full text-center md:before:transition-transform md:before:duration-300 md:before:origin-bottom-left md:before:w-full md:before:h-1 md:before:bg-bl-base dark:md:before:bg-wh-border md:before:absolute md:before:inset-x-0;
 }
 
 .nav-active {
-    @apply text-primaryL dark:text-wh-border relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-primaryL md:before:bg-wh-border md:before:absolute md:before:inset-x-0;
+    @apply text-bl-base dark:text-wh-border relative md:before:content-[''] md:before:-bottom-2 md:before:scale-x-100 border-b md:before:bg-bl-base md:before:absolute md:before:inset-x-0;
 }
 .res-nav-active {
     @apply bg-zinc-700 dark:bg-bl-block-2 fill-white dark:fill-wh-hover text-white;

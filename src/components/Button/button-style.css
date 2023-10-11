@@ -20,7 +20,7 @@
 }
 
 .moon {
-	@apply before:translate-x-full bg-slate-900 dark:bg-bl-block-2 before:bottom-[0.3em] before:shadow-white before:shadow-[inset_2px_-2px_0_1.8px];
+	@apply before:translate-x-full border border-bl-block bg-bl-block-2 before:bottom-[0.3em] before:shadow-white before:shadow-[inset_2px_-2px_0_1.8px];
 }
 
 .sun {
