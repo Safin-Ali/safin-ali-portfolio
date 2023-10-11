@@ -17,4 +17,6 @@
     @import url('../components/Modal/modal-style.css');
     /* field component styles*/
     @import url('../components/Field/field-style.css');
+    /* mouse animation component styles*/
+    @import url('../components/Mouse-Scroll-Anim/mouse-scroll-anim.module.css');
 }
