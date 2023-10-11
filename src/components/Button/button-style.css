@@ -1,5 +1,5 @@
 .pmr-btn {
-	@apply bg-bl-base text-white px-2 py-1.5 rounded-md;
+	@apply bg-zinc-900 hover:bg-bl-base dark:bg-bl-block dark:hover:bg-bl-hover text-white dark:text-wh-menu-hover px-2 py-1.5 rounded-md;
 }
 
 /* theme button start */
