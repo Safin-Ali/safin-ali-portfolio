@@ -25,7 +25,7 @@ export default function AboutCard({
                     alt={`${title}-icon`}
                     width={width}
                     height={height}
-                    className={`mx-auto`}
+                    className={`mx-auto dark:invert`}
                 />
             </div>
 
