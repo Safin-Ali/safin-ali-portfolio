@@ -21,7 +21,7 @@
 		@apply font-semibold;
 	}
 	.note-text{
-		@apply border rounded-md p-2.5 bg-wh-hover;
+		@apply border dark:border-bl-block-2 rounded-md p-2.5 bg-wh-hover dark:bg-bl-hover;
 	}
 
 }
