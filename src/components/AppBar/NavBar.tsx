@@ -3,13 +3,15 @@ import navLinks from '@/data/nav-links';
 import useScreenWidth from '@/hooks/useScreenWidth';
 import Image from 'next/image';
 import NavLink from "next/link";
-import { Link } from 'react-scroll';
+import { Link as SLink } from 'react-scroll';
 import ResNavBar from './Res-NavBar';
 import { TbLayoutGridAdd } from 'react-icons/tb';
 import { BsUiChecksGrid } from 'react-icons/bs';
 import { memo, useState } from 'react';
 import useAOS from '@/hooks/useAOS';
 import ThemeToggle from '../Button/Theme-Toggle';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default memo(function NavBar() {
 
@@ -19,6 +21,9 @@ export default memo(function NavBar() {
 
 	// for aos animate on scroll
 	useAOS();
+
+	// get paths in current location
+	const path = usePathname();
 
 	return (
 		<header
@@ -58,7 +63,7 @@ export default memo(function NavBar() {
 												key={ idx }
 												aria-label={ `nav-link` }
 											>
-												<Link
+												<SLink
 													className={ `nav-item` }
 													activeClass={ `nav-active` }
 													spy
@@ -66,11 +71,23 @@ export default memo(function NavBar() {
 												>
 													{ link.label
 													}
-												</Link>
+												</SLink>
 
 											</li>
 										)
 									}
+									<li
+										aria-label={ `nav-link` }
+									>
+										<Link
+											href={'/blogs'}
+											className={ `nav-item ${path === 'blogs' ? 'nav-active' : ''}` }
+										>
+											Blogs
+										</Link>
+
+									</li>
+
 								</ul>
 							</div>
 
@@ -80,7 +97,7 @@ export default memo(function NavBar() {
 						</>
 						:
 						// responsive navbar
-						<div className={`flex-full-center`}>
+						<div className={ `flex-full-center` }>
 							<div className={ `mx-2 mb-1.5` }>
 								<ThemeToggle />
 							</div>
@@ -113,7 +130,7 @@ export default memo(function NavBar() {
 								/>
 							}
 
-					</div>
+						</div>
 				}
 
 			</nav>

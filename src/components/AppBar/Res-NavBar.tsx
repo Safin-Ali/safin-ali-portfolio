@@ -6,6 +6,8 @@ import AboutSVG from '@/assets/icons/svg/About-SVG';
 import ServicesSVG from '@/assets/icons/svg/Services-SVG';
 import FinishedProjectSVG from '@/assets/icons/svg/Finished-Project-SVG';
 import ContactSVG from '@/assets/icons/svg/Contact-SVG';
+import BlogsSVG from '@/assets/icons/svg/Blogs-SVG';
+import { usePathname, useRouter } from 'next/navigation';
 interface PropsTypes {
     expandBool: boolean,
 };
@@ -15,6 +17,10 @@ export default function ResNavBar({
 }: PropsTypes) {
 
     const [expand, setExpand] = useState<boolean>(false);
+
+	const router = useRouter();
+
+	const path = usePathname();
 
     useEffect(() => {
         if (expandBool) setExpand(true);
@@ -107,6 +113,18 @@ export default function ResNavBar({
                             />
                         </Link>
                         <span className={`font-medium text-sm`}>Contact</span>
+                    </div>
+
+                    <div>
+                        <div
+						className={`${path === 'blogs' ? 'res-nav-active' : ''} rounded-md`}
+						onClick={() => router.push('/blogs')}
+                        >
+                            <BlogsSVG
+                                size={ 35 }
+                            />
+                        </div>
+                        <span className={`font-medium text-sm`}>Blogs</span>
                     </div>
                 </div>
             </div>
