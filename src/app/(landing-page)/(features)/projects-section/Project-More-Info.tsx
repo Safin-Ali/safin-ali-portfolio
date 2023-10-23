@@ -20,7 +20,7 @@ export default function ProjectMoreInfo({
   return (
     <div className={ `project-more-info` }>
 
-      <div className={ `flex-v-center justify-between w-full px-2 pb-2 border-b` }>
+      <div className={ `flex-v-center justify-between w-full px-2 pb-2 border-b dark:border-bl-block-2` }>
         <div className={ `w-full` }>
           <h2 className={ `font-semibold` }>{ modalInfo.projectName }</h2>
         </div>
@@ -89,9 +89,9 @@ export default function ProjectMoreInfo({
               className={ `project-more-library-name` }
             >
               <div>
-                <svg fill="none" width={ 15 } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#fff" fillOpacity=".01" d="M0 0h48v48H0z" /><path d="M24 33a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" fill="#1B1B1B" stroke="#1B1B1B" strokeWidth="4" /></svg>
+                <svg fill="none" width={ 15 } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#fff" fillOpacity=".01" d="M0 0h48v48H0z" /><path d="M24 33a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" strokeWidth="4" /></svg>
               </div>
-              <div>
+              <div className={`pr-1 whitespace-nowrap`}>
                 { lib }
               </div>
             </div>)

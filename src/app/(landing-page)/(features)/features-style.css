@@ -8,10 +8,13 @@
     @apply p-5 h-full overflow-hidden;
 }
 .project-more-library-info{
-    @apply border-t flex items-center justify-center gap-5 h-full;
+    @apply overflow-x-scroll lg:overflow-hidden border-t dark:border-t-bl-block-2 flex items-center justify-start lg:justify-center gap-5 h-full;
 }
 .project-more-library-name{
-    @apply flex items-center justify-center border py-0.5 px-1 border-bl-base rounded-md;
+    @apply flex items-center justify-center border py-0.5 px-1 border-bl-base dark:border-bl-block-2 rounded-md;
+}
+.project-more-library-name svg {
+    @apply dark:fill-wh-menu-hover fill-bl-base;
 }
 .project-more-info ol{
     list-style-position: inside;
