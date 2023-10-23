@@ -1,5 +1,5 @@
 .modal-base {
-    @apply fixed rounded-2xl z-[105] bg-wh-base shadow-square shadow-black/10 inset-0 w-1/2 m-auto h-[calc(100vh-80px)];
+    @apply fixed rounded-2xl z-[105] bg-wh-base dark:bg-bl-block shadow-square dark:shadow-bl-block-2/10 shadow-black/10 inset-0 w-11/12 sm:w-4/5 md:w-3/5 lg:w-1/2 m-auto h-[calc(100vh-80px)];
 }
 
 .modal-blur-bg {
