@@ -1,0 +1,9 @@
+@tailwind components;
+
+body {
+	font-family: "BR Cobane", cursive;
+	@apply bg-navy text-primary-parag-txt;
+}
+
+@layer components {
+}

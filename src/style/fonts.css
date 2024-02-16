@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Black.woff2') format('woff2'),
+        url('../fonts/BRCobane-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-BlackItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Bold.woff2') format('woff2'),
+        url('../fonts/BRCobane-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BRCobane-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-BoldItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-MediumItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-LightItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Light.woff2') format('woff2'),
+        url('../fonts/BRCobane-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-RegularItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Regular.woff2') format('woff2'),
+        url('../fonts/BRCobane-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Medium.woff2') format('woff2'),
+        url('../fonts/BRCobane-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-SemiBold.woff2') format('woff2'),
+        url('../fonts/BRCobane-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-Thin.woff2') format('woff2'),
+        url('../fonts/BRCobane-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Cobane';
+    src: url('../fonts/BRCobane-ThinItalic.woff2') format('woff2'),
+        url('../fonts/BRCobane-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
