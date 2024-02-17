@@ -10,7 +10,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors:{
-				'navy':'#070819',
+				'navy':'#050a1a',
 				'glow':'#99999e',
 				'primary-header-txt':'#dbdbdd',
 				'primary-parag-txt':'#a0a1a6',
