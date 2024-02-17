@@ -1,0 +1,26 @@
+.multi-text-root {
+	display: inline-block;
+	height: fit-content;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+.multi-text-root>span {
+	display: none;
+	transition: transform 0.5s ease-in-out;
+}
+
+.multi-text-root>.multi-text-textIn {
+	display: block;
+	animation: textIn 0.5s ease;
+}
+
+@keyframes textIn {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
