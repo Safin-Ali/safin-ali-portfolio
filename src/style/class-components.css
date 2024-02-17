@@ -2,7 +2,7 @@
 
 body {
 	font-family: "BR Cobane", cursive;
-	@apply bg-navy text-primary-parag-txt;
+	@apply bg-navy text-primary-parag-txt relative;
 }
 
 @layer components {
@@ -17,5 +17,11 @@ body {
 	}
 	.social_media_block {
 		@apply absolute bottom-10 left-0 flex flex-col md:flex-row gap-3;
+	}
+	.nav_container{
+		@apply flex-full-center uppercase gap-2.5 font-light text-primary-header-txt;
+	}
+	.nav_container li {
+		@apply duration-200 hover:text-primary-parag-txt;
 	}
 }

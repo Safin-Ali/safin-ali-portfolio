@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../style/globals.css";
+import Navbar from '@/components/CSR/Navbar/Navbar';
 
 export const metadata: Metadata = {
 	title: "Safin Ali",
@@ -16,9 +17,13 @@ export default function RootLayout({
 			<body>
 
 				<section>
-					<main className={`overflow-hidden`}>
+					<main className={ `overflow-hidden` }>
 						{ children }
 					</main>
+					{/* navigation route */ }
+					<div className={ `absolute bottom-10 right-[5%]` }>
+						<Navbar />
+					</div>
 				</section>
 			</body>
 		</html>
