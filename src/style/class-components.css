@@ -27,4 +27,7 @@ body {
 	.nav_container li {
 		@apply duration-200 hover:text-primary-parag-txt;
 	}
+	.card_icon{
+		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
+	}
 }
