@@ -6,3 +6,12 @@
 @import "./class-components.css";
 
 @tailwind utilities;
+
+
+/* customize scrllbar */
+::-webkit-scrollbar {
+	@apply w-1;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-primary-border rounded-md hover:bg-glow/50 duration-200;
+}
