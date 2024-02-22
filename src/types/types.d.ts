@@ -4,7 +4,6 @@ export interface ProjectDataShortType {
 	projectThumb: string;
 	projectLiveURL: string;
 	projectCodeURL: string;
-	projectUsedLib: string[];
 	shortText: string;
 };
 export interface ProjectDataType extends ProjectDataShortType {

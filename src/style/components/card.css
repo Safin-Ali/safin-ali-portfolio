@@ -1,5 +1,5 @@
 /* project info card class start */
 .project_card_container{
-	@apply bg-transparent border my-5 border-primary-border w-1/2 mx-auto p-5 rounded-md flex-full-center gap-5;
+	@apply bg-transparent border border-primary-border w-full mx-auto p-5 rounded-md flex-full-center gap-5;
 }
 /* project info card class end */

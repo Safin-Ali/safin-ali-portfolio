@@ -11,7 +11,6 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 		projectLiveURL,
 		projectName,
 		projectThumb,
-		projectUsedLib,
 		shortText
 	} = props;
 
@@ -20,7 +19,7 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 
 			<div className={`basis-1/2`}>
 				<div className={`my-2`}>
-					<h4 className={`text-2xl`}>{ projectName }</h4>
+					<h4 className={`text-2xl text-primary-header-txt`}>{ projectName }</h4>
 				</div>
 				<div className={`my-5`}>
 					<p className={`font-light`}>
