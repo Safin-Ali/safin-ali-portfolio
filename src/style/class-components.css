@@ -6,28 +6,47 @@ body {
 }
 
 @layer components {
-	.home_page{
+	.home_page {
 		@apply h-screen relative w-full overflow-hidden flex justify-center mx-[5%];
 	}
-	.glow_effetc{
+
+	.glow_effetc {
 		@apply absolute w-96 h-96 bg-glow/70 rounded-full blur-[100px] opacity-[30%] top-1/2 transform -translate-y-1/2 md:translate-y-0 md:-top-20 left-1/2 -translate-x-1/2;
 	}
+
 	.home_page_text_block {
 		@apply basis-1/2 flex flex-col justify-center w-full;
 	}
-	.blob_home{
+
+	.blob_home {
 		@apply absolute w-screen -left-1/2 h-full bg-[url('../../public/assets/home_bg.webp')] bg-no-repeat bg-cover bg-origin-content bg-center;
 	}
+
 	.social_media_block {
 		@apply absolute bottom-10 left-0 flex flex-col md:flex-row gap-3;
 	}
-	.nav_container{
+
+	.nav_container {
 		@apply flex-full-center uppercase gap-2.5 font-light text-primary-header-txt;
 	}
+
 	.nav_container li {
 		@apply duration-200 hover:text-primary-parag-txt;
 	}
-	.card_icon{
+
+	.card_icon {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
+
+	.content_header {
+		@apply my-5 text-3xl text-center text-primary-header-txt;
+	}
+
+	/* card styles ref start */
+		@import url('./components/card.css');
+	/* card styles ref end */
+
+	/* button styles ref start */
+		@import url('./components/button.css');
+	/* button styles ref end */
 }
