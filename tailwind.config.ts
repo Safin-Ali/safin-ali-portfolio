@@ -23,6 +23,19 @@ const config: Config = {
 			},
 			backgroundImage:{
 				'fade-linear-tb':'linear-gradient(to bottom, rgba(217, 217, 217, 0.15) 0%, transparent 70%, transparent 90%, transparent 100%)'
+			},
+			animation:{
+				'slight_to_lr': 'slight_lr 3s ease-in-out infinite'
+			}
+		},
+		keyframes:{
+			'slight_lr':{
+				'0%':{
+					'transform':'translateX(0)'
+				},
+				'100%':{
+					'transform':'translateX(60%)'
+				}
 			}
 		},
 	},
