@@ -4,7 +4,7 @@ export default function NotFound() {
 
 	return (
 		<div className={ `flex-full-center relative flex-col h-screen w-full` }>
-			<div className={`glow_effetc`}></div>
+			<div className={`glow_effect`}></div>
 			<div>
 				<h2 className={ `text-6xl font-bold` }>
 					404

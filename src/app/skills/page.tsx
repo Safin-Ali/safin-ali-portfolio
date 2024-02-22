@@ -56,7 +56,7 @@ export default function Page() {
 	return (
 		<div className={ `relative flex-full-center h-screen` }>
 			<div className={`text-center`}>
-				<div className={ `my-5 text-3xl` }>
+				<div className={ `content_header` }>
 					My Technical Skills
 				</div>
 				<div className={ `grid grid-cols-3 capitalize gap-5 justify-center items-center h-full` }>

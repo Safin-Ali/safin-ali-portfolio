@@ -10,7 +10,7 @@ body {
 		@apply h-screen relative w-full overflow-hidden flex justify-center mx-[5%];
 	}
 
-	.glow_effetc {
+	.glow_effect {
 		@apply absolute w-96 h-96 bg-glow/70 rounded-full blur-[100px] opacity-[30%] top-1/2 transform -translate-y-1/2 md:translate-y-0 md:-top-20 left-1/2 -translate-x-1/2;
 	}
 
