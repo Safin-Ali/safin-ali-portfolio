@@ -3,3 +3,9 @@
 	@apply bg-transparent border border-primary-border w-full mx-auto p-5 rounded-md flex-full-center gap-5;
 }
 /* project info card class end */
+
+/* contact card class start */
+.contact_card{
+    @apply border w-32 h-28 bg-transparent text-center py-5 font-semibold rounded-lg border-primary-border duration-150;
+}
+/* contact card class end */
