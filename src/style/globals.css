@@ -13,5 +13,5 @@
 	@apply w-1;
 }
 ::-webkit-scrollbar-thumb {
-	@apply bg-primary-border rounded-md hover:bg-glow/50 duration-200;
+	@apply bg-primary-border rounded-md hover:bg-white/80 duration-200;
 }

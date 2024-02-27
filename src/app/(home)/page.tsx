@@ -43,9 +43,9 @@ export default function Page() {
 						<br />
 						Creating and Developing user-friendly interface. 📰
 						<br />
-						Responsive Web Design. 📝📱
+						Responsive Web Design. 📱
 						<br />
-						Problem Solving. 📖💡
+						Problem Solving. 💡
 					</p>
 				</div>
 			</div>
@@ -53,7 +53,6 @@ export default function Page() {
 			{/* code image block */ }
 
 			<div className={ `basis-1/2 relative` }>
-				<div className={ `blob_home` }></div>
 				<div className={ `absolute left-[50%] top-[2%] z-[2]` }>
 					<Image
 						width={ 240 }
@@ -75,18 +74,18 @@ export default function Page() {
 			{/* social media links*/ }
 			<div className={ `social_media_block` }>
 
-					<div className={`text-xl font-light`}>
+					<div className={`text-xl font-light text-primary-header-txt`}>
 						Find out more —
 					</div>
 
-					<a href={ 'https://www.linkedin.com/in/safin-ali/' } target={ '_blank' }>
+					<a className={`duration-150 hover:text-sky-600`} href={ 'https://www.linkedin.com/in/safin-ali/' } target={ '_blank' }>
 						<IoLogoLinkedin size={ 25 } />
 					</a>
-					<a href={ 'https://www.facebook.com/safin.ali.7205' } target={ '_blank' }>
+					<a className={`duration-150 hover:text-blue-600`} href={ 'https://www.facebook.com/safin.ali.7205' } target={ '_blank' }>
 						<FaSquareFacebook size={ 25 } />
 					</a>
-					<a href={ 'https://github.com/Safin-Ali/' } target={ '_blank' }>
-						<SiGithub size={ 25 } />
+					<a className={`duration-150 hover:text-gray-950`} href={ 'https://github.com/Safin-Ali/' } target={ '_blank' }>
+						<SiGithub className={`rounded-full duration-200 ease-in-out hover:bg-primary-header-txt`} size={ 25 } />
 					</a>
 			</div>
 		</div>

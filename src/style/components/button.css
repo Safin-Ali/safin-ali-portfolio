@@ -1,5 +1,5 @@
 /*default button class start */
 .primary_btn{
-	@apply px-3 py-2 border border-primary-border rounded-md bg-glow/5 hover:bg-glow/10 duration-150;
+	@apply px-3 py-2 border border-primary-border rounded-md bg-white/5 hover:bg-white/15 duration-150;
 }
 /*default button class end */

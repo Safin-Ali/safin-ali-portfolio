@@ -14,7 +14,13 @@ export default function Page() {
 				<div className={ `content_header` }>
 					Contact With Me
 				</div>
-				<div className={ `flex-full-center h-full relative middle_divider` }>
+				<div className={`text-center`}>
+				Feel free to Contact me by submitting the form
+				or social media below
+				<br />
+				and I will get back to you as soon as possible
+				</div>
+				<div className={ `flex-full-center h-full relative` }>
 					{/* contact via email */ }
 					<div className={ `basis-full` }>
 						<div className={ `w-1/2 mx-auto` }>
