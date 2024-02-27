@@ -26,17 +26,17 @@ const config: Config = {
 			},
 			animation:{
 				'slight_to_lr': 'slight_lr 3s ease-in-out infinite'
-			}
-		},
-		keyframes:{
-			'slight_lr':{
-				'0%':{
-					'transform':'translateX(0)'
-				},
-				'100%':{
-					'transform':'translateX(60%)'
+			},
+			keyframes:{
+				'slight_lr':{
+					'0%':{
+						'transform':'translateX(0)'
+					},
+					'100%':{
+						'transform':'translateX(60%)'
+					}
 				}
-			}
+			},
 		},
 	},
 	plugins: [
