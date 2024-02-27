@@ -1,24 +1,26 @@
 import Image from 'next/image';
 import React from 'react';
-import image1 from '../../../public/assets/code_template_1.webp'
-import { getGreeting } from '@/utils/common-utils';
+import image1 from '../../../public/assets/code_template_1.webp';
 import Multi_Text_Slide from '@/components/CSR/Multi-Text-Slider/Multi_Text_Slider';
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { SiGithub } from "react-icons/si";
 
-export default function page() {
+export default function Page() {
 
 	return (
 		<div className={ `home_page` }>
+
 			{/* text block */ }
 
 			<div className={ `home_page_text_block` }>
 
 				<div className={ `font-bold` }>
 
-					{/* greetinh block */ }
-					<h2 className={ `text-5xl text-primary-header-txt my-3 capitalize` }>Hey Good { getGreeting() }</h2>
+					{/* welcome block */ }
+					<h2 className={ `text-5xl text-primary-header-txt my-3` }>
+						Hello! <span className={`hello_anim_emoji`}></span>
+					</h2>
 
 					{/* multi skill status */ }
 					<h2 className={ `text-3xl text-primary-header-txt my-5` }>
@@ -26,9 +28,10 @@ export default function page() {
 						<span>
 							<Multi_Text_Slide
 								textArr={ [
-									'Front End Developer',
-									'Back End Developer'
+									'Safin Ali'
 								] }
+								once
+								lazyTime={1}
 								changeTime={ 6 }
 							/>
 						</span>
@@ -36,11 +39,13 @@ export default function page() {
 
 					{/* short bio of my skills */ }
 					<p className={ `font-light text-lg` }>
-						creating and developing user-friendly interface. 📰
+						A skilled JavaScript Developer. 👨‍💻
 						<br />
-						I am very passionate and dedicated in my work. 📝
+						Creating and Developing user-friendly interface. 📰
 						<br />
-						like to learn and practice. 📖
+						Responsive Web Design. 📝📱
+						<br />
+						Problem Solving. 📖💡
 					</p>
 				</div>
 			</div>

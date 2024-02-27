@@ -14,6 +14,10 @@ body {
 		@apply absolute w-96 h-96 bg-glow/70 rounded-full blur-[100px] opacity-[30%] top-1/2 transform -translate-y-1/2 md:translate-y-0 md:-top-20 left-1/2 -translate-x-1/2;
 	}
 
+	.hello_anim_emoji {
+		@apply w-9 inline-block h-9 bg-cover bg-no-repeat bg-[url('../../public/assets/hello_emoji.gif')];
+	}
+
 	.home_page_text_block {
 		@apply basis-1/2 flex flex-col justify-center w-full;
 	}
