@@ -8,10 +8,10 @@ export default function Page() {
 
 	const skillsData = {
 		'front_end': [
-			'ReactJS',
 			'NextJS',
+			'Redux',
+			'SASS',
 			'TailwindCSS',
-			'Redux'
 		],
 		'back_end': [
 			'NodeJS',
@@ -20,10 +20,10 @@ export default function Page() {
 			'MongoDB',
 		],
 		'tools': [
+			'GIT',
+			'Figma',
 			'VS Code',
 			'TypeScript',
-			'Figma',
-			'GIT'
 		]
 	}
 
