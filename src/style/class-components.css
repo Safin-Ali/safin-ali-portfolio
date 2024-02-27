@@ -38,6 +38,10 @@ body {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
 
+	.middle_divider{
+		@apply before:w-[2px] before:rounded-full before:h-full before:absolute before:bg-primary-border before:left-1/2 before:transform before:-translate-x-1/2;
+	}
+
 	.content_header {
 		@apply my-5 text-3xl text-center text-primary-header-txt;
 	}
