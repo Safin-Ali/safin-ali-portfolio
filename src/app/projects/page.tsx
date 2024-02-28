@@ -10,13 +10,14 @@ export default async function page() {
 	const projectsData = [...x, ...x, ...x]
 
 	return (
-		<div className={ `relative flex-full-center h-screen` }>
-			<div className={`glow_effect`}></div>
-			<div>
-				<div className={ `content_header relative z-[2]` }>
-					My Experinces In
+		<div className={ `flex-full-center h-full` }>
+			<div className={`h-full`}>
+				<div className={ `content_header` }>
+					Projects Showcase
+					<p><span className={`text-base font-light`}>Selected Personal Projects:</span></p>
 				</div>
-				<div className={ `flex px-2 flex-col gap-3 overflow-y-scroll max-h-80 w-1/2 mx-auto` }>
+				<div
+				className={ `flex px-2 flex-col gap-3 overflow-y-scroll h-page w-3/4 mx-auto` }>
 					{
 						projectsData.map((obj) => {
 							const {

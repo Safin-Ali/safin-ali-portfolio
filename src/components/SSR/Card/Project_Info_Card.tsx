@@ -25,7 +25,7 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 					<p className={`font-light`}>
 						<Text_Expandable_Nav_Btn
 						path={_id}
-						sliceRange={195}
+						sliceRange={200}
 						className={`text-justify`}
 						>
 							{shortText}
@@ -52,8 +52,8 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 				<Image
 					src={projectThumb}
 					alt={projectName+`_thumbnail`}
-					width={300}
-					height={300}
+					width={400}
+					height={400}
 					className={`rounded-md mx-auto`}
 				/>
 			</div>

@@ -1,6 +1,6 @@
 /* project info card class start */
 .project_card_container{
-	@apply bg-transparent border border-primary-border w-full mx-auto p-5 rounded-md flex-full-center gap-5;
+	@apply bg-transparent duration-150 hover:bg-white/5 border border-primary-border w-full mx-auto p-5 rounded-md flex-full-center gap-5;
 }
 /* project info card class end */
 

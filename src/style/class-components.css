@@ -38,27 +38,27 @@ body {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
 
-	.middle_divider{
+	.middle_divider {
 		@apply before:w-[2px] before:rounded-full before:h-full before:absolute before:bg-primary-border before:left-1/2 before:transform before:-translate-x-1/2;
 	}
 
 	.content_header {
-		@apply my-5 text-3xl text-center text-primary-header-txt;
+		@apply my-6 text-3xl text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
 	}
 
 	/* card styles ref start */
-		@import url('./components/card.css');
+	@import url('./components/card.css');
 	/* card styles ref end */
 
 	/* button styles ref start */
-		@import url('./components/button.css');
+	@import url('./components/button.css');
 	/* button styles ref end */
 
 	/* field styles ref start */
-		@import url('./components/field.css');
+	@import url('./components/field.css');
 	/* field styles ref end */
 
 	/* chip styles ref start */
-		@import url('./components/chip.css');
+	@import url('./components/chip.css');
 	/* chip styles ref end */
 }
