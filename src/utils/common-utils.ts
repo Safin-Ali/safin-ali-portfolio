@@ -22,3 +22,14 @@ export const getGreeting = (): string => {
 
 	return greeting;
 }
+
+/**
+ *
+ * return css string for chip only color name.
+ *
+ * @param colorName - color name css `red-500`
+ * @returns
+ */
+export const chipColorCSSGen = (colorName:string) => {
+	return `text-${colorName} border-${colorName} shadow-${colorName}/25`
+}

@@ -1,66 +1,35 @@
 import React from 'react';
-import Image from 'next/image';
 import userInterfacePlaceHolder from '../../../public/assets/user_interface_placeholder.webp';
 import serverPlaceHolder from '../../../public/assets/server_placeholder.webp';
 import toolsPlaceHolder from '../../../public/assets/tools_placeholder.webp';
+import Skills_Info_Card from '@/components/SSR/Card/Skills_Info_Card';
+import { skills_arr } from '@/data/skills-tech';
 
 export default function Page() {
 
-	const skillsData = {
-		'front_end': [
-			'NextJS',
-			'Redux',
-			'SASS',
-			'TailwindCSS',
-		],
-		'back_end': [
-			'NodeJS',
-			'ExpressJS',
-			'Socket.io',
-			'MongoDB',
-		],
-		'tools': [
-			'GIT',
-			'Figma',
-			'VS Code',
-			'TypeScript',
-		]
-	}
-
-	const renderSkills = () => {
-		return Object.entries(skillsData).map(([category, skills], idx) => {
-			let imgSrc = category === 'front_end' ? userInterfacePlaceHolder : category === 'back_end' ? serverPlaceHolder : toolsPlaceHolder
-			return (
-				<div
-				key={ idx }
-				className={ `border p-5 rounded-xl bg-fade-linear-tb border-primary-border` }
-			>
-				<div>
-					<Image
-						width={300}
-						height={300}
-						alt={'skill_front_end'}
-						src={imgSrc.src}
-					/>
-				</div>
-
-				<h6 className={ `my-2 text-xl font-medium` }><span>{ category.replace('_', ' ') }</span></h6>
-				<ul>
-					{ skills.map((skill, idx) => <li key={ idx }>{ skill }</li>) }
-				</ul>
-			</div>
-			)
-		});
-	}
-
 	return (
-		<div className={ `relative flex-full-center h-screen` }>
-			<div className={`text-center`}>
+		<div className={ `flex-full-center h-full` }>
+			<div className={ `text-center w-full h-full` }>
 				<div className={ `content_header` }>
-					My Technical Skills
+					<h3>My Technical Skills</h3>
+					<p><span className={`text-base font-light`}>Proficient in:</span></p>
 				</div>
-				<div className={ `grid grid-cols-3 capitalize gap-5 justify-center items-center h-full` }>
-					{ renderSkills() }
+
+				<div className={ `h-page w-3/4 mx-auto overflow-y-scroll px-2` }>
+					{
+						Object.entries(skills_arr).map(([category, techs], idx) => {
+							let imgSrc = category === 'front_end' ? userInterfacePlaceHolder : category === 'back_end' ? serverPlaceHolder : toolsPlaceHolder
+							return (
+								<Skills_Info_Card
+									key={idx}
+									placeholderImg={imgSrc}
+									categ={category}
+									techs={techs.tech}
+									services={techs.services}
+								/>
+							)
+						})
+					}
 				</div>
 			</div>
 		</div>

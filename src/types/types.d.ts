@@ -14,3 +14,8 @@ export interface ProjectDataType extends ProjectDataShortType {
 	projectCategory: string[];
 	projectTech: string[];
 };
+
+export interface SkillsTech {
+	label:string,
+	colorCSS:string
+}
