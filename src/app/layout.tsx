@@ -16,12 +16,12 @@ export default function RootLayout({
 		<html lang="en">
 			<body>
 
-				<section>
-					<main className={ `overflow-hidden` }>
+				<>
+					<main className={`h-full`}>
 						{ children }
 					</main>
 					{/* navigation route */ }
-					<div className={ `absolute bottom-10 right-[5%]` }>
+					<div className={ `absolute bottom-[9%] right-[5%]` }>
 						<Navbar />
 					</div>
 
@@ -72,7 +72,7 @@ export default function RootLayout({
 							</svg>
 						</div>
 					</div>
-				</section>
+				</>
 			</body>
 		</html>
 	);

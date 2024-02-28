@@ -2,7 +2,7 @@
 
 body {
 	font-family: "BR Cobane", cursive;
-	@apply bg-black text-primary-parag-txt relative;
+	@apply bg-black text-primary-parag-txt relative h-screen overflow-hidden;
 }
 
 @layer components {

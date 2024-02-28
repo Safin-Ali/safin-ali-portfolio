@@ -20,6 +20,9 @@ const config: Config = {
 			boxShadow:{
 				'half-border':'0px -0.5px 0px 0.5px'
 			},
+			height:{
+				'page':'calc(100vh - 45vh)'
+			},
 			backgroundImage:{
 				'fade-linear-tb':'linear-gradient(to bottom, rgba(215, 215, 215, 0.15) 0%, transparent 70%, transparent 90%, transparent 100%)'
 			},
