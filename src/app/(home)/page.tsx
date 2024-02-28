@@ -39,13 +39,13 @@ export default function Page() {
 
 					{/* short bio of my skills */ }
 					<p className={ `font-light text-lg` }>
-						A skilled JavaScript Developer. 👨‍💻
+						A skilled JavaScript developer. 👨‍💻
 						<br />
-						Creating and Developing user-friendly interface. 📰
+						Creating and developing user-friendly interface. 📰
 						<br />
-						Responsive Web Design. 📱
+						Responsive web design. 📱
 						<br />
-						Problem Solving. 💡
+						Problem-solving. 💡
 					</p>
 				</div>
 			</div>
