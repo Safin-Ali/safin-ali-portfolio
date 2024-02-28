@@ -9,3 +9,9 @@
     @apply border w-32 h-28 bg-transparent text-center py-5 font-semibold rounded-lg border-primary-border duration-150;
 }
 /* contact card class end */
+
+/* skill info card class start */
+.skill_card_container{
+	@apply [&:not(:first-child):not(:last-child)]:my-2 flex justify-evenly duration-150 hover:bg-white/5 p-5 rounded-md;
+}
+/* skill info card class end */
