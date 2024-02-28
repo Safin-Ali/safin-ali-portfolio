@@ -1,11 +1,15 @@
 import type { Config } from "tailwindcss";
 import customCssUtility from "./custom-css-utility";
+import { chipColorCSSGen } from '@/utils/common-utils';
 
 const config: Config = {
 	content: [
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	safelist:[
+		{ pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
 	],
 	theme: {
 		extend: {
@@ -21,7 +25,7 @@ const config: Config = {
 				'half-border':'0px -0.5px 0px 0.5px'
 			},
 			height:{
-				'page':'calc(100vh - 45vh)'
+				'page':'calc(100vh - 35vh)'
 			},
 			backgroundImage:{
 				'fade-linear-tb':'linear-gradient(to bottom, rgba(215, 215, 215, 0.15) 0%, transparent 70%, transparent 90%, transparent 100%)'
