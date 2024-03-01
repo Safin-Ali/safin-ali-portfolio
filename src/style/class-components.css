@@ -61,4 +61,8 @@ body {
 	/* chip styles ref start */
 	@import url('./components/chip.css');
 	/* chip styles ref end */
+
+	/* toast styles ref start */
+	@import url('./components/toast.css');
+	/* toast styles ref end */
 }

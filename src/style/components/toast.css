@@ -1,0 +1,8 @@
+/* hire me toast class start */
+	.hire_me_toast_cont{
+		@apply absolute left-1/2 -translate-x-[70%] bottom-[5%] z-[5];
+	}
+	.hire_me_toast{
+		@apply backdrop-blur-lg bg-transparent border-primary-border flex-full-center gap-5 py-2 px-5 border rounded-md;
+	}
+/* hire me toast class end */
