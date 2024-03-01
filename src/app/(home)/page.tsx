@@ -10,89 +10,103 @@ import Hire_Me_Toast from '@/components/CSR/Toast/Hire_Me_Toast';
 export default function Page() {
 
 	return (
-		<div className={ `home_page` }>
+		<>
+			<div className={ `home_page` }>
 
-			{/* text block */ }
+				{/* text block */ }
 
-			<div className={ `home_page_text_block` }>
+				<div className={ `home_page_text_block` }>
 
-				<div className={ `font-bold` }>
+					<div className={ `font-bold` }>
 
-					{/* welcome block */ }
-					<h2 className={ `text-4xl text-primary-header-txt my-3` }>
-						Hi there! <span className={ `hello_anim_emoji` }></span>
-					</h2>
+						{/* welcome block */ }
+						<h2
+							className={ `text-4xl text-primary-header-txt my-3 animate-fade_in` }
+							style={{
+								animationDuration:'0.7s',
+								animationTimingFunction:'ease-in'
+							}}
+						>
+							Hi
+							there! <span className={ `hello_anim_emoji` }></span>
+						</h2>
 
-					{/* multi skill status */ }
-					<h2 className={ `text-6xl text-primary-header-txt my-5` }>
-						<span>I am </span>
-						<span>
-							<Multi_Text_Slide
-								textArr={ [
-									'Safin Ali'
-								] }
-								once
-								lazyTime={ 1 }
-								changeTime={ 6 }
-							/>
-						</span>
-					</h2>
+						{/* multi skill status */ }
+						<h2 className={ `text-6xl text-primary-header-txt my-5` }>
+							<span>I am </span>
+							<span>
+								<Multi_Text_Slide
+									textArr={ [
+										'Safin Ali'
+									] }
+									once
+									lazyTime={ 1 }
+									changeTime={ 6 }
+								/>
+							</span>
+						</h2>
 
-					{/* short bio of my skills */ }
-					<p className={ `font-light text-lg` }>
-						A skilled JavaScript developer. 👨‍💻
-						<br />
-						A self-taught developer with an
-						interest in Computer Science. 🖥️
-						<br />
-						Currently specializing in Front-end Development 📰
-						<br />
-					</p>
+						{/* short bio of my skills */ }
+						<p
+							className={ `font-light text-lg animate-fade_in_up` }
+							style={{
+								animationDelay:'0.7s',
+								opacity:'0',
+								animationFillMode:'forwards'
+							}}
+						>
+							A developer with expertise in JavaScript programming. 👨‍💻
+							<br />
+							Self-motivated with a passion for Computer Science. 🖥️
+							<br />
+							Specializing in cutting-edge Front-end Development. 💼
+							<br />
+						</p>
+					</div>
+				</div>
+
+				{/* code image block */ }
+
+				<div className={ `basis-1/2 relative` }>
+					<div className={ `absolute left-[50%] top-[2%] z-[2]` }>
+						<Image
+							width={ 240 }
+							height={ 240 }
+							src={ image1.src }
+							alt={ 'code_template_1' }
+						/>
+					</div>
+					<div className={ `absolute left-[18%] top-[30%]` }>
+						<Image
+							width={ 240 }
+							height={ 240 }
+							src={ image1.src }
+							alt={ 'code_template_1' }
+						/>
+					</div>
+				</div>
+
+				{/* social media links*/ }
+				<div className={ `social_media_block` }>
+
+					<div className={ `text-xl font-light text-primary-header-txt` }>
+						Find out more —
+					</div>
+
+					<a className={ `duration-150 hover:text-sky-600` } href={ 'https://www.linkedin.com/in/safin-ali/' } target={ '_blank' }>
+						<IoLogoLinkedin size={ 25 } />
+					</a>
+					<a className={ `duration-150 hover:text-blue-600` } href={ 'https://www.facebook.com/safin.ali.7205' } target={ '_blank' }>
+						<FaSquareFacebook size={ 25 } />
+					</a>
+					<a className={ `duration-150 hover:text-gray-950` } href={ 'https://github.com/Safin-Ali/' } target={ '_blank' }>
+						<SiGithub className={ `rounded-full duration-200 ease-in-out hover:bg-primary-header-txt` } size={ 25 } />
+					</a>
 				</div>
 			</div>
+			{/* hire me toast */ }
 
-			{/* code image block */ }
-
-			<div className={ `basis-1/2 relative` }>
-				<div className={ `absolute left-[50%] top-[2%] z-[2]` }>
-					<Image
-						width={ 240 }
-						height={ 240 }
-						src={ image1.src }
-						alt={ 'code_template_1' }
-					/>
-				</div>
-				<div className={ `absolute left-[18%] top-[30%]` }>
-					<Image
-						width={ 240 }
-						height={ 240 }
-						src={ image1.src }
-						alt={ 'code_template_1' }
-					/>
-				</div>
-			</div>
-
-			{/* hire me toast */}
-
-			<Hire_Me_Toast/>
-
-			{/* social media links*/ }
-			<div className={ `social_media_block` }>
-
-				<div className={ `text-xl font-light text-primary-header-txt` }>
-					Find out more —
-				</div>
-
-				<a className={ `duration-150 hover:text-sky-600` } href={ 'https://www.linkedin.com/in/safin-ali/' } target={ '_blank' }>
-					<IoLogoLinkedin size={ 25 } />
-				</a>
-				<a className={ `duration-150 hover:text-blue-600` } href={ 'https://www.facebook.com/safin.ali.7205' } target={ '_blank' }>
-					<FaSquareFacebook size={ 25 } />
-				</a>
-				<a className={ `duration-150 hover:text-gray-950` } href={ 'https://github.com/Safin-Ali/' } target={ '_blank' }>
-					<SiGithub className={ `rounded-full duration-200 ease-in-out hover:bg-primary-header-txt` } size={ 25 } />
-				</a>
-			</div>
-		</div>
+			<Hire_Me_Toast />
+		</>
 	);
 }

@@ -21,7 +21,7 @@ export default function RootLayout({
 						{ children }
 					</main>
 					{/* navigation route */ }
-					<div className={ `absolute bottom-[9%] right-[5%]` }>
+					<div className={ `absolute bottom-[7%] right-[5%]` }>
 						<Navbar />
 					</div>
 
