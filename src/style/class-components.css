@@ -21,6 +21,10 @@ body {
 		@apply absolute w-screen -left-1/2 h-full bg-[url('../../public/assets/home_bg.webp')] bg-no-repeat bg-cover bg-origin-content bg-center;
 	}
 
+	.image_glow_shadow{
+		@apply absolute scale-[1.007] blur-md inset-0;
+	}
+
 	.social_media_block {
 		@apply absolute bottom-10 left-0 flex flex-col md:flex-row gap-3;
 	}
