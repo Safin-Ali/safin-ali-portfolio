@@ -13,18 +13,27 @@ export default function Page() {
 	return (
 		<div className={ `flex-full-center h-full` }>
 			<div className={ `w-full h-full` }>
-				<div className={ `content_header` }>
+				<div
+					className={ `content_header animate-fade_in_down opacity-0` }
+					style={{
+						animationDelay:'0.2s',
+						animationDuration:'0.5s'
+					}}
+				>
 					Let&apos;s Connect
-					<p><span className={ `text-base font-light` }>For business inquiries or to discuss potential collaborations, please feel free to reach out to me.:</span></p>
+					<p><span className={ `text-base font-light` }>For business inquiries or potential collaborations, reach out to me.:</span></p>
 				</div>
-				<div className={ `flex-full-center h-page gap-[5%]` }>
+				<div className={ `flex-full-center h-page gap-[5%] my-10` }>
 
 					{/* contact via email form */ }
-					<div className={ `basis-full` }>
+					<div
+						className={ `basis-full animate-fade_in opacity-0` }
+						style={{
+							animationDuration:'0.5s',
+							animationDelay:'0.3s'
+						}}
+					>
 						<div className={ `w-1/2 ml-auto` }>
-							<div>
-								<span>Contact Form</span>
-							</div>
 							<form>
 								<Floating_Input_Field
 									labelVal={ 'Subject' }
@@ -53,10 +62,13 @@ export default function Page() {
 					</div>
 
 					{/* contatct with social */ }
-					<div className={`basis-full self-start`}>
-						<div className={`mb-[7%]`}>
-							<span>Connect on Social Media</span>
-						</div>
+					<div
+						className={ `basis-full animate-fade_in_up opacity-0` }
+						style={{
+							animationDuration:'0.45s',
+							animationDelay:'0.5s',
+						}}
+					>
 						<div className={ `basis-full flex flex-col justify-center gap-5` }>
 							{/* social block 1  */ }
 							<div className={ `flex items-center gap-3` }>
@@ -64,7 +76,7 @@ export default function Page() {
 								<div>
 									<Contact_Card
 										desSrc={ 'https://www.linkedin.com/in/safin-ali/' }
-										iconNode={ <RiTwitterXLine
+										iconNode={ <SlSocialLinkedin
 											className={ `mx-auto animate-bounce` } size={ 25 }
 										/>
 										}
@@ -73,12 +85,12 @@ export default function Page() {
 								</div>
 								<div>
 									<Contact_Card
-										desSrc={ 'http://m.me/safin.ali.7205' }
-										iconNode={ <SlSocialInstagram
-											className={ `mx-auto animate-bounce` } size={ 30 }
+										desSrc={ 'https://www.linkedin.com/in/safin-ali/' }
+										iconNode={ <RiTwitterXLine
+											className={ `mx-auto animate-bounce` } size={ 25 }
 										/>
 										}
-										userId={ `safin.ali.7205` }
+										userId={ `safin-ali` }
 									/>
 								</div>
 								<div>
@@ -97,12 +109,12 @@ export default function Page() {
 							<div className={ `flex items-center gap-3` }>
 								<div>
 									<Contact_Card
-										desSrc={ 'https://www.linkedin.com/in/safin-ali/' }
-										iconNode={ <SlSocialLinkedin
-											className={ `mx-auto animate-bounce` } size={ 25 }
+										desSrc={ 'http://m.me/safin.ali.7205' }
+										iconNode={ <SlSocialInstagram
+											className={ `mx-auto animate-bounce` } size={ 30 }
 										/>
 										}
-										userId={ `safin-ali` }
+										userId={ `safin.ali.7205` }
 									/>
 								</div>
 								<div>
