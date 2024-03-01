@@ -32,9 +32,9 @@ const config: Config = {
 			},
 			animation: {
 				'slight_to_lr': 'slight_lr 3s ease-in-out infinite',
-				'fade_in_up': 'fade_in_up 0.8s linear',
-				'fade_in_down': 'fade_in_down 0.3s linear',
-				'fade_in': 'fade_in 0.3s linear',
+				'fade_in_up': 'fade_in_up 0.8s linear 0s 1 forwards',
+				'fade_in_down': 'fade_in_down 0.3s linear 0s 1 forwards',
+				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
 			},
 			keyframes: {
 				'slight_lr': {
