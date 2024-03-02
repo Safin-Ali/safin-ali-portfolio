@@ -9,7 +9,7 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	safelist: [
-		{ pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
+		// { pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
 	],
 	theme: {
 		extend: {
@@ -35,8 +35,17 @@ const config: Config = {
 				'fade_in_up': 'fade_in_up 0.8s linear 0s 1 forwards',
 				'fade_in_down': 'fade_in_down 0.3s linear 0s 1 forwards',
 				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
+				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
 			},
 			keyframes: {
+				'bounce_low':{
+					'0%,100%':{
+						'transform': 'translateY(-10%)',
+					},
+					'50%':{
+						'transform': 'none'
+					}
+				},
 				'slight_lr': {
 					'0%': {
 						'transform': 'translateX(0)'
