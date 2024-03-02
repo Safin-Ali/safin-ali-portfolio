@@ -1,0 +1,59 @@
+'use client';
+import React from 'react';
+import { IoHomeOutline } from "react-icons/io5";
+import { FaRegLightbulb } from "react-icons/fa";
+import { PiToolboxBold } from "react-icons/pi";
+import { BsInfoSquare } from "react-icons/bs";
+import { TbMessage } from "react-icons/tb";
+import { GrArticle } from "react-icons/gr";
+import Link from 'next/link';
+import { navItems } from '@/data/nav-items';
+import { usePathname } from 'next/navigation';
+
+export default function Mobile_Navbar() {
+	const iconComponents:{[key: string]: React.ComponentType<any>} = {
+		home: IoHomeOutline,
+		skills: FaRegLightbulb,
+		projects: PiToolboxBold,
+		about: BsInfoSquare,
+		contact: TbMessage,
+		blogs: GrArticle
+	};
+
+	let path = usePathname().split('/')[1];
+
+	path = !path.length ? '/' : `/${path}`;
+
+	return (
+		<nav>
+			<section className={ `mobile_nav_container` }>
+
+				{
+					navItems.map(({ label, value }, idx) => {
+						const IconComponent = iconComponents[label];
+						return (
+							<div
+								key={ idx }
+								className={`${(path === value && 'pointer-events-none opacity-30')}`}
+							>
+								<Link
+									href={ value }
+									prefetch={ false }
+								>
+									<div>
+										{
+											<IconComponent/>
+										}
+									</div>
+									<p><span>{label}</span></p>
+								</Link>
+							</div>
+						)
+					})
+				}
+
+
+			</section>
+		</nav>
+	);
+}

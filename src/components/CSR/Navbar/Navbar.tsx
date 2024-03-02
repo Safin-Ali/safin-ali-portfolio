@@ -1,18 +1,10 @@
 'use client';
+import { navItems } from '@/data/nav-items';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
 export default function Navbar() {
-
-	const navItems = [
-		{ label: 'home', value: '/' },
-		{ label: 'skills', value: '/skills' },
-		{ label: 'projects', value: '/projects' },
-		{ label: 'about', value: '/about' },
-		{ label: 'contact', value: '/contact' },
-		{ label: 'blogs', value: '/blogs' }
-	];
 
 	let path = usePathname().split('/')[1];
 

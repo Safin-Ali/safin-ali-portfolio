@@ -29,14 +29,6 @@ body {
 		@apply absolute bottom-10 left-0 flex flex-col md:flex-row gap-3;
 	}
 
-	.nav_container {
-		@apply flex-full-center uppercase gap-2.5 font-light text-primary-header-txt;
-	}
-
-	.nav_container li {
-		@apply duration-200 hover:text-primary-parag-txt;
-	}
-
 	.card_icon {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
@@ -48,6 +40,10 @@ body {
 	.content_header {
 		@apply my-6 text-3xl text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
 	}
+
+	/* navbar styles ref start */
+	@import url('./components/navbar.css');
+	/* navbar styles ref end */
 
 	/* card styles ref start */
 	@import url('./components/card.css');
