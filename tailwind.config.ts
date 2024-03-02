@@ -37,6 +37,9 @@ const config: Config = {
 				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
 				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
 			},
+			screens:{
+				'xs':'320px'
+			},
 			keyframes: {
 				'bounce_low':{
 					'0%,100%':{

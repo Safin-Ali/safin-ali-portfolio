@@ -16,6 +16,7 @@ export default function Anchor_CV(props:Props) {
 			href={ cdnUrl }
 			target={ '_blank' }
 			prefetch={ false }
+			className={`w-fit inline-block`}
 		>
 			<div
 				className={ `flex items-center w-fit primary_btn gap-2 py-1.5 ${className || ''}` }
