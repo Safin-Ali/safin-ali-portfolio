@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../style/globals.css";
 import Navbar from '@/components/CSR/Navbar/Navbar';
 import { Inter,Montserrat,Roboto,Lato,Raleway,Nunito } from 'next/font/google'
+import Mobile_Navbar from '@/components/CSR/Navbar/Mobile_Navbar';
 
 export const metadata: Metadata = {
 	title: "Safin Ali",
@@ -29,8 +30,13 @@ export default function RootLayout({
 						{ children }
 					</main>
 					{/* navigation route */ }
-					<div className={ `absolute bottom-[7%] right-[5%]` }>
+					<div className={ `hidden md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%]` }>
 						<Navbar />
+					</div>
+
+					{/* mobile navigation route */ }
+					<div className={ `block md:hidden w-full absolute bottom-0 right-0` }>
+						<Mobile_Navbar/>
 					</div>
 
 					{/* gradient background */ }

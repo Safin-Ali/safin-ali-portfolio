@@ -15,7 +15,7 @@
 }
 
 .mobile_nav_container > div {
-	@apply mx-2;
+	@apply mx-2 sm:mx-5;
 }
 .mobile_nav_container svg {
 	@apply mx-auto;

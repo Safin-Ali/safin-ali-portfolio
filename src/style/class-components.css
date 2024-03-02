@@ -1,20 +1,24 @@
 @tailwind components;
 
 body {
-	@apply bg-black text-primary-parag-txt relative h-screen overflow-hidden;
+	@apply bg-black scroll-smooth text-primary-parag-txt relative h-screen overflow-hidden;
 }
 
 @layer components {
 	.home_page {
-		@apply h-screen relative w-full overflow-hidden flex justify-center mx-[5%];
+		@apply h-full overflow-y-scroll relative w-full md:flex md:justify-center md:mx-[5%] md:flex-row;
 	}
 
 	.hello_anim_emoji {
 		@apply w-9 inline-block h-9 bg-cover bg-no-repeat bg-[url('../../public/assets/hello_emoji.gif')];
 	}
 
+	.code_image_block{
+		@apply md:order-2 md:basis-full h-auto min-h-[300px] self-center my-[5%] md:my-0 mx-auto;
+	}
+
 	.home_page_text_block {
-		@apply basis-1/2 flex flex-col justify-center w-full;
+		@apply basis-full md:flex md:flex-col min-h-[300px] md:justify-center w-full md:basis-full md:order-1 h-auto px-[5%] md:px-0;
 	}
 
 	.blob_home {
@@ -26,7 +30,14 @@ body {
 	}
 
 	.social_media_block {
-		@apply absolute bottom-10 left-0 flex flex-col md:flex-row gap-3;
+		@apply static my-3 h-[80px] md:h-fit md:my-0 px-[5%] md:px-0 md:absolute sm:bottom-2 lg:bottom-[7%] md:left-0 flex flex-row gap-3;
+	}
+
+	.code_img_1{
+		@apply hidden sm:block sm:absolute sm:left-2/4 sm:top-[5%] md:left-[50%] md:top-[2%] sm:z-[2];
+	}
+	.code_img_2{
+		@apply static sm:absolute inset-0 sm:inset-auto sm:left-[10%] sm:top-[12%] md:left-[18%] md:top-[30%];
 	}
 
 	.card_icon {
