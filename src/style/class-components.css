@@ -44,6 +44,20 @@ body {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
 
+	.social_contact_card{
+		@apply flex flex-wrap w-full justify-between sm:w-min md:w-auto sm:justify-normal md:flex-nowrap items-center gap-3;
+	}
+	.social_contact_card a{
+		@apply w-fit inline-block;
+	}
+	.social_contact_card > div{
+		@apply shrink-0 grow-0 basis-1/2 w-full xl:w-auto sm:basis-auto sm:shrink sm:grow xl:grow-0;
+	}
+
+	.social_contact_block_end > div{
+		@apply ml-auto sm:ml-0;
+	}
+
 	.middle_divider {
 		@apply before:w-[2px] before:rounded-full before:h-full before:absolute before:bg-primary-border before:left-1/2 before:transform before:-translate-x-1/2;
 	}

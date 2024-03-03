@@ -11,7 +11,7 @@ import Contact_Card from '@/components/CSR/Card/Contact_Card';
 export default function Page() {
 
 	return (
-		<div className={ `flex-full-center h-full` }>
+		<div className={ `flex-full-center h-[calc(100%-15%)] overflow-y-scroll md:overflow-y-auto md:h-full` }>
 			<div className={ `w-full h-full` }>
 				<div
 					className={ `content_header animate-fade_in_down opacity-0` }
@@ -23,17 +23,18 @@ export default function Page() {
 					Let&apos;s Connect
 					<p><span className={ `text-base font-light` }>For business inquiries or potential collaborations, reach out to me.:</span></p>
 				</div>
-				<div className={ `flex-full-center h-page gap-[5%] my-10` }>
+
+				<div className={ `flex-full-center h-fit sm:px-[2%] md:px-[5%] lg:px-0 flex-col sm:flex-row md:h-page sm:gap-[5%] my-10` }>
 
 					{/* contact via email form */ }
 					<div
-						className={ `basis-full animate-fade_in opacity-0` }
+						className={ `basis-full w-[95%] mx-auto md:mx-0 sm:ml-auto md:w-auto animate-fade_in my-5 md:my-0 opacity-0` }
 						style={{
 							animationDuration:'0.5s',
 							animationDelay:'0.3s'
 						}}
 					>
-						<div className={ `w-1/2 ml-auto` }>
+						<div className={ `w-full lg:w-3/4 xl:w-1/2 mx-auto xl:mx-0 xl:ml-auto` }>
 							<form>
 								<Floating_Input_Field
 									labelVal={ 'Subject' }
@@ -63,15 +64,15 @@ export default function Page() {
 
 					{/* contatct with social */ }
 					<div
-						className={ `basis-full animate-fade_in_up opacity-0` }
+						className={ `basis-full w-[95%] mx-auto md:mx-0 md:w-auto animate-fade_in_up opacity-0` }
 						style={{
 							animationDuration:'0.45s',
 							animationDelay:'0.5s',
 						}}
 					>
-						<div className={ `basis-full flex flex-col justify-center gap-5` }>
+						<div className={ `basis-full flex flex-row md:flex-col justify-center gap-5` }>
 							{/* social block 1  */ }
-							<div className={ `flex items-center gap-3` }>
+							<div className={ `social_contact_card` }>
 
 								<div>
 									<Contact_Card
@@ -106,7 +107,7 @@ export default function Page() {
 							</div>
 
 							{/* social block 2 */ }
-							<div className={ `flex items-center gap-3` }>
+							<div className={ `social_contact_card social_contact_block_end` }>
 								<div>
 									<Contact_Card
 										desSrc={ 'http://m.me/safin.ali.7205' }
