@@ -30,12 +30,12 @@ export default function RootLayout({
 						{ children }
 					</main>
 					{/* navigation route */ }
-					<div className={ `hidden md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%]` }>
+					<div className={ `hidden md:z-30 md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%]` }>
 						<Navbar />
 					</div>
 
 					{/* mobile navigation route */ }
-					<div className={ `block md:hidden w-full absolute bottom-0 right-0` }>
+					<div className={ `block w-full md:hidden fixed h-fit bottom-0 right-0` }>
 						<Mobile_Navbar/>
 					</div>
 

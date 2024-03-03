@@ -2,21 +2,22 @@ import React from 'react';
 import myImage from '../../../public/assets/my_professional_photo.webp';
 import Image from 'next/image';
 import Link from 'next/link';
+import Anchor_CV from '@/components/SSR/Anchor/Anchor_CV';
 
 export default function page() {
 
 	return (
-		<div className={ `h-full flex-full-center` }>
+		<div className={ `md:h-full h-[calc(100%-15%)] overflow-y-scroll md:overflow-y-auto flex-full-center` }>
 			<div className={ `w-full h-full` }>
 				<div className={ `content_header` }>
 					<h3>About  me</h3>
 					<p><span className={ `text-base font-light` }>Introduction:</span></p>
 				</div>
 
-				<div className={ `flex-full-center gap-[5%]` }>
+				<div className={ `flex-full-center gap-[5%] flex-col md:flex-row` }>
 
 					{/* profesional image block */ }
-					<div className={`w-fit relative`}>
+					<div className={`w-3/4 md:w-fit relative`}>
 						<Image
 							src={ myImage }
 							placeholder={ 'blur' }
@@ -40,7 +41,7 @@ export default function page() {
 					{/* my bio graphy block */ }
 
 					<div
-						className={ `h-page overflow-y-auto pr-5 basis-[40%] self-start` }
+						className={ `px-3 md:px-0 my-2 md:my-0 h-page md:overflow-y-auto md:pr-5 basis-[40%] self-start` }
 					>
 						<p className={`my-2`}>I am Safin Ali from Bangladesh. Passionate about technology from a young age, I embarked on my programming journey in 2022, exploring into JavaScript through self-guided learning. The thrill of problem-solving fuels my dedication to coding. I also find joy in contributing to the tech community and imparting knowledge through teaching.</p>
 
@@ -55,14 +56,11 @@ export default function page() {
 								animationDelay:'0.4s'
 							}}
 						>
-							<Link
-								href={process.env.NEXT_PUBLIC_MY_CV_CDN!}
-								target={'_blank'}
-								className={`primary_btn py-1.5`}
-								prefetch={false}
+							<Anchor_CV
+								cdnUrl={process.env.NEXT_PUBLIC_MY_RESUME_CDN!}
 							>
 								Download CV
-							</Link>
+							</Anchor_CV>
 						</div>
 					</div>
 				</div>
