@@ -6,7 +6,6 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { SiGithub } from "react-icons/si";
 import Hire_Me_Toast from '@/components/CSR/Toast/Hire_Me_Toast';
-import Link from 'next/link';
 import Anchor_CV from '@/components/SSR/Anchor/Anchor_CV';
 
 export default function Page() {
@@ -32,7 +31,8 @@ export default function Page() {
 							<Image
 								width={ 240 }
 								height={ 240 }
-								src={ image1.src }
+								src={ image1 }
+								placeholder={'blur'}
 								alt={ 'code_template_1' }
 								className={`w-full md:w-3/4`}
 							/>
@@ -41,7 +41,8 @@ export default function Page() {
 							<Image
 								width={ 240 }
 								height={ 240 }
-								src={ image1.src }
+								placeholder={'blur'}
+								src={ image1 }
 								alt={ 'code_template_1' }
 								className={ `mx-auto sm:mx-0 w-[90%] md:w-3/4` }
 							/>

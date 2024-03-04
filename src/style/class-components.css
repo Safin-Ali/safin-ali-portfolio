@@ -6,7 +6,7 @@ body {
 
 @layer components {
 	.home_page {
-		@apply h-full overflow-y-scroll relative w-full md:flex md:justify-center md:mx-[5%] md:flex-row;
+		@apply h-[calc(100%-7%)] md:h-full overflow-y-scroll relative w-full md:flex md:justify-center md:mx-[5%] md:flex-row;
 	}
 
 	.hello_anim_emoji {
