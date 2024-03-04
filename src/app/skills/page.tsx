@@ -15,7 +15,9 @@ export default function Page() {
 					<p><span className={`text-base font-light`}>Proficient in:</span></p>
 				</div>
 
-				<div className={ `h-page w-3/4 mx-auto overflow-y-scroll px-2` }>
+				<div
+					className={ `h-page-mb md:h-page lg:h-page-mb xl:h-page md:w-full lg:w-10/12 xl:w-3/4 mx-auto overflow-y-scroll md:px-2` }
+				>
 					{
 						Object.entries(skills_arr).map(([category, techs], idx) => {
 							let imgSrc = category === 'front_end' ? userInterfacePlaceHolder : category === 'back_end' ? serverPlaceHolder : toolsPlaceHolder

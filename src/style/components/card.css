@@ -12,6 +12,6 @@
 
 /* skill info card class start */
 .skill_card_container{
-	@apply [&:not(:first-child):not(:last-child)]:my-2 flex justify-evenly duration-150 hover:bg-white/5 p-5 rounded-md;
+	@apply my-5 p-3 md:my-0 [&:not(:first-child):not(:last-child)]:my-2 flex flex-col md:flex-row justify-evenly duration-150 hover:bg-white/5 md:p-5 rounded-md;
 }
 /* skill info card class end */
