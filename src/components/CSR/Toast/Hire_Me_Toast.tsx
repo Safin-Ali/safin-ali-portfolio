@@ -7,8 +7,9 @@ export default function Hire_Me_Toast() {
 	return (
 			<div className={`hire_me_toast_cont`}>
 				<div
-					className={ `hire_me_toast animate-fade_in_up` }
+					className={ `hire_me_toast animate-fade_in_up opacity-0` }
 					style={{
+						animationDelay:'1.5s',
 						animationTimingFunction:'ease-out'
 					}}
 				>

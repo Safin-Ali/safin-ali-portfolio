@@ -18,7 +18,12 @@ export default function Page() {
 				{/* code image block */ }
 
 				<div
-					className={ `code_image_block` }
+					className={ `code_image_block animate-fade_in opacity-0` }
+					style={{
+						animationDelay:'0.6s',
+						animationDuration:'0.6s',
+						animationTimingFunction:'linear'
+					}}
 				>
 					<div
 						className={ `md:w-[500px] mx-auto md:relative md:h-[500px]` }
@@ -52,7 +57,7 @@ export default function Page() {
 
 						{/* welcome block */ }
 						<h2
-							className={ `text-4xl text-primary-header-txt my-3 animate-fade_in` }
+							className={ `text-4xl text-primary-header-txt my-3 animate-fade_in opacity-0` }
 							style={ {
 								animationDuration: '0.7s',
 								animationTimingFunction: 'ease-in'
@@ -63,7 +68,13 @@ export default function Page() {
 						</h2>
 
 						{/* multi skill status */ }
-						<h2 className={ `text-5xl md:text-6xl text-primary-header-txt my-5` }>
+						<h2
+							className={ `animate-fade_in text-5xl md:text-6xl text-primary-header-txt my-5 opacity-0` }
+							style={{
+								animationDelay:'0.6s',
+								animationTimingFunction:'ease-in'
+							}}
+						>
 							<span>I am </span>
 							<span>
 								<Multi_Text_Slide
@@ -79,11 +90,11 @@ export default function Page() {
 
 						{/* short bio of my skills */ }
 						<div
-							className={ `font-light text-lg animate-fade_in_up` }
+							className={ `font-light text-lg animate-fade_in_up opacity-0` }
 							style={ {
 								animationDelay: '0.7s',
+								animationTimingFunction:'ease-in',
 								opacity: '0',
-								animationFillMode: 'forwards'
 							} }
 						>
 							<ul className={ `list-disc md:text-justify lg:text-left md:list-none px-[5%] md:px-0` }>
@@ -97,8 +108,8 @@ export default function Page() {
 					<div
 						className={ `my-5 xl:hidden animate-fade_in_up xl:animate-none opacity-0` }
 						style={ {
-							animationTimingFunction: 'ease-out',
-							animationDelay: '0.9s',
+							animationDelay:'0.8s',
+						animationTimingFunction:'ease-in'
 						} }
 					>
 						<Anchor_CV
@@ -110,7 +121,13 @@ export default function Page() {
 				</div>
 
 				{/* social media links*/ }
-				<div className={ `social_media_block` }>
+				<div
+					className={ `animate-fade_in opacity-0 social_media_block` }
+					style={{
+						animationDelay:'1.4s',
+						animationTimingFunction:'ease-in'
+					}}
+				>
 
 					<div className={ `text-xl font-light text-primary-header-txt` }>
 						Find out more —

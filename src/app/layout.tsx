@@ -30,12 +30,24 @@ export default function RootLayout({
 						{ children }
 					</main>
 					{/* navigation route */ }
-					<div className={ `hidden md:z-30 md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%]` }>
+					<div
+						className={ `hidden animate-fade_in md:z-30 md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%] opacity-0` }
+						style={{
+							animationDelay:'1.7s',
+							animationDuration:'0.4s',
+							animationTimingFunction:'ease-in'
+						}}
+					>
 						<Navbar />
 					</div>
 
 					{/* mobile navigation route */ }
-					<div className={ `block w-full md:hidden fixed h-fit bottom-0 right-0` }>
+					<div
+						className={ `block w-full md:hidden fixed h-fit bottom-0 right-0 opacity-0 animate-fade_in_up` }
+						style={{
+							animationDelay:'0.7s'
+						}}
+					>
 						<Mobile_Navbar/>
 					</div>
 
