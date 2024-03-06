@@ -89,4 +89,8 @@ body {
 	/* toast styles ref start */
 	@import url('./components/toast.css');
 	/* toast styles ref end */
+
+	/* modal styles ref start */
+	@import url('./components/modal.css');
+	/* modal styles ref end */
 }

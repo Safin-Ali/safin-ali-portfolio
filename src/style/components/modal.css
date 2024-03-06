@@ -1,0 +1,11 @@
+/* intercept routing modal style start */
+
+.modal_container{
+	@apply fixed w-full top-1/2 -translate-y-1/2 h-full flex-full-center backdrop-blur-sm z-[100];
+}
+
+.modal_content {
+	@apply w-[95%] md:w-[80%] h-[calc(100vh-20vh)] animate-fade_in_up opacity-0 border border-primary-border rounded-xl bg-black text-inherit flex items-center flex-col min-h-[500px];
+}
+
+/* intercept routing modal style end */

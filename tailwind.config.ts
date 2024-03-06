@@ -35,6 +35,7 @@ const config: Config = {
 				'slight_to_lr': 'slight_lr 3s ease-in-out infinite',
 				'fade_in_up': 'fade_in_up 0.8s linear 0s 1 forwards',
 				'fade_in_down': 'fade_in_down 0.3s linear 0s 1 forwards',
+				'fade_out_down': 'fade_out_down 0.3s linear 0s 1 forwards',
 				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
 				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
 			},
@@ -74,6 +75,16 @@ const config: Config = {
 					'100%': {
 						opacity:'1',
 						transform: 'translateY(0)',
+					},
+				},
+				'fade_out_down': {
+					'0%': {
+						opacity:'1',
+						transform: 'translateY(0px)',
+					},
+					'100%': {
+						opacity:'0',
+						transform: 'translateY(40px)',
 					},
 				},
 				'fade_in_up': {
