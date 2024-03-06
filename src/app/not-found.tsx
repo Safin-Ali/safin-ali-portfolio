@@ -13,7 +13,7 @@ export default function NotFound() {
 
 			<div className={`my-2 text-center`}>
 				<p className={ `my-1.5` }>Page Not Found</p>
-				<p className={ `my-1.5` }><span>sorry we couldn&apos;t found the page you&apos;r looking for.</span></p>
+				<p className={ `my-1.5` }><span>We&rsquo;re sorry, the page you requested was not found.</span></p>
 			</div>
 		</div>
 	);

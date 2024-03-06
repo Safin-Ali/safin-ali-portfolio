@@ -11,8 +11,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
+	modal
 }: Readonly<{
 	children: React.ReactNode;
+	modal: React.ReactNode;
 }>) {
 	return (
 		<html lang="en">
@@ -21,6 +23,7 @@ export default function RootLayout({
 				<>
 					<main className={`h-full`}>
 						{ children }
+						{modal}
 					</main>
 					{/* navigation route */ }
 					<div
@@ -43,6 +46,9 @@ export default function RootLayout({
 					>
 						<Mobile_Navbar/>
 					</div>
+
+					{/* modal portal */}
+					<div id={'modal-root'}></div>
 
 					{/* gradient background */ }
 					<div>
