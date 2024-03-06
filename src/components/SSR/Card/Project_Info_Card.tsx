@@ -24,7 +24,7 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 				<div className={`my-3 md:my-5`}>
 					<p className={`font-light`}>
 						<Text_Expandable_Nav_Btn
-						path={_id}
+						path={`projects/${_id}`}
 						sliceRange={200}
 						className={`text-left`}
 						>
