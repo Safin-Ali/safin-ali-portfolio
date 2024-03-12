@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 import customCssUtility from "./custom-css-utility";
-import { chipColorCSSGen } from '@/utils/common-utils';
 
 const config: Config = {
 	content: [

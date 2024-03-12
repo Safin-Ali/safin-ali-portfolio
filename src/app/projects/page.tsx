@@ -5,9 +5,9 @@ import React from 'react';
 
 export default async function page() {
 
-	const x: ProjectDataShortType[] = await (await API.get('projects/categ?category=javascript')).json();
+	const x: ProjectDataShortType[] = await (await API.get('project/all')).json();
 
-	const projectsData = [...x, ...x, ...x]
+	const projectsData = [...x, ...x, ...x];
 
 	return (
 		<div className={ `flex-full-center h-full` }>
