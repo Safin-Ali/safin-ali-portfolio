@@ -13,7 +13,7 @@ body {
 		@apply w-9 inline-block h-9 bg-cover bg-no-repeat bg-[url('../../public/assets/hello_emoji.gif')];
 	}
 
-	.code_image_block{
+	.code_image_block {
 		@apply md:order-2 md:basis-full h-auto min-h-[300px] self-center my-[5%] md:my-0 mx-auto;
 	}
 
@@ -25,7 +25,7 @@ body {
 		@apply absolute w-screen -left-1/2 h-full bg-[url('../../public/assets/home_bg.webp')] bg-no-repeat bg-cover bg-origin-content bg-center;
 	}
 
-	.image_glow_shadow{
+	.image_glow_shadow {
 		@apply absolute scale-[1.007] blur-md inset-0;
 	}
 
@@ -33,10 +33,11 @@ body {
 		@apply static my-3 h-[80px] md:h-fit md:my-0 px-[5%] md:px-0 md:absolute sm:bottom-2 lg:bottom-[7%] md:left-0 flex flex-row gap-3;
 	}
 
-	.code_img_1{
+	.code_img_1 {
 		@apply hidden sm:block sm:absolute sm:left-2/4 sm:top-[5%] md:left-[50%] md:top-[2%] sm:z-[2];
 	}
-	.code_img_2{
+
+	.code_img_2 {
 		@apply static sm:absolute inset-0 sm:inset-auto sm:left-[10%] sm:top-[12%] md:left-[18%] md:top-[30%];
 	}
 
@@ -44,53 +45,68 @@ body {
 		@apply bg-gradient-to-b shadow-half-border shadow-slate-600 from-glow/20 to-transparent p-3 rounded-lg;
 	}
 
-	.social_contact_card{
+	.social_contact_card {
 		@apply flex flex-wrap w-full justify-between sm:w-min md:w-auto sm:justify-normal md:flex-nowrap items-center gap-3;
 	}
-	.social_contact_card a{
+
+	.social_contact_card a {
 		@apply w-fit inline-block;
 	}
-	.social_contact_card > div{
+
+	.social_contact_card>div {
 		@apply shrink-0 grow-0 basis-1/2 w-full xl:w-auto sm:basis-auto sm:shrink sm:grow xl:grow-0;
 	}
 
-	.social_contact_block_end > div{
+	.social_contact_block_end>div {
 		@apply ml-auto sm:ml-0;
 	}
 
-	.middle_divider {
-		@apply before:w-[2px] before:rounded-full before:h-full before:absolute before:bg-primary-border before:left-1/2 before:transform before:-translate-x-1/2;
+	.spinner{
+		mask: radial-gradient(
+			transparent 60%,
+			#F6F6F7 61%
+		);
+		-webkit-mask: radial-gradient(
+			transparent 60%,
+			#F6F6F7 61%
+		);
+		background: radial-gradient(farthest-side,#F6F6F7 90%, transparent) top/9px 9px no-repeat, conic-gradient(transparent 20%, #F6F6F7);
+		@apply w-28 h-28 animate-spin rounded-full;
 	}
-
-	.content_header {
-		@apply my-6 text-3xl text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
-	}
-
-	/* navbar styles ref start */
-	@import url('./components/navbar.css');
-	/* navbar styles ref end */
-
-	/* card styles ref start */
-	@import url('./components/card.css');
-	/* card styles ref end */
-
-	/* button styles ref start */
-	@import url('./components/button.css');
-	/* button styles ref end */
-
-	/* field styles ref start */
-	@import url('./components/field.css');
-	/* field styles ref end */
-
-	/* chip styles ref start */
-	@import url('./components/chip.css');
-	/* chip styles ref end */
-
-	/* toast styles ref start */
-	@import url('./components/toast.css');
-	/* toast styles ref end */
-
-	/* modal styles ref start */
-	@import url('./components/modal.css');
-	/* modal styles ref end */
 }
+
+.middle_divider {
+	@apply before:w-[2px] before:rounded-full before:h-full before:absolute before:bg-primary-border before:left-1/2 before:transform before:-translate-x-1/2;
+}
+
+.content_header {
+	@apply my-6 text-3xl text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
+}
+
+/* navbar styles ref start */
+@import url('./components/navbar.css');
+/* navbar styles ref end */
+
+/* card styles ref start */
+@import url('./components/card.css');
+/* card styles ref end */
+
+/* button styles ref start */
+@import url('./components/button.css');
+/* button styles ref end */
+
+/* field styles ref start */
+@import url('./components/field.css');
+/* field styles ref end */
+
+/* chip styles ref start */
+@import url('./components/chip.css');
+/* chip styles ref end */
+
+/* toast styles ref start */
+@import url('./components/toast.css');
+/* toast styles ref end */
+
+/* modal styles ref start */
+@import url('./components/modal.css');
+/* modal styles ref end */
