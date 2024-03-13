@@ -73,7 +73,10 @@ body {
 }
 
 .content_header {
-	@apply my-6 text-3xl text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
+	@apply my-6 text-3xl h-[calc(100%-88%)] md:h-[calc(100%-85%)] text-center text-primary-header-txt relative before:content-[''] before:w-12 before:bg-transparent before:border-primary-header-txt before:border-[3px] before:rounded-full before:absolute before:-bottom-2 before:transform before:left-1/2 before:-translate-x-1/2;
+}
+.content_wrapper {
+	@apply h-[calc(100%-19.5%)] overflow-y-scroll md:h-[calc(100%-24.5%)];
 }
 
 /* navbar styles ref start */

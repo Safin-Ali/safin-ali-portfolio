@@ -17,10 +17,10 @@ export default function Skills_Info_Card(props: Props) {
 
 	return (
 		<div className={ 'skill_card_container' }>
-			<div className={ `basis-full md:basis-[80%] mx-auto flex md:mr-5 lg:mr-0 items-center` }>
+			<div className={ `basis-full md:basis-[80%] mx-auto xsm:mx-0 xsm:mr-auto md:mx-auto flex md:mr-5 lg:mr-0 items-center` }>
 				<div>
 					<div
-						className={ `border p-2 md:p-5 rounded-xl bg-fade-linear-tb border-primary-border` }
+						className={ `border p-2 md:p-5 rounded-xl bg-fade-linear-tb border-primary-border xsm:flex xsm:items-center xsm:gap-x-2 md:block` }
 					>
 						<div>
 							<Image
@@ -33,22 +33,24 @@ export default function Skills_Info_Card(props: Props) {
 							/>
 						</div>
 
-						<h6 className={ `my-2 text-xl capitalize font-medium` }><span>{ categ.replace('_', '-') }</span></h6>
-						<ul className={ `flex gap-2 flex-wrap justify-center` }>
-							{ techs.map(({ colorCSS, label }, idx) => {
+						<div>
+							<h6 className={ `my-2 text-xl capitalize font-medium` }><span>{ categ.replace('_', '-') }</span></h6>
+							<ul className={ `flex gap-2 flex-wrap justify-center` }>
+								{ techs.map(({ colorCSS, label }, idx) => {
 
-								return <li
+									return <li
 										key={ idx }
 									>
-									<Chip
-										className={ `${colorCSS} shadow-lg` }
-									>
-										{ label }
-									</Chip>
-								</li>
-							})
-							}
-						</ul>
+										<Chip
+											className={ `${colorCSS} shadow-lg` }
+										>
+											{ label }
+										</Chip>
+									</li>
+								})
+								}
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

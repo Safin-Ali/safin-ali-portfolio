@@ -37,7 +37,8 @@ const config: Config = {
 				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
 			},
 			screens:{
-				'xs':'320px'
+				'xs':'320px',
+				'xsm':'540px'
 			},
 			keyframes: {
 				'bounce_low':{

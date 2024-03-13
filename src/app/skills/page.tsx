@@ -9,14 +9,14 @@ export default function Page() {
 
 	return (
 		<div className={ `flex-full-center h-full` }>
-			<div className={ `text-center w-full h-full` }>
+			<div className={ `text-center w-full h-full overflow-hidden` }>
 				<div className={ `content_header` }>
 					<h3>My Technical Skills</h3>
 					<p><span className={`text-base font-light`}>Proficient in:</span></p>
 				</div>
 
 				<div
-					className={ `h-page-mb md:h-page lg:h-page-mb xl:h-page md:w-full lg:w-10/12 xl:w-3/4 mx-auto overflow-y-scroll md:px-2` }
+					className={ `content_wrapper md:w-full lg:w-10/12 xl:w-3/4 mx-auto md:px-2` }
 				>
 					{
 						Object.entries(skills_arr).map(([category, techs], idx) => {
