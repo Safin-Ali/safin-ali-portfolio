@@ -2,7 +2,7 @@
 
 body {
 	height: 100vh;
-	@apply bg-black scroll-smooth text-primary-parag-txt h-[100dvh] md:h-screen relative overflow-hidden;
+	@apply bg-black scroll-smooth text-primary-parag-txt h-dvh md:h-screen relative overflow-hidden;
 }
 
 @layer components {
