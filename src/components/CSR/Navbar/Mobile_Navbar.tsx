@@ -25,7 +25,7 @@ export default function Mobile_Navbar() {
 	path = !path.length ? '/' : `/${path}`;
 
 	return (
-		<nav>
+		<nav className={`h-full`}>
 			<section className={ `mobile_nav_container` }>
 
 				{

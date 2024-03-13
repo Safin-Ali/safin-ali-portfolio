@@ -11,7 +11,7 @@
 
 /* mobile navbar class start */
 .mobile_nav_container{
-	@apply flex-full-center backdrop-blur-xl bg-black/60 pt-2 h-full;
+	@apply flex items-center justify-center sm:justify-around backdrop-blur-xl border-t border-primary-border md:border-none bg-black/60 pt-2 h-full;
 }
 
 .mobile_nav_container > div {
@@ -21,6 +21,6 @@
 	@apply mx-auto;
 }
 .mobile_nav_container > div > a > p {
-	@apply text-xs capitalize xs:text-sm sm:text-base my-0.5;
+	@apply text-xs capitalize xs:text-base my-0.5;
 }
 /* mobile navbar class end */

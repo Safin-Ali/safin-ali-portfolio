@@ -3,6 +3,8 @@ import "../style/globals.css";
 import Navbar from '@/components/CSR/Navbar/Navbar';
 import Mobile_Navbar from '@/components/CSR/Navbar/Mobile_Navbar';
 import { nunito } from '../fonts/fonts';
+import Hire_Me_Toast from '@/components/CSR/Toast/Hire_Me_Toast';
+import Social_Block from '@/components/SSR/Anchor/Social_Block';
 
 export const metadata: Metadata = {
 	title: "Safin Ali",
@@ -18,47 +20,75 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${nunito.className}`}>
+			<body className={ `${nunito.className}` }>
 
 				<>
-					<main className={`h-full`}>
+					<main className={ `h-[92%] md:h-[88%] lg:h-[85%]` }>
 						{ children }
-						{modal}
+						{ modal }
 					</main>
-					{/* navigation route */ }
-					<div
-						className={ `hidden animate-fade_in md:z-30 md:block md:absolute md:bottom-2 lg:bottom-[7%] md:right-[5%] opacity-0` }
-						style={{
-							animationDelay:'1.7s',
-							animationDuration:'0.4s',
-							animationTimingFunction:'ease-in'
-						}}
-					>
-						<Navbar />
-					</div>
 
-					{/* mobile navigation route */ }
-					<div
-						className={ `block w-full md:hidden fixed h-fit bottom-0 right-0 opacity-0 animate-fade_in_up` }
-						style={{
-							animationDelay:'0.7s'
-						}}
-					>
-						<Mobile_Navbar/>
-					</div>
+					<footer className={ `h-[8%] md:h-[12%] lg:h-[15%]` }>
+						<div
+							className={ `flex xl:justify-evenly justify-between md:px-[5%] xl:px-0 items-center h-full` }
+						>
+							{/* social media links*/ }
+							<div className={ `hidden md:block lg:hidden xl:block` }>
+								<div
+									className={ `animate-fade_in opacity-0 social_media_block` }
+									style={ {
+										animationDelay: '1.4s',
+										animationTimingFunction: 'ease-in'
+									} }
+								>
+									<Social_Block />
+								</div>
+							</div>
 
-					{/* modal portal */}
-					<div id={'modal-root'}></div>
+							{/* hire me toast */ }
+							<div>
+								{/* hire me toast */ }
+								<div className={ `hidden lg:block` }>
+									<Hire_Me_Toast />
+								</div>
+							</div>
+
+							{/* desktop navbar */ }
+							<div
+								className={ `hidden animate-fade_in md:block opacity-0` }
+								style={ {
+									animationDelay: '1.7s',
+									animationDuration: '0.4s',
+									animationTimingFunction: 'ease-in'
+								} }
+							>
+								<Navbar />
+							</div>
+
+							{/* mobile navbar */ }
+							<div
+								className={ `block h-full w-full md:hidden opacity-0 animate-fade_in_up` }
+								style={ {
+									animationDelay: '0.7s'
+								} }
+							>
+								<Mobile_Navbar />
+							</div>
+						</div>
+					</footer>
+
+					{/* modal portal */ }
+					<div id={ 'modal-root' }></div>
 
 					{/* gradient background */ }
 					<div>
 
 						{/* blob 1 */ }
-						<div className={'fixed left-1/2 -top-[20%] transform -translate-x-1/2 blur-3xl opacity-50 -z-[1]'}>
+						<div className={ 'fixed left-1/2 -top-[20%] transform -translate-x-1/2 blur-3xl opacity-50 -z-[1]' }>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="15.06 24.96 153.37 141.66"
-								className={'w-72 fill-pink-600/35'}
+								className={ 'w-72 fill-pink-600/35' }
 							>
 								<path
 									fill="inherit"
@@ -68,11 +98,11 @@ export default function RootLayout({
 						</div>
 
 						{/* blob 2 */ }
-						<div className={'fixed right-0 top-1/2 transform -translate-y-1/2 blur-3xl opacity-40 -z-[1]'}>
+						<div className={ 'fixed right-0 top-1/2 transform -translate-y-1/2 blur-3xl opacity-40 -z-[1]' }>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="36.91 13.47 123.75 163.21"
-								className={'w-72 fill-indigo-700/35'}
+								className={ 'w-72 fill-indigo-700/35' }
 							>
 								<path
 									fill="inherit"
@@ -83,11 +113,11 @@ export default function RootLayout({
 						</div>
 
 						{/* blob 3 */ }
-						<div className={'fixed -bottom-[30%] rotate-[40deg] blur-3xl opacity-40 -z-[1]'}>
+						<div className={ 'fixed -bottom-[30%] rotate-[40deg] blur-3xl opacity-40 -z-[1]' }>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="31.63 27.25 118.52 159.69"
-								className={'w-72 fill-green-600/35'}
+								className={ 'w-72 fill-green-600/35' }
 							>
 								<path
 									fill="inherit"

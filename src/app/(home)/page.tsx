@@ -2,11 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import image1 from '../../../public/assets/code_template_1.webp';
 import Multi_Text_Slide from '@/components/CSR/Multi-Text-Slider/Multi_Text_Slider';
-import { IoLogoLinkedin } from "react-icons/io5";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { SiGithub } from "react-icons/si";
-import Hire_Me_Toast from '@/components/CSR/Toast/Hire_Me_Toast';
 import Anchor_CV from '@/components/SSR/Anchor/Anchor_CV';
+import Social_Block from '@/components/SSR/Anchor/Social_Block';
 
 export default function Page() {
 
@@ -24,34 +21,19 @@ export default function Page() {
 						animationTimingFunction:'linear'
 					}}
 				>
-					<div
-						className={ `md:w-[500px] mx-auto md:relative md:h-[500px]` }
-					>
-						<div className={ `code_img_1` }>
+						<div className={ `flex justify-center items-center lg:justify-end xl:justify-center h-full` }>
 							<Image
-								width={ 240 }
-								height={ 240 }
+								width={ 300 }
+								height={ 300 }
 								src={ image1 }
 								placeholder={'blur'}
-								alt={ 'code_template_1' }
-								className={`w-full md:w-3/4`}
+								alt={ 'code_template' }
+								className={`block`}
 							/>
-						</div>
-						<div className={ `code_img_2` }>
-							<Image
-								width={ 240 }
-								height={ 240 }
-								placeholder={'blur'}
-								src={ image1 }
-								alt={ 'code_template_1' }
-								className={ `mx-auto sm:mx-0 w-[90%] md:w-3/4` }
-							/>
-						</div>
 					</div>
 				</div>
 
 				{/* text block */ }
-
 				<div className={ `home_page_text_block` }>
 
 					<div className={ `font-bold` }>
@@ -106,11 +88,12 @@ export default function Page() {
 						</div>
 					</div>
 
+					{/* download resume button */}
 					<div
-						className={ `my-5 xl:hidden animate-fade_in_up xl:animate-none opacity-0` }
+						className={ `my-5 lg:hidden animate-fade_in_up xl:animate-none opacity-0` }
 						style={ {
 							animationDelay:'0.8s',
-						animationTimingFunction:'ease-in'
+							animationTimingFunction:'ease-in'
 						} }
 					>
 						<Anchor_CV
@@ -119,36 +102,14 @@ export default function Page() {
 							Download Resume
 						</Anchor_CV>
 					</div>
-				</div>
 
-				{/* social media links*/ }
-				<div
-					className={ `animate-fade_in opacity-0 social_media_block` }
-					style={{
-						animationDelay:'1.4s',
-						animationTimingFunction:'ease-in'
-					}}
-				>
+					{/* social link */}
 
-					<div className={ `text-xl font-light text-primary-header-txt` }>
-						Find out more —
+					<div className={`flex gap-2 my-2 md:hidden lg:flex xl:hidden`}>
+						<Social_Block/>
 					</div>
-
-					<a className={ `duration-150 hover:text-sky-600` } href={ 'https://www.linkedin.com/in/safin-ali/' } target={ '_blank' }>
-						<IoLogoLinkedin size={ 25 } />
-					</a>
-					<a className={ `duration-150 hover:text-blue-600` } href={ 'https://www.facebook.com/safin.ali.7205' } target={ '_blank' }>
-						<FaSquareFacebook size={ 25 } />
-					</a>
-					<a className={ `duration-150 hover:text-gray-950` } href={ 'https://github.com/Safin-Ali/' } target={ '_blank' }>
-						<SiGithub className={ `rounded-full duration-200 ease-in-out hover:bg-primary-header-txt` } size={ 25 } />
-					</a>
 				</div>
 
-			</div>
-			{/* hire me toast */ }
-			<div className={ `hidden xl:block` }>
-				<Hire_Me_Toast />
 			</div>
 		</>
 	);

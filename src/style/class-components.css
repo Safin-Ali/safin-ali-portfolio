@@ -1,12 +1,13 @@
 @tailwind components;
 
 body {
-	@apply bg-black scroll-smooth text-primary-parag-txt relative h-screen overflow-hidden;
+	height: 100vh;
+	@apply bg-black scroll-smooth text-primary-parag-txt h-[100dvh] md:h-screen relative overflow-hidden;
 }
 
 @layer components {
 	.home_page {
-		@apply h-[calc(100%-7%)] md:h-full overflow-y-scroll relative w-full md:flex md:justify-center md:mx-[5%] md:flex-row;
+		@apply h-full overflow-y-scroll md:items-center md:overflow-y-auto md:w-auto lg:w-full md:flex md:justify-center md:px-[5%] md:gap-x-5 lg:gap-x-0 md:flex-row;
 	}
 
 	.hello_anim_emoji {
@@ -14,11 +15,11 @@ body {
 	}
 
 	.code_image_block {
-		@apply md:order-2 md:basis-full h-auto min-h-[300px] self-center my-[5%] md:my-0 mx-auto;
+		@apply md:order-2 md:basis-full h-auto self-center my-[5%] md:my-0 px-[5%] sm:px-0;
 	}
 
 	.home_page_text_block {
-		@apply basis-full md:flex md:flex-col min-h-[300px] md:justify-center w-full md:basis-full md:order-1 h-auto px-[5%] md:px-0;
+		@apply basis-full md:flex md:flex-col md:self-baseline lg:self-auto md:justify-center w-full md:basis-full md:order-1 h-auto px-[5%] md:px-0;
 	}
 
 	.blob_home {
@@ -30,15 +31,7 @@ body {
 	}
 
 	.social_media_block {
-		@apply static my-3 h-[80px] md:h-fit md:my-0 px-[5%] md:px-0 md:absolute sm:bottom-2 lg:bottom-[7%] md:left-0 flex flex-row gap-3;
-	}
-
-	.code_img_1 {
-		@apply hidden sm:block sm:absolute sm:left-2/4 sm:top-[5%] md:left-[50%] md:top-[2%] sm:z-[2];
-	}
-
-	.code_img_2 {
-		@apply static sm:absolute inset-0 sm:inset-auto sm:left-[10%] sm:top-[12%] md:left-[18%] md:top-[30%];
+		@apply my-3 h-[80px] md:h-fit md:my-0 px-[5%] md:px-0 sm:bottom-2 lg:bottom-[7%] md:left-0 flex flex-row gap-3;
 	}
 
 	.card_icon {
