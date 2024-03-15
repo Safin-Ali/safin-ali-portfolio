@@ -7,8 +7,24 @@ import { SiMedium } from "react-icons/si";
 import { RiTwitterXLine } from "react-icons/ri";
 import React from 'react';
 import Contact_Card from '@/components/CSR/Card/Contact_Card';
+import { API } from '@/utils/http-fetcher';
 
 export default function Page() {
+
+	async function formAction (formData: FormData) {
+		'use server'
+
+		const rawFormData = {
+			emailSub: formData.get('emailSub')!,
+			senderName: formData.get('senderName')!,
+			senderEmail: formData.get('senderEmail')!,
+			emailDesc: formData.get('emailDesc')!,
+		}
+
+		const res = await API.post(`sendEmail`,{
+			body:JSON.stringify(rawFormData)
+		});
+	}
 
 	return (
 		<div className={ `flex-full-center h-full` }>
@@ -39,21 +55,25 @@ export default function Page() {
 							} }
 						>
 							<div className={ `w-full lg:w-3/4 xl:w-1/2 mx-auto xl:mx-0 xl:ml-auto` }>
-								<form>
+								<form action={formAction}>
 									<Floating_Input_Field
 										labelVal={ 'Subject' }
+										name={'emailSub'}
 									/>
 									<Floating_Input_Field
 										labelVal={ 'Your Name' }
+										name={'senderName'}
 									/>
 									<Floating_Input_Field
 										labelVal={ 'Your Email' }
+										name={'senderEmail'}
 									/>
 									<Floating_Textarea_Field
 										labelVal={ 'Message' }
 										rows={ 5 }
 										maxLength={ 500 }
 										className={ `resize-none` }
+										name={'emailDesc'}
 									/>
 									<div>
 										<Primary_Btn
