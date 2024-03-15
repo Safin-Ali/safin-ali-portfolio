@@ -1,30 +1,12 @@
-import Primary_Btn from '@/components/CSR/Button/Primary_Btn';
-import Floating_Input_Field from '@/components/SSR/Card/Floating_Input_Field';
-import Floating_Textarea_Field from '@/components/SSR/Card/Floating_Textarea_Field';
 import { SlSocialLinkedin, SlSocialInstagram } from "react-icons/sl";
 import { PiMessengerLogoLight, PiWhatsappLogoLight } from "react-icons/pi";
 import { SiMedium } from "react-icons/si";
 import { RiTwitterXLine } from "react-icons/ri";
 import React from 'react';
 import Contact_Card from '@/components/CSR/Card/Contact_Card';
-import { API } from '@/utils/http-fetcher';
+import Contact_Input_Form from './(CSR_Elements)/Contact_Input_Form';
 
 export default function Page() {
-
-	async function formAction (formData: FormData) {
-		'use server'
-
-		const rawFormData = {
-			emailSub: formData.get('emailSub')!,
-			senderName: formData.get('senderName')!,
-			senderEmail: formData.get('senderEmail')!,
-			emailDesc: formData.get('emailDesc')!,
-		}
-
-		const res = await API.post(`sendEmail`,{
-			body:JSON.stringify(rawFormData)
-		});
-	}
 
 	return (
 		<div className={ `flex-full-center h-full` }>
@@ -55,34 +37,7 @@ export default function Page() {
 							} }
 						>
 							<div className={ `w-full lg:w-3/4 xl:w-1/2 mx-auto xl:mx-0 xl:ml-auto` }>
-								<form action={formAction}>
-									<Floating_Input_Field
-										labelVal={ 'Subject' }
-										name={'emailSub'}
-									/>
-									<Floating_Input_Field
-										labelVal={ 'Your Name' }
-										name={'senderName'}
-									/>
-									<Floating_Input_Field
-										labelVal={ 'Your Email' }
-										name={'senderEmail'}
-									/>
-									<Floating_Textarea_Field
-										labelVal={ 'Message' }
-										rows={ 5 }
-										maxLength={ 500 }
-										className={ `resize-none` }
-										name={'emailDesc'}
-									/>
-									<div>
-										<Primary_Btn
-											className={ `px-6` }
-										>
-											Sent
-										</Primary_Btn>
-									</div>
-								</form>
+								<Contact_Input_Form/>
 							</div>
 						</div>
 
@@ -94,9 +49,9 @@ export default function Page() {
 								animationDelay: '0.5s',
 							} }
 						>
-							<div className={ `basis-full flex flex-row md:flex-col justify-center gap-5` }>
+							<div className={ `basis-full flex md:flex-col justify-center gap-5` }>
 								{/* social block 1  */ }
-								<div className={ `social_contact_card` }>
+								<div className={ `flex social_contact_card` }>
 
 									<div>
 										<Contact_Card
@@ -110,31 +65,31 @@ export default function Page() {
 									</div>
 									<div>
 										<Contact_Card
-											desSrc={ 'https://www.linkedin.com/in/safin-ali/' }
+											desSrc={ 'https://twitter.com/SafinAli7205' }
 											iconNode={ <RiTwitterXLine
 												className={ `mx-auto animate-bounce` } size={ 25 }
 											/>
 											}
-											userId={ `safin-ali` }
+											userId={ `@SafinAli7205` }
 										/>
 									</div>
 									<div>
 										<Contact_Card
-											desSrc={ 'https://web.whatsapp.com/send?phone=+8801316987205' }
+											desSrc={ 'https://medium.com/@safin.ali.7205' }
 											iconNode={ <SiMedium
 												className={ `mx-auto animate-bounce` } size={ 30 }
 											/>
 											}
-											userId={ `01316987205` }
+											userId={ `@safin.ali.7205` }
 										/>
 									</div>
 								</div>
 
 								{/* social block 2 */ }
-								<div className={ `social_contact_card social_contact_block_end` }>
+								<div className={ `hidden md:flex social_contact_card social_contact_block_end` }>
 									<div>
 										<Contact_Card
-											desSrc={ 'http://m.me/safin.ali.7205' }
+											desSrc={ 'https://www.instagram.com/safin.ali.7205/' }
 											iconNode={ <SlSocialInstagram
 												className={ `mx-auto animate-bounce` } size={ 30 }
 											/>

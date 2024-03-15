@@ -39,7 +39,7 @@ body {
 	}
 
 	.social_contact_card {
-		@apply flex flex-wrap w-full justify-between sm:w-min md:w-auto sm:justify-normal md:flex-nowrap items-center gap-3;
+		@apply flex-wrap w-full justify-between sm:w-min md:w-auto sm:justify-normal sm:flex-nowrap items-center gap-y-3 sm:gap-3;
 	}
 
 	.social_contact_card a {
@@ -47,7 +47,7 @@ body {
 	}
 
 	.social_contact_card>div {
-		@apply shrink-0 grow-0 basis-1/2 w-full xl:w-auto sm:basis-auto sm:shrink sm:grow xl:grow-0;
+		@apply shrink-0 grow-0 w-auto basis-auto sm:shrink sm:grow xl:grow-0;
 	}
 
 	.social_contact_block_end>div {
