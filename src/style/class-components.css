@@ -42,6 +42,13 @@ body {
 		@apply flex-wrap w-full justify-between sm:w-min md:w-auto sm:justify-normal sm:flex-nowrap items-center gap-y-3 sm:gap-3;
 	}
 
+	.project_details_container{
+		@apply flex-full-center h-full;
+	}
+	.project_details_container h4{
+		@apply text-2xl font-semibold text-primary-header-txt hover:underline-offset-4 hover:underline my-1;
+	}
+
 	.social_contact_card a {
 		@apply w-fit inline-block;
 	}
