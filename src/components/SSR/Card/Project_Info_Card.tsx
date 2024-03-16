@@ -2,6 +2,8 @@ import Text_Expandable_Nav_Btn from '@/components/CSR/Button/Text_Expandable_Nav
 import { ProjectDataShortType } from '@/types/types';
 import Image from 'next/image';
 import React from 'react';
+import { TbWorldShare } from 'react-icons/tb';
+import Projects_Url_Btn_Group from '../Group/Projects_Url_Btn_Group';
 
 export default function Project_Info_Card(props: ProjectDataShortType) {
 
@@ -32,21 +34,10 @@ export default function Project_Info_Card(props: ProjectDataShortType) {
 						</Text_Expandable_Nav_Btn>
 					</p>
 				</div>
-
-				<div className={ `flex gap-2 mt-5 sm:mt-2 my-2` }>
-					<div>
-						<a className={ `primary_btn text-sm sm:text-base` } href={ projectCodeURL } target={ '_blank' }>
-							<span>Source Code </span>
-							<span className={`animate-slight_to_lr inline-block`}>»</span>
-						</a>
-					</div>
-					<div>
-						<a className={ `primary_btn text-sm sm:text-base` } href={ projectLiveURL } target={ '_blank' }>
-							<span>Live Demo </span>
-							<span className={`animate-slight_to_lr inline-block`}>»</span>
-						</a>
-					</div>
-				</div>
+				<Projects_Url_Btn_Group
+					live={projectLiveURL}
+					source={projectCodeURL}
+				/>
 			</div>
 			<div className={`basis-full order-1 md:order-none`}>
 				<Image
