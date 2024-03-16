@@ -17,7 +17,7 @@ export default async function page() {
 					<p><span className={`text-base font-light`}>Selected Personal Projects:</span></p>
 				</div>
 				<div
-				className={ `content_wrapper flex md:px-2 flex-col gap-3 w-[95%] md:w-[80%] px-1 lg:w-3/4 mx-auto` }>
+				className={ `content_wrapper flex md:px-2 flex-col gap-3 w-full md:w-[85%] px-[5%] lg:w-3/4 mx-auto` }>
 					{
 						projectsData.map((obj) => {
 							const {

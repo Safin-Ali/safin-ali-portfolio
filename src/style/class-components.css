@@ -19,7 +19,7 @@ body {
 	}
 
 	.home_page_text_block {
-		@apply basis-full md:flex md:flex-col md:self-baseline lg:self-auto md:justify-center w-full md:basis-full md:order-1 h-auto px-[5%] md:px-0;
+		@apply basis-full md:flex md:flex-col md:justify-center w-full md:basis-full md:order-1 h-auto px-[5%] md:px-0;
 	}
 
 	.blob_home {

@@ -26,7 +26,7 @@ export default function Page() {
 				</div>
 
 				<div className={`content_wrapper`}>
-					<div className={ `flex-full-center h-fit sm:px-[2%] md:px-[5%] lg:px-0 flex-col sm:flex-row md:h-page sm:gap-[5%] my-10` }>
+					<div className={ `flex-full-center h-fit px-[5%] lg:px-0 flex-col sm:flex-row md:h-page sm:gap-[5%] my-10` }>
 
 						{/* contact via email form */ }
 						<div

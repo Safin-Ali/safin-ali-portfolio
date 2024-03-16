@@ -16,13 +16,13 @@ export default function Projects_Url_Btn_Group (props:Props) {
 		<div>
 			<a className={ `primary_btn text-sm sm:text-base` } href={ source } target={ '_blank' }>
 				<span>Source Code </span>
-				<span className={`inline-block align-middle animate-bounce_low`}><SiGithub size={20}/></span>
+				<span className={`inline-block w-[10%] xs:w-auto align-middle animate-bounce_low`}><SiGithub size={20}/></span>
 			</a>
 		</div>
 		<div>
 			<a className={ `primary_btn text-sm sm:text-base` } href={ live } target={ '_blank' }>
 				<span>Live Demo </span>
-				<span className={`inline-block align-middle animate-bounce_low`}><TbWorldShare size={21}/></span>
+				<span className={`inline-block w-[10%] xs:w-auto align-middle animate-bounce_low`}><TbWorldShare size={21}/></span>
 			</a>
 		</div>
 	</div>

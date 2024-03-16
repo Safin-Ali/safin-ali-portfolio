@@ -16,7 +16,7 @@ export default function Page() {
 				</div>
 
 				<div
-					className={ `content_wrapper md:w-full lg:w-10/12 xl:w-3/4 mx-auto md:px-2` }
+					className={ `content_wrapper px-[5%] md:w-full lg:w-10/12 xl:w-3/4 mx-auto md:px-2` }
 				>
 					{
 						Object.entries(skills_arr).map(([category, techs], idx) => {

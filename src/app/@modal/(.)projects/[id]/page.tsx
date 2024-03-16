@@ -12,10 +12,10 @@ export default function ModalPage ({params}:Props) {
 
 	return (
 		<Intercept_Modal
-			header={'Project Modal'}
 		>
 			<Project_Details
 				id={params.id}
+				className={`px-[5%] md:px-5`}
 
 			/>
 		</Intercept_Modal>

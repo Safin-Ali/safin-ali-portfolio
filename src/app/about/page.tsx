@@ -42,7 +42,7 @@ export default function page() {
 						{/* my bio graphy block */ }
 
 						<div
-							className={ `px-3 md:px-0 my-2 md:my-0 h-page md:overflow-y-auto md:pr-5 basis-[40%] self-start` }
+							className={ `px-[5%] md:px-0 my-2 md:my-0 h-page md:overflow-y-auto md:pr-5 basis-[40%] self-start` }
 						>
 							<p className={ `my-2` }>I am Safin Ali from Bangladesh. Passionate about technology from a young age, I embarked on my programming journey in 2022, exploring into JavaScript through self-guided learning. The thrill of problem-solving fuels my dedication to coding. I also find joy in contributing to the tech community and imparting knowledge through teaching.</p>
 

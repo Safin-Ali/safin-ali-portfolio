@@ -132,7 +132,7 @@ export default async function Project_Details ({
 				</h4>
 				<div className={`my-5`}>
 				<Projects_Url_Btn_Group
-					className={`xs:gap-8`}
+					className={`xs:gap-4 xsm:gap-8 text-center`}
 					live={projectLiveURL}
 					source={projectCodeURL}
 				/>
