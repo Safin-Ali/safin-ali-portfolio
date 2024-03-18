@@ -1,6 +1,5 @@
-'use client';
 import React from 'react';
-import Primary_Btn from '../Button/Primary_Btn';
+import Link from 'next/link';
 
 export default function Hire_Me_Toast() {
 
@@ -17,14 +16,13 @@ export default function Hire_Me_Toast() {
 					<p><span>Excited to take on new challenges</span></p>
 
 					<div>
-						<Primary_Btn
-							onClick={ () => {
-								window.open(process.env.NEXT_PUBLIC_MY_RESUME_CDN, '_blank')
-							} }
-							className={ `py-1 px-4` }
+						<Link
+							href={process.env.NEXT_PUBLIC_MY_RESUME_CDN!}
+							target={"_blank"}
+							className={ `primary_btn inline-block py-1 px-4` }
 						>
 							Resume
-						</Primary_Btn>
+						</Link>
 					</div>
 				</div>
 			</div>

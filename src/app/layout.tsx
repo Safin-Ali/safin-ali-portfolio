@@ -3,7 +3,7 @@ import "../style/globals.css";
 import Navbar from '@/components/CSR/Navbar/Navbar';
 import Mobile_Navbar from '@/components/CSR/Navbar/Mobile_Navbar';
 import { nunito } from '../fonts/fonts';
-import Hire_Me_Toast from '@/components/CSR/Toast/Hire_Me_Toast';
+import Hire_Me_Toast from '@/components/SSR/Toast/Hire_Me_Toast';
 import Social_Block from '@/components/SSR/Anchor/Social_Block';
 
 export const metadata: Metadata = {
