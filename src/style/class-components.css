@@ -73,6 +73,13 @@ body {
 		background: radial-gradient(farthest-side,#F6F6F7 90%, transparent) top/9px 9px no-repeat, conic-gradient(transparent 20%, #F6F6F7);
 		@apply w-28 h-28 animate-spin rounded-full;
 	}
+
+	.three_dots_loader{
+		aspect-ratio: 2;
+		background: radial-gradient(circle closest-side,#F6F6F7 90%,transparent) 0/calc(100%/3) 100% space;
+		clip-path: inset(0 100% 0 0);
+		@apply w-3 sm:w-4 ml-0.5 mt-3 block animate-loader_dots rounded-full;
+	}
 }
 
 .middle_divider {

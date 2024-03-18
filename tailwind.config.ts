@@ -9,6 +9,7 @@ const config: Config = {
 	],
 	safelist: [
 		{ pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
+		
 	],
 	theme: {
 		extend: {
@@ -35,6 +36,8 @@ const config: Config = {
 				'fade_out_down': 'fade_out_down 0.3s linear 0s 1 forwards',
 				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
 				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
+				'translate_y':'translateY 0.7s linear 0s 1 forwards',
+				'loader_dots':'loader_dots 1s steps(4) infinite',
 			},
 			screens:{
 				'xs':'320px',
@@ -95,6 +98,16 @@ const config: Config = {
 						transform: 'translateY(0)',
 					},
 				},
+				'translateY':{
+					'to': {
+						'transform':'translateY(0px)'
+					},
+				},
+				'loader_dots':{
+					'to':{
+						'clip-path':'inset(0 -34% 0 0)'
+					}
+				}
 			},
 		},
 	},
