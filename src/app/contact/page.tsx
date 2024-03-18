@@ -12,20 +12,21 @@ export default function Page() {
 		<div className={ `flex-full-center h-full` }>
 			<div className={ `w-full h-full` }>
 				<div
-					className={ `content_header animate-fade_in_down opacity-0` }
+					className={ `content_header` }
 					style={ {
-						animationDelay: '0.2s',
-						animationDuration: '0.5s'
+						animationDuration: '1.2s'
 					} }
 				>
 					Let&apos;s Connect
 					<p>
-						<span className={`hidden md:inline-block text-base font-light`}>For business inquiries or potential collaborations, </span>
+						<span className={ `hidden md:inline-block text-base font-light` }>For business inquiries or potential collaborations, </span>
 						<span className={ `text-base font-light` }>reach out to me.:</span>
 					</p>
 				</div>
 
-				<div className={`content_wrapper`}>
+				<div
+				className={ `content_wrapper` }
+				>
 					<div className={ `flex-full-center h-fit px-[5%] lg:px-0 flex-col sm:flex-row md:h-page sm:gap-[5%] my-10` }>
 
 						{/* contact via email form */ }
@@ -37,7 +38,7 @@ export default function Page() {
 							} }
 						>
 							<div className={ `w-full lg:w-3/4 xl:w-1/2 mx-auto xl:mx-0 xl:ml-auto` }>
-								<Contact_Input_Form/>
+								<Contact_Input_Form />
 							</div>
 						</div>
 

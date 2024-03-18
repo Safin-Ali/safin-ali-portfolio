@@ -16,7 +16,7 @@ export default function Navbar() {
 				{ navItems.map(item => (
 					<li
 					key={ item.value }
-					className={`${(path === item.value && 'pointer-events-none opacity-30')}`}
+					className={`${(path === item.value ? 'pointer-events-none text-blue-600 font-normal' : '')}`}
 					>
 						<Link href={ item.value }>
 							{ item.label }

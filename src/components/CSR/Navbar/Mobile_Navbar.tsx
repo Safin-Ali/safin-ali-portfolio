@@ -11,7 +11,7 @@ import { navItems } from '@/data/nav-items';
 import { usePathname } from 'next/navigation';
 
 export default function Mobile_Navbar() {
-	const iconComponents:{[key: string]: React.ComponentType<any>} = {
+	const iconComponents:{[key: string]: typeof IoHomeOutline} = {
 		home: IoHomeOutline,
 		skills: FaRegLightbulb,
 		projects: PiToolboxBold,
@@ -34,7 +34,7 @@ export default function Mobile_Navbar() {
 						return (
 							<div
 								key={ idx }
-								className={`${(path === value && 'pointer-events-none opacity-30')}`}
+								className={`${(path === value ? 'pointer-events-none opacity-30' : '')}`}
 							>
 								<Link
 									href={ value }
@@ -45,7 +45,7 @@ export default function Mobile_Navbar() {
 											<IconComponent/>
 										}
 									</div>
-									<p><span>{label}</span></p>
+									<span className={`capitalize block`}>{label}</span>
 								</Link>
 							</div>
 						)

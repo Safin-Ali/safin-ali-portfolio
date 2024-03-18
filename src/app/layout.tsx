@@ -84,7 +84,7 @@ export default function RootLayout({
 					<div>
 
 						{/* blob 1 */ }
-						<div className={ 'fixed left-1/2 -top-[20%] transform -translate-x-1/2 blur-3xl opacity-50 -z-[1]' }>
+						<div className={ 'fixed left-0 md:left-1/2 -top-[20%] md:transform md:-translate-x-1/2 blur-3xl opacity-50 -z-[1]' }>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="15.06 24.96 153.37 141.66"
@@ -122,6 +122,35 @@ export default function RootLayout({
 								<path
 									fill="inherit"
 									d="M34.6,-53.8C40.9,-42.9,39.5,-27.7,40.2,-15.4C41,-3.2,43.8,6,46.8,21C49.8,36,53.1,56.8,45.4,70.5C37.6,84.2,18.8,90.7,4.4,84.7C-10,78.6,-20.1,60,-33.6,48.2C-47.2,36.4,-64.3,31.4,-67.7,21.8C-71.1,12.2,-60.8,-2.1,-55.3,-17.6C-49.7,-33,-48.9,-49.7,-40.5,-59.9C-32.1,-70,-16.1,-73.8,-1,-72.5C14.1,-71.1,28.2,-64.7,34.6,-53.8Z"
+									transform="translate(100 100)"
+								/>
+							</svg>
+						</div>
+
+						{/* blob 4 */ }
+						<div className={ 'hidden md:block md:fixed md:-top-[10%] md:-left-[5%] md:blur-3xl md:opacity-40 md:-z-[1]' }>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="20.88 31.29 156.82 155.58"
+								className={ `w-72 fill-neutral-600/45` }
+							>
+								<path
+									fill="inherit"
+									d="M135.6 46c7.3 10.4 7.9 25 16.1 39.7 8.2 14.6 23.9 29.3 25.8 44.4s-10.1 30.6-25.4 42c-15.2 11.4-33.6 18.6-47.7 12.6S80.5 159.4 65.3 148c-15.2-11.3-35.8-14.9-42.2-25.2-6.3-10.3 1.8-27.4 11.8-39.6C44.8 71 56.6 63.8 67.8 54.6c11.1-9.2 21.7-20.3 34-22.8 12.3-2.4 26.4 3.8 33.8 14.2"
+								/>
+							</svg>
+						</div>
+
+						{/* blob 5 */ }
+						<div className={ 'hidden md:block md:fixed md:-bottom-[10%] md:left-[47%] md:blur-3xl md:opacity-40 md:-z-[1]' }>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="23.99 14.36 150.88 149.39"
+								className={ `w-72 fill-slate-600/25` }
+							>
+								<path
+									fill="inherit"
+									d="M41.4,-58.5C55.4,-46.8,69.6,-37,73.6,-24.1C77.6,-11.1,71.3,5,66.1,21.6C60.9,38.2,56.7,55.3,45.9,61.1C35.1,67,17.5,61.5,1.5,59.4C-14.5,57.3,-28.9,58.5,-44.4,54.2C-59.9,49.9,-76.5,40.1,-76,27.9C-75.6,15.8,-58.1,1.3,-50.6,-14.8C-43.1,-30.8,-45.6,-48.5,-38.8,-62.5C-32,-76.6,-16,-87,-1.2,-85.5C13.7,-83.9,27.4,-70.2,41.4,-58.5Z"
 									transform="translate(100 100)"
 								/>
 							</svg>

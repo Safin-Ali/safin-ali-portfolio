@@ -1,20 +1,30 @@
-import React from 'react';
-import myImage from '../../../public/assets/my_professional_photo.webp';
-import Image from 'next/image';
-import Link from 'next/link';
 import Anchor_CV from '@/components/SSR/Anchor/Anchor_CV';
+import Image from 'next/image';
+import myImage from '../../../public/assets/my_professional_photo.webp';
 
 export default function page() {
 
 	return (
 		<div className={ `h-full flex-full-center` }>
 			<div className={ `w-full h-full` }>
-				<div className={ `content_header` }>
+				<div
+					className={ `content_header` }
+					style={ {
+						animationDuration: '1.2s'
+					} }
+				>
 					<h3>About  me</h3>
 					<p><span className={ `text-base font-light` }>Introduction:</span></p>
 				</div>
 
-				<div className={ `content_wrapper` }>
+				<div
+					className={ `content_wrapper opacity-0 animate-fade_in` }
+					style={ {
+						animationDuration: '0.5s',
+						animationTimingFunction:'ease-out',
+						animationDelay:'0.34s'
+					} }
+				>
 					<div className={ `flex-full-center gap-[5%] flex-col md:flex-row` }>
 
 						{/* profesional image block */ }
@@ -60,7 +70,7 @@ export default function page() {
 								<Anchor_CV
 									cdnUrl={ process.env.NEXT_PUBLIC_MY_RESUME_CDN! }
 								>
-									Download CV
+									Get CV
 								</Anchor_CV>
 							</div>
 						</div>

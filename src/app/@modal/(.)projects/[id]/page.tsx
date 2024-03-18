@@ -12,6 +12,7 @@ export default function ModalPage ({params}:Props) {
 
 	return (
 		<Intercept_Modal
+		className={`bg-black/95 md:bg-black/[98%]`}
 		>
 			<Project_Details
 				id={params.id}

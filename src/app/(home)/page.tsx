@@ -15,21 +15,21 @@ export default function Page() {
 
 				<div
 					className={ `code_image_block animate-fade_in opacity-0` }
-					style={{
-						animationDelay:'0.6s',
-						animationDuration:'0.6s',
-						animationTimingFunction:'linear'
-					}}
+					style={ {
+						animationDelay: '0.6s',
+						animationDuration: '0.6s',
+						animationTimingFunction: 'linear'
+					} }
 				>
-						<div className={ `flex justify-center items-center lg:justify-end xl:justify-center h-full` }>
-							<Image
-								width={ 300 }
-								height={ 300 }
-								src={ image1 }
-								placeholder={'blur'}
-								alt={ 'code_template' }
-								className={`block`}
-							/>
+					<div className={ `flex justify-center items-center lg:justify-end xl:justify-center h-full` }>
+						<Image
+							width={ 300 }
+							height={ 300 }
+							src={ image1 }
+							placeholder={ 'blur' }
+							alt={ 'code_template' }
+							className={ `block` }
+						/>
 					</div>
 				</div>
 
@@ -38,7 +38,7 @@ export default function Page() {
 
 					<div className={ `font-bold` }>
 
-						{/* welcome block */ }
+						{/* greething */ }
 						<h2
 							className={ `text-4xl text-primary-header-txt my-3 animate-fade_in opacity-0` }
 							style={ {
@@ -50,13 +50,13 @@ export default function Page() {
 							there! <span className={ `hello_anim_emoji` }></span>
 						</h2>
 
-						{/* multi skill status */ }
+						{/* repeat my name */ }
 						<h2
 							className={ `animate-fade_in text-5xl md:text-6xl text-primary-header-txt my-5 opacity-0` }
-							style={{
-								animationDelay:'0.6s',
-								animationTimingFunction:'ease-in'
-							}}
+							style={ {
+								animationDelay: '0.6s',
+								animationTimingFunction: 'ease-in'
+							} }
 						>
 							<span>I am </span>
 							<span>
@@ -71,12 +71,12 @@ export default function Page() {
 							</span>
 						</h2>
 
-						{/* short bio of my skills */ }
+						{/* short bio of my personality */ }
 						<div
 							className={ `font-light text-lg animate-fade_in_up opacity-0` }
 							style={ {
 								animationDelay: '0.7s',
-								animationTimingFunction:'ease-in',
+								animationTimingFunction: 'ease-in',
 								opacity: '0',
 							} }
 						>
@@ -88,25 +88,32 @@ export default function Page() {
 						</div>
 					</div>
 
-					{/* download resume button */}
+					{/* get resume button */ }
 					<div
 						className={ `my-5 lg:hidden animate-fade_in_up xl:animate-none opacity-0` }
 						style={ {
-							animationDelay:'0.8s',
-							animationTimingFunction:'ease-in'
+							animationDelay: '0.8s',
+							animationTimingFunction: 'ease-in'
 						} }
 					>
 						<Anchor_CV
-							cdnUrl={process.env.NEXT_PUBLIC_MY_RESUME_CDN!}
+							cdnUrl={ process.env.NEXT_PUBLIC_MY_RESUME_CDN! }
 						>
-							Download Resume
+							Get Resume
 						</Anchor_CV>
 					</div>
 
-					{/* social link */}
+					{/* social link */ }
 
-					<div className={`flex gap-2 my-2 md:hidden lg:flex xl:hidden`}>
-						<Social_Block/>
+					<div
+						className={ `animate-fade_in opacity-0 flex gap-2 my-2 md:hidden lg:flex xl:hidden` }
+						style={ {
+							animationDelay: '1.35s',
+							animationDuration:'0.3s',
+							animationTimingFunction: 'ease-in'
+						} }
+					>
+						<Social_Block />
 					</div>
 				</div>
 
