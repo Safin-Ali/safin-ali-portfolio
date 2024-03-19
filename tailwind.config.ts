@@ -8,8 +8,8 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	safelist: [
-		{ pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
-		
+		// { pattern: /(bg|text|border|shadow)-(blue|orange|violet|pink|green|sky|emerald|slate)-(400|500|600)/ },
+
 	],
 	theme: {
 		extend: {
@@ -35,6 +35,7 @@ const config: Config = {
 				'fade_in_down': 'fade_in_down 0.3s linear 0s 1 forwards',
 				'fade_out_down': 'fade_out_down 0.3s linear 0s 1 forwards',
 				'fade_in': 'fade_in 0.3s linear 0s 1 forwards',
+				'fade_out': 'fade_out 0.3s linear 0s 1 forwards',
 				'bounce_low': 'bounce_low 1.7s ease-in-out infinite',
 				'translate_y':'translateY 0.7s linear 0s 1 forwards',
 				'loader_dots':'loader_dots 1s steps(4) infinite',
@@ -61,12 +62,14 @@ const config: Config = {
 					}
 				},
 				'fade_in':{
-					'0%':{
-						opacity:'0',
-					},
-					'100%':{
+					'to':{
 						opacity:'1',
 					},
+				},
+				'fade_out':{
+					'to':{
+						'opacity':'0'
+					}
 				},
 				'fade_in_down': {
 					'0%': {
