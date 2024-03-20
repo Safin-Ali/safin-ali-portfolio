@@ -45,7 +45,7 @@ export default memo(function Select_Option_Field({
 		}
 		setVis({closeAnim,show:!show})
 	}}
-	className={ `select_field_cont  ${show ? 'bg-white/15' : ''} ${selContainerClassName || ''}` }
+	className={ `select_field_cont  ${show ? '!bg-white/15' : ''} ${selContainerClassName || ''}` }
 	{ ...selContainerAttr }
 >
 
