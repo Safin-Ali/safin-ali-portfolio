@@ -93,6 +93,10 @@ body {
 	@apply h-[calc(100%-19.5%)] overflow-y-scroll md:h-[calc(100%-24.5%)];
 }
 
+.blogs_header{
+	@apply backdrop-blur-sm self-start mt-[calc(100%-88%)] md:mt-[calc(100%-95%)] border rounded-lg border-primary-border flex items-center justify-between p-3 bg-primary-header-txt/5 w-full;
+}
+
 /* navbar styles ref start */
 @import url('./components/navbar.css');
 /* navbar styles ref end */
